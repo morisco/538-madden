@@ -2,11 +2,14 @@ var MADDEN = MADDEN || {
 
   playAudio: true,
 
+  currentID: 1,
+
   initApp: function(){
     MADDEN.setScrollWatchers();
     MADDEN.checkPosition();
     MADDEN.pulseArrow();
     MADDEN.initEvents();
+    MADDEN.initOpener();
   },
 
   pulseArrow: function(){
@@ -18,33 +21,19 @@ var MADDEN = MADDEN || {
     $('.start-gamebreakers').on('click',MADDEN.nextBreaker);
   },
 
-  nextBreaker: function(event,current,next){
-    if(event){
-      event.preventDefault();
-    }
-    var currentIndex = current || parseInt($('.gamebreaker-panel.active').not('.previous').attr('data-panel-index'));
-    var nextIndex = next || currentIndex + 1;
-    var elementScroll = $('#gamebreakers').offset().top;
-    var scrollPosition = elementScroll + (($(window).height() * currentIndex)/3);
-    $('html,body').scrollTop(elementScroll);
-    if($('#breaker-audio-'+currentIndex).length > 0){
-      document.getElementById('breaker-audio-'+currentIndex).pause();
-      document.getElementById('breaker-audio-'+currentIndex).currentTime = 0;
-    }
-    if(MADDEN.playAudio){
-      document.getElementById('breaker-audio-'+nextIndex).play();
-    }
-    $('.gamebreaker-panel[data-panel-index="'+currentIndex+'"]').addClass('previous');
-    $('.gamebreaker-panel[data-panel-index="'+nextIndex+'"]').addClass('active');
+  initOpener: function(){
+    // $(window).on('scroll.temporary',function(event){
+    //   $('html,body').scrollTop(0);
+    // });
 
     setTimeout(function(){
-      $('.gamebreaker-panel[data-panel-index="'+nextIndex+'"]').addClass('show-bio');
-    },100)
+      $('#part-1-opener .panel-1').addClass('triggered');
+    },500);
 
     setTimeout(function(){
-      $('.gamebreaker-panel[data-panel-index="'+currentIndex+'"]').removeClass('active');
-    },1000);
-  },  
+      // $(window).off('scroll.temporary');
+    }, 1500);
+  },
 
   setScrollWatchers: function(){
     $('.trigger-watch').each(function(){
@@ -94,6 +83,37 @@ var MADDEN = MADDEN || {
     return ratio;
   },
 
+  part1Opener:function(element,reset){
+    if( reset && element.attr('data-trigger') ) {
+      element.removeAttr('data-trigger');
+    } else if(!reset) {
+      element.attr('data-trigger',true);
+      var ratio = MADDEN.getRatio(element);
+      if(ratio > 0 && ratio < 30){
+        $('.panel-1').addClass('triggered');
+        $('.panel-2').removeClass('triggered');
+        $('.panel-2 h3').addClass('hidden');
+        $('.panel-2 h3.visible').removeClass('hidden');
+      } else if(ratio >= 30 && ratio < 50 && !$('.panel-2').hasClass('triggered')){
+        $('.panel-1').removeClass('triggered');
+        $('.panel-2').addClass('triggered');
+      } else if(ratio >=50 && ratio < 70 && !$('.panel-3').hasClass('triggered')){
+        $('.panel-2 h3.hidden').removeClass('hidden');
+        $('.panel-2 h3.visible').addClass('hidden');
+
+      }
+    }
+    if($(window).scrollTop() >= element.offset().top && $(window).scrollTop() < (element.offset().top + element.height() - $(window).height())){
+      element.removeClass('done').addClass('locked');
+    } else if($(window).scrollTop() >= (element.offset().top + element.height() - $(window).height())) {
+      element.removeClass('locked').addClass('done');
+    } else if($(window).scrollTop() < element.offset().top){
+      element.removeClass('locked').removeClass('done');
+    } else{
+      element.removeClass('locked').removeClass('done');
+    }
+  },
+
   fullQuote: function(element,reset){
     if( reset && element.attr('data-trigger') ) {
       element.removeAttr('data-trigger').removeClass('triggered');
@@ -139,7 +159,7 @@ var MADDEN = MADDEN || {
       return;
     } else if(!reset){
       element.attr('data-trigger',true);
-      var currentRatio = MADDEN.getRatio(element);
+      var ratio = MADDEN.getRatio(element);
       var enterPoint = element.offset().top;
       var scrollTop = $(window).scrollTop();
       if((enterPoint - scrollTop) < 25){
@@ -148,32 +168,70 @@ var MADDEN = MADDEN || {
           adjusteHeader = 0 - (enterPoint - scrollTop);
         }
         element.find('.tweet-intro').css('top',adjustedHeader);
+        element.find('.tweet-viewer').css('top',adjustedHeader + element.find('.tweet-intro').height());
+      }
+      window.tweetTimeout = setTimeout(function(){},100);
+      if(ratio > 0 && ratio < 30){
+        element.find('.tweet[data-index="1"]' ).removeClass('triggered');
+      } else if(ratio >= 30 && ratio < 45 && !element.find('.tweet[data-index="1"]').hasClass('triggered')){
+        if(element.find('.tweet[data-index="2"]').hasClass('triggered')){
+          element.find('.tweet[data-index="2"]').removeClass('triggered');
+          element.find('.tweet[data-index="3"]').removeClass('triggered');
+          element.find('.tweet[data-index="4"]').removeClass('triggered');
+          window.tweetTimeout = setTimeout(function(){
+            element.find('.tweet[data-index="1"]').addClass('triggered');
+          },500)          
+        } else{
+          element.find('.tweet[data-index="1"]').addClass('triggered');
+        }
+      } else if(ratio >= 45 && ratio < 60 && !element.find('.tweet[data-index="2"]').hasClass('triggered')){
+          element.find('.tweet[data-index="1"]').removeClass('triggered');
+          element.find('.tweet[data-index="3"]').removeClass('triggered');
+          element.find('.tweet[data-index="4"]').removeClass('triggered');
+          window.clearTimeout(tweetTimeout);
+          window.tweetTimeout = setTimeout(function(){
+            element.find('.tweet[data-index="2"]').addClass('triggered');
+          },500);
+      } else if(ratio >= 60 && ratio < 75 && !element.find('.tweet[data-index="3"]').hasClass('triggered')){
+          element.find('.tweet[data-index="1"]').removeClass('triggered');
+          element.find('.tweet[data-index="2"]').removeClass('triggered');
+          element.find('.tweet[data-index="4"]').removeClass('triggered');
+          window.clearTimeout(tweetTimeout);
+          window.tweetTimeout = setTimeout(function(){
+            element.find('.tweet[data-index="3"]').addClass('triggered');
+          },500); 
+      } else if(ratio >= 75 && ratio < 90 && !element.find('.tweet[data-index="4"]').hasClass('triggered') && !finalTweet){
+          window.finalTweet = true;
+          window.clearTimeout(tweetTimeout);
+          if(element.find('.tweet.triggered').length > 0){
+            window.tweetTimeout = setTimeout(function(){
+              element.find('.tweet[data-index="4"]').addClass('triggered');
+              window.finalTweet = false;
+            },500);   
+          } else{
+            element.find('.tweet[data-index="4"]').addClass('triggered');
+          }
+          element.find('.tweet[data-index="1"]').removeClass('triggered');
+          element.find('.tweet[data-index="2"]').removeClass('triggered');
+          element.find('.tweet[data-index="3"]').removeClass('triggered');
+          
+      } else if(ratio >= 90){
+        element.find('.tweet[data-index="1"]').removeClass('triggered');
+        element.find('.tweet[data-index="2"]').removeClass('triggered');
+        element.find('.tweet[data-index="3"]').removeClass('triggered');
+        element.find('.tweet[data-index="4"]').removeClass('triggered');
       }
 
-      if(currentRatio < 2 ){
-        element.find('.tweet.triggered').removeClass('triggered');
-      } else if(currentRatio >= 2 && currentRatio < 30 ){
-        element.find('.tweet.triggered').removeClass('triggered');
-        element.find('.tweet[data-index="1"]').addClass('triggered');
-      } else if(currentRatio >= 30 && currentRatio < 45){
-        element.find('.tweet.triggered').removeClass('triggered');
-        element.find('.tweet[data-index="2"]').addClass('triggered');
-      } else if(currentRatio >= 45 && currentRatio < 60){
-        element.find('.tweet.triggered').removeClass('triggered');
-        element.find('.tweet[data-index="3"]').addClass('triggered');
-      } else if(currentRatio >= 60 && currentRatio < 75){
-        element.find('.tweet.triggered').removeClass('triggered');
-        element.find('.tweet[data-index="4"]').addClass('triggered');
-      } else if(currentRatio >= 75){
-        element.find('.tweet.triggered').removeClass('triggered');
-      }
+      
     }
   },
 
   adjustedStats: function(element,reset){
     if(reset && element.attr('data-trigger')){
       element.removeAttr('data-trigger');
+      element.find('.adjustments').removeClass('triggered');
       element.find('.player-stats').removeClass('triggered');
+      element.find(".adjusted-rating .player-rating").text(element.find(".adjusted-rating .player-rating").attr('data-starting-rating'));
       return;
     } else if(!reset){
       element.attr('data-trigger',true);
@@ -212,22 +270,31 @@ var MADDEN = MADDEN || {
 
     if(reset && element.attr('data-trigger')){
       element.removeAttr('data-trigger');
-      document.getElementById('breaker-audio-2').pause();
-      document.getElementById('breaker-audio-2').currenTime = 0;
-      document.getElementById('breaker-audio-3').pause();
-      document.getElementById('breaker-audio-3').currenTime = 0;
-      document.getElementById('breaker-audio-4').pause();
-      document.getElementById('breaker-audio-4').currenTime = 0;
-      $('.gamebreaker-panel').removeClass('active').removeClass('previous').removeClass('show-bio').first().addClass('active');
+      document.getElementById('breaker-video-2').pause();
+      document.getElementById('breaker-video-3').pause();
+      document.getElementById('breaker-video-4').pause();
       return;
     } else if(!reset){
       element.attr('data-trigger',true);
       var ratio = MADDEN.getRatio(element);
-      if(ratio > 98){
-        setTimeout(function(){
-          MADDEN.gameBreakers(element,true);
-        },250);
+      var adjustedTop = 30 * (ratio/100);
+      var newTop = (70 - adjustedTop) + '%';
+      element.find(".gamebreaker-wrapper").css('top',newTop);
+
+      console.log(MADDEN.currentID);
+      var currentVid = document.getElementById('breaker-video-'+MADDEN.currentID);
+      if(currentVid){
+        if(currentVid.paused){
+          currentVid.play();
+        }   
       }
+
+      if(ratio > 95){
+        if(currentVid){
+          currentVid.pause();
+        }
+      }
+           
       if($(window).scrollTop() >= element.offset().top && $(window).scrollTop() < (element.offset().top + element.height() - $(window).height())){
         element.removeClass('done').addClass('locked');
       } else if($(window).scrollTop() >= (element.offset().top + element.height() - $(window).height())) {
@@ -240,6 +307,83 @@ var MADDEN = MADDEN || {
     }
   },
 
+  nextBreaker: function(event,current,next){
+    if(event){
+      event.preventDefault();
+    }
+    if($(event.target).hasClass('final')){
+      MADDEN.currentID = 1;
+      MADDEN.resetBreakers();
+      MADDEN.resetGamebreakers();  
+      return;
+    }
+    var currentIndex = current || parseInt($('.gamebreaker-panel.active').not('.previous').attr('data-panel-index'));
+    MADDEN.currentID = next || currentIndex + 1;
+
+    var elementScroll = $('#gamebreakers').offset().top;
+    var scrollPosition = elementScroll + (($(window).height() * currentIndex)/3);
+    $('html,body').scrollTop(elementScroll);
+    MADDEN.resetBreakers();
+    if(MADDEN.playAudio){
+      var currentVideo = document.getElementById('breaker-video-'+MADDEN.currentID);
+      currentVideo.play();
+      currentVideo.onended = function(e) {
+        if($('.gamebreaker-panel.active .start-gamebreakers').length > 0){
+          $('.gamebreaker-panel.active .start-gamebreakers').click();
+        } else{
+          MADDEN.currentID = 1;
+          MADDEN.resetGamebreakers();  
+        }
+      }
+
+    }
+    $('.gamebreaker-panel[data-panel-index="'+currentIndex+'"]').addClass('previous');
+    $('.gamebreaker-panel[data-panel-index="'+MADDEN.currentID+'"]').addClass('active');
+
+    setTimeout(function(){
+      $('.gamebreaker-panel[data-panel-index="'+MADDEN.currentID+'"]').addClass('show-bio');
+    },150);
+
+    setTimeout(function(){
+      $('.gamebreaker-panel[data-panel-index="'+MADDEN.currentID+'"]').addClass('hide-bio');
+    },7000);
+
+    setTimeout(function(){
+      $('.gamebreaker-panel[data-panel-index="'+currentIndex+'"]').addClass('faded');
+      $('.gamebreaker-panel[data-panel-index="'+currentIndex+'"]').removeClass('active');
+    },1000);
+  }, 
+
+  resetBreakers: function(){
+    $('.gamebreaker-video').each(function(){
+      var vidID = parseInt($(this).attr('data-video-id'));
+      if(vidID != MADDEN.currentID){
+        document.getElementById('breaker-video-'+vidID).pause();    
+        setTimeout(function(){
+          document.getElementById('breaker-video-'+vidID).currentTime = 0;    
+        },1000);
+      }
+    });
+  },
+
+  resetGamebreakers:function(){
+    var finalScroll = $('#gamebreakers').offset().top + $("#gamebreakers").height();
+    if($(window).scrollTop() < finalScroll){
+      $('html,body').animate({scrollTop:finalScroll},1000);
+    }
+    $('.gamebreaker-panel.active').animate({'opacity':0},250,function(){
+      $('.gamebreaker-panel.active').removeAttr('style');
+      MADDEN.currentID = 1;
+      $('.show-bio').removeClass('show-bio');
+      $('.hide-bio').removeClass('hide-bio');
+      $('.gamebreaker-panel.active').removeClass('active');
+      $('.gamebreaker-panel.previous').removeClass('previous');
+      $('.gamebreaker-panel.faded').removeClass('faded');
+      $('#gamebreaker-intro').addClass('active');
+      
+    });
+  },
+
   part2Opener:function(element,reset){
     if(reset && element.attr('data-trigger')){
       element.removeAttr('data-trigger');
@@ -248,10 +392,10 @@ var MADDEN = MADDEN || {
     } else if(!reset){
       element.attr('data-trigger',true);
       var ratio = MADDEN.getRatio(element);
-      if(ratio > 5 && ratio < 30 && !element.find('#opener-1').hasClass('triggered')){
+      if(ratio > 5 && ratio < 35 && !element.find('#opener-1').hasClass('triggered')){
         element.find('.triggered').removeClass('triggered');
         element.find('#opener-1').addClass('triggered');
-      } else if(ratio >= 30 && ratio < 60 && !element.find('#opener-2').hasClass('triggered')){
+      } else if(ratio >= 35 && ratio < 60 && !element.find('#opener-2').hasClass('triggered')){
         element.find('.triggered').removeClass('triggered');
         element.find('#opener-2').addClass('triggered');
       } else if(ratio >= 60 && !element.find('#opener-3').hasClass('triggered')){
@@ -281,7 +425,7 @@ var MADDEN = MADDEN || {
       } else if(ratio > 20 && ratio < 65 && !element.hasClass('triggered')){
         element.addClass('triggered');
       } else if(ratio >= 65 && element.hasClass('triggered')){
-        element.removeClass('triggered');
+        // element.removeClass('triggered');
       }
     }
   },
@@ -290,6 +434,11 @@ var MADDEN = MADDEN || {
     if(reset && element.attr('data-trigger')){
       element.removeAttr('data-trigger');
       element.removeClass('triggered');
+      element.find('#video-overlay').removeClass('triggered');
+      element.find('.stat').removeClass('triggered');
+      var hickVid = document.getElementById('hickey-video');
+      hickVid.pause();
+      hickVid.currentTime = 0;
       return;
     } else if(!reset){
       element.attr('data-trigger',true);
@@ -325,6 +474,7 @@ var MADDEN = MADDEN || {
         }
       } else if(ratio >= 25 && ratio < 40 && !$('#combines .combine-2').hasClass('triggered')){
         $('#combines .combine-2').addClass('triggered');
+        
         var vid2 = document.getElementById('combine-video-2');
         if(vid2){
           vid2.play();
@@ -349,9 +499,17 @@ var MADDEN = MADDEN || {
 
 jQuery(function() {
   setTimeout(function(){
+    window.finalTweet = false;
     MADDEN.initApp();
 
   },1000);
+
+  // $('video').each(function() {
+            
+  //           $($(this)[0]).attr('src', false);
+  //           $(this)[0].pause();
+  //           $(this)[0].load();
+  //       });
   // if($('#part-2-opener')){
   //   MADDEN.part2Opener();
   // }
