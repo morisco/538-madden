@@ -37,7 +37,7 @@ body{
 #madden .full-screen.opener{ margin-top:0px; }
 
 #madden #part-1-opener{ height:175vh; overflow:hidden; }
-#madden #part-1-opener .background{ width:100%; height:100vh; position:absolute; top:0; bottom:0; right:0; left:0; background-image:url(../../img/full-screen.jpg); z-index:0; background-position:center top; background-size:cover;}
+#madden #part-1-opener .background{ width:100%; height:100vh; position:absolute; top:0; bottom:0; right:0; left:0; background-image:url(/madden/img/full-screen.jpg); z-index:0; background-position:center top; background-size:cover;}
 #madden #part-1-opener.locked .panel{position:fixed;}
 #madden #part-1-opener.done .panel{position:absolute; top:auto; bottom:0;}
 #madden #part-1-opener.locked .background{ position:fixed; }
@@ -126,9 +126,9 @@ body{
 #madden #part-2-opener .panel{ height:100vh; position:absolute; top:0px; width:100%; left:0px; opacity:0; background-size:cover; transition:all 1s; -webkit-transition:all 1s; }
 #madden #part-2-opener.locked .panel{ position:fixed; }
 #madden #part-2-opener .panel.triggered{ opacity:1; }
-#madden #part-2-opener #opener-1{ z-index:1; background-image:url(../../img/part-2-opener-3.jpg); z-index:1;}
-#madden #part-2-opener #opener-2{ z-index:1; background-image:url(../../img/part-2-opener-2.jpg); z-index:2;}
-#madden #part-2-opener #opener-3{ z-index:1; background-image:url(../../img/part-2-opener-1.jpg); z-index:3;}
+#madden #part-2-opener #opener-1{ z-index:1; background-image:url(/madden/img/part-2-opener-3.jpg); z-index:1;}
+#madden #part-2-opener #opener-2{ z-index:1; background-image:url(/madden/img/part-2-opener-2.jpg); z-index:2;}
+#madden #part-2-opener #opener-3{ z-index:1; background-image:url(/madden/img/part-2-opener-1.jpg); z-index:3;}
 #madden #part-2-opener #opener-text{ z-index:2;}
 #madden #part-2-opener.done .panel{ position:absolute; bottom:0; top:auto;  }
 
@@ -142,7 +142,7 @@ body{
 #madden #gamebreakers.done  .gamebreaker-panel{ bottom:0; top:auto; }
 #madden #gamebreakers .gamebreaker-video{ min-height:100%; max-width:300%; min-width:100%; position:absolute; top:0px; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); z-index:0; }
 
-#madden #gamebreakers #gamebreaker-intro{ background-image:url(../../img/gamebreakers.jpg); background-position: center center;  }
+#madden #gamebreakers #gamebreaker-intro{ background-image:url(/madden/img/gamebreakers.jpg); background-position: center center;  }
 #madden #gamebreakers #gamebreaker-manning{ top:100%; }
 
 #madden #gamebreakers audio{ position:absolute; left:-5555px;}
@@ -189,7 +189,7 @@ body{
 
 #madden #video{position:relative; overflow:hidden;}
 #madden #hickey-video{ min-height:100%; max-width:300%; min-width:100%; position:absolute; top:0px; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); z-index:0; }
-#madden #video #video-overlay{ position:absolute; top:0; right:0; bottom:0; left:0; background-image:url(../../img/video-overlay.png); background-position:left top; background-repeat:repeat-y; z-index:2; opacity:0; transition:all 0.5s ease-out; -webkit-transition:all 0.5s ease-out; font-family:'Decima'; letter-spacing:2px;}
+#madden #video #video-overlay{ position:absolute; top:0; right:0; bottom:0; left:0; background-image:url(/madden/img/video-overlay.png); background-position:left top; background-repeat:repeat-y; z-index:2; opacity:0; transition:all 0.5s ease-out; -webkit-transition:all 0.5s ease-out; font-family:'Decima'; letter-spacing:2px;}
 #madden #video #video-overlay.triggered{ opacity:1;}
 #madden #video #video-overlay .stat-wrapper{ position:absolute; left:0px; bottom:5%; }
 #madden #video #video-overlay .stat{ margin:35px 0 20px -50px; font-size:30px; color:#fff; opacity:0; font-size:18px; transition:opacity 0.5s, margin-left 0.5s ease-in-out; -webkit-transition:opacity 0.5s, margin-left 0.5s ease-in-out; vertical-align:middle; text-transform:uppercase; }
