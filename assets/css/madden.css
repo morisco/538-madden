@@ -14,8 +14,8 @@ body{
 
 #madden header{ position:fixed; top:0; width:100%; height:40px; color:#fff; background:#1b1a1b; transition:background 0.5s; -webkit-transition:background 0.5s; z-index:10; vertical-align:middle;}
 #madden header.triggered{ background:#c4380c;}
-#madden header .header-wrapper{ width: 98%; max-width:1450px; margin:0 auto; }
-#madden header .logo{ position:relative; display:inline-block; padding:12px 20px;}
+#madden header .header-wrapper{ width: 100%; padding:0 15px;   margin:0 auto; }
+#madden header .logo{ position:relative; display:inline-block; padding:12px 20px 12px 0; }
 #madden header .logo .words{ opacity:1; transition:opacity 0.5s; -webkit-transition:opacity 0.5s; }
 #madden header .logo .words.triggered{ opacity:0; }
 #madden header .logo .fox{ position:absolute; top:10px; left:20px; height:20px; opacity:0; transition:all 0.5s; -webkit-transition:all 0.5s; }
@@ -25,34 +25,37 @@ body{
 #madden header nav a{ display:inline-block; padding:0px 0 0 5px; line-height:105%; color:#fff; font-size:16px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; vertical-align:middle; transition:all 1s; -webkit-transition:all 1s;}
 #madden header nav.part-1 #part-1-link{ color:#fff100; }
 #madden header nav.part-2 #part-2-link{ color:#fff100; }
-#madden header .social-links a.social{ padding:12px 5px; }
+#madden header .social-links a.social{ padding:12px 5px 12px 0; }
 #madden header .social-links a.social img{ height:15px;  }
 #madden header .social-links{ float:right; }
 
 #madden section{ clear:both; }
 
-#madden blockquote{ font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:24px; color:#40ad48; text-decoration:underline; line-height:150%; font-weight:bold; padding:0; max-width:80%;}
+#madden blockquote{ font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:24px; color:#40ad48; text-decoration:none; line-height:130%; font-weight:bold; padding:0; max-width:80%;}
 
 #madden .full-screen{ position:relative; width:100%; height:100vh; margin:110px 0;  background-size:cover; background-position:center center; }
 #madden .full-screen.opener{ margin-top:0px; }
 
-#madden #part-1-opener{ height:125vh; overflow:hidden; }
+#madden #part-1-opener{ height:175vh; overflow:hidden; }
 #madden #part-1-opener .background{ width:100%; height:100vh; position:absolute; top:0; bottom:0; right:0; left:0; background-image:url(../../img/full-screen.jpg); z-index:0; background-position:center top; background-size:cover;}
 #madden #part-1-opener.locked .panel{position:fixed;}
 #madden #part-1-opener.done .panel{position:absolute; top:auto; bottom:0;}
 #madden #part-1-opener.locked .background{ position:fixed; }
 #madden #part-1-opener.done .background{ position:absolute; bottom:0px; top:auto; }
 #madden .panel{ position:absolute; height:100vh; width:100%; top:0;  opacity:0; font-family:'Decima'; text-align:center; text-transform:uppercase; transition:opacity 1s; -webkit-transition:opacity 1s; }
-#madden .panel .panel-wrapper{ position:absolute; top:50%; left:50%; width:95%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%) }
+#madden .panel .panel-wrapper{ position:absolute; top:calc(50% + 40px); left:5%; width:95%; text-align:; transform:translateY(-50%); -webkit-transform:translateY(-50%) }
 #madden .panel .panel.triggered{ opacity:1; }
 #madden .panel hr{ border:0px; border-top:5px solid #000; background:transparent; max-width:500px; margin:0 auto; }
-#madden .panel h1{ font-size:100px; height:245px; letter-spacing:20px; font-family:'Decima'; line-height:100%; padding:25px 0 20px; text-transform:uppercase; }
-#madden #part-1-opener .panel h2{ padding-top:40px; }
-#madden .panel h2{ height:245px; font-size:48px; letter-spacing:10px; font-family:'Decima'; line-height:175%; padding:20px 0 15px; max-width:1100px; margin:0 auto; }
-#madden .panel h3{ font-size:20px; color:#fff100; margin:100px 0 0; letter-spacing:5px; transition:opacity 1s; -webkit-transition:opacity 1s;  position:absolute; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); }
+#madden .panel h1{ font-size:50px; color:#fff100;  letter-spacing:8px; font-family:'Decima'; line-height:115%; padding:0; text-transform:uppercase; width:550px; text-align:left; }
+#madden .panel h2{ width:500px; font-size:50px; letter-spacing:8px; font-family:'Decima'; line-height:115%; padding:0;   text-align:left; color:#fff; font-weight:normal; }
+#madden .panel h2 .line-2{ display:block; width:200%;}
+#madden .panel h3{ font-size:20px; color:#fff100; margin:50px 0 0; letter-spacing:5px; font-weight:normal; text-align:left; font-family:'Decima'; text-transform:uppercase; }
+#madden .panel h4{ font-size:16px; margin:5px 0 0; font-weight:normal; color:#fff100; text-align:left; letter-spacing:3px; font-family:'Decima'; text-transform:uppercase;}
 #madden .panel h3 .photographer{ font-size:17px;}
 #madden .panel h3.hidden{ opacity:0;  }
 #madden .panel.triggered{ opacity:1 !important; }
+#madden .panel.video{opacity:1;}
+#madden #intro-video{ min-height:100%; max-width:300%; min-width:100%; position:absolute; top:0px; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); z-index:0; }
 
 #madden #quote-image{ position:relative; width:1024px; max-width:100%;  margin:100px auto 75px; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 #madden #quote-image h2.quote{ position:absolute; top:2%; opacity:0; left:3%; width: 20%; color:#40ad48; text-decoration:underline; font-size:24px; line-height:130%; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; transition:all 1s ease-in-out; -webkit-transition:all 1s ease-in-out; }
@@ -67,7 +70,7 @@ body{
 #madden .content-width p{ width:45%; max-width:530px; margin:0 auto 1em; }
 #madden .content-width p.chart{ margin:50px auto;}
 #madden .caption{ display:inline-block; margin-top:10px; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:13px;}
-#madden .dropcap { float: left; font-size: 64pt; line-height: 50%; padding-top: 24px; padding-right: 20px; padding-left: 0px; padding-bottom:10px; }
+#madden .dropcap { float: left; font-size: 64pt; line-height: 50%; padding-top: 19px; padding-right: 20px; padding-left: 0px; padding-bottom:10px; }
 
 #madden .ornamental-rule{ width:45%; max-width:530px; margin:0px auto 40px; padding:20px 0 0;}
 #madden .ornamental-rule hr{ top:10px; width:0; margin:0 auto; -webkit-transition: width 1s ease-in-out;-moz-transition: width 1s ease-in-out; -o-transition: width 1s ease-in-out; transition: width 1s ease-in-out; }
@@ -123,12 +126,10 @@ body{
 #madden #part-2-opener .panel{ height:100vh; position:absolute; top:0px; width:100%; left:0px; opacity:0; background-size:cover; transition:all 1s; -webkit-transition:all 1s; }
 #madden #part-2-opener.locked .panel{ position:fixed; }
 #madden #part-2-opener .panel.triggered{ opacity:1; }
-#madden #part-2-opener #opener-1{ background-image:url(../../img/part-2-opener-3.jpg); z-index:1;}
-#madden #part-2-opener #opener-2{ background-image:url(../../img/part-2-opener-2.jpg); z-index:2;}
-#madden #part-2-opener #opener-3{ background-image:url(../../img/part-2-opener-1.jpg); z-index:3;}
-#madden #part-2-opener .panel .panel-wrapper h1{ font-size:180px; color:#fff;}
-#madden #part-2-opener .panel .panel-wrapper h2{ color:#fff; }
-#madden #part-2-opener .panel .panel-wrapper hr{ border-color:#fff;}
+#madden #part-2-opener #opener-1{ z-index:1; background-image:url(../../img/part-2-opener-3.jpg); z-index:1;}
+#madden #part-2-opener #opener-2{ z-index:1; background-image:url(../../img/part-2-opener-2.jpg); z-index:2;}
+#madden #part-2-opener #opener-3{ z-index:1; background-image:url(../../img/part-2-opener-1.jpg); z-index:3;}
+#madden #part-2-opener #opener-text{ z-index:2;}
 #madden #part-2-opener.done .panel{ position:absolute; bottom:0; top:auto;  }
 
 #madden #gamebreakers{ position:relative; text-align:center; height:150vh; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;}
@@ -177,14 +178,14 @@ body{
 #madden #hickey-stat .stat-wrap{  border-top:1px dashed #fff; padding:13px 0; text-align:center; }
 #madden #hickey-stat .stat-wrap.solid-border-top{  border-top:2px solid #fff; }
 #madden #hickey-stat .stat-wrap .stat{ font-size:22px; color:#fff100; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px;}
-#madden #hickey-stat .stat-wrap .stat-note{ font-size:14px; color:#fff; font-weight:bold; letter-spacing:0.03em; }
+#madden #hickey-stat .stat-wrap .stat-note{ font-size:14px; color:#fff; letter-spacing:0.03em; }
 
 #madden #combines p{ margin-bottom:50px; font-weight:bold; letter-spacing:0.03em; }
 #madden #combines .combine{ margin:0 0 100px; }
 #madden #combines video{ max-width:100%; }
 #madden #combines .combine h3{ font-size:26px; letter-spacing:2px; }
 #madden #combines .combine .stat{ width:100%; padding:20px 0; border-bottom:1px dashed #000; font-size:13px; vertical-align:middle; font-weight:700; letter-spacing:0.03em;}
-#madden #combines .combine .stat .stat-number{ font-size:26px; display:inline-block; text-align:right; vertical-align:middle; float:right; font-family:'Decima'; letter-spacing:2px; }
+#madden #combines .combine .stat .stat-number{ font-size:26px; display:inline-block; text-align:right; vertical-align:middle; float:right; font-family:'Decima'; letter-spacing:2px; font-weight:normal; }
 
 #madden #video{position:relative; overflow:hidden;}
 #madden #hickey-video{ min-height:100%; max-width:300%; min-width:100%; position:absolute; top:0px; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); z-index:0; }
@@ -198,7 +199,7 @@ body{
 #madden #video #video-overlay .stat.triggered,
 #madden #video #video-overlay .stat.name.triggered{ margin-left:50px; opacity:1; }
 
-#madden #entry-footnotes{ width:100%; max-width: 530px; margin: 60px auto 20px; }
+#madden #entry-footnotes, #madden #entry-comments{ width:100%; max-width: 530px; margin: 60px auto 20px; }
 #madden #entry-footnotes li{  margin-top:-50px; padding-top:50px; }
 #madden .post-author{ width:100%; max-width:530px; margin:0 auto 30px; padding-top:20px; border-top:1px solid #D1D3D4;}
 

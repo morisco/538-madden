@@ -14,7 +14,7 @@
     </head>
     <body>
       <div id="madden" class="entry-content">
-        <?php require('header-part-1.php'); ?>
+        <?php require('header-part-2.php'); ?>
         <?php require('part1.php'); ?>
         <?php require('part2.php'); ?>
       </div>

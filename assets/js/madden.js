@@ -17,6 +17,10 @@
 
     muted: false,
 
+    introVideo: document.getElementById('intro-video'),
+
+    videoPlaying:false,
+
     initApp: function(){
       $('#madden').animate({'opacity':1});
       MADDEN.setScrollWatchers();
@@ -158,15 +162,17 @@
       } else if(!reset) {
         element.attr('data-trigger',true);
         var ratio = MADDEN.getRatio(element);
-        if(ratio > 40 && ratio < 50){
+        if(ratio > 36 && ratio < 38){
           element.find('.panel-1').addClass('triggered');
-          element.find('.panel-2').removeClass('triggered');
-          element.find('.panel-2 h3').addClass('hidden');
-          element.find('.panel-2 h3.visible').removeClass('hidden');
-          element.find('.panel-2 .panel-wrapper').css('top','50%');
-        } else if(ratio >= 50 && ratio < 60 && !element.find('.panel-2').hasClass('triggered')){
+          if(!MADDEN.introVideo.paused){
+            MADDEN.introVideo.load();
+            MADDEN.videoPlaying = false;
+          }
+        } else if(ratio >= 38 && ratio < 60 && !MADDEN.videoPlaying){
+          MADDEN.videoPlaying = true;
+          MADDEN.watchIntro();
           element.find('.panel-1').removeClass('triggered');
-          element.find('.panel-2').addClass('triggered');
+          MADDEN.introVideo.play();
         } else if(ratio >=60 && ratio < 70 && !element.find('.panel-3').hasClass('triggered')){
           element.find('.panel-2 h3.hidden').removeClass('hidden');          
           element.find('.panel-2 h3.visible').addClass('hidden');
@@ -187,6 +193,13 @@
         element.removeClass('locked').removeClass('done');
       } else{
         element.removeClass('locked').removeClass('done');
+      }
+    },
+
+    watchIntro: function(){
+      MADDEN.introVideo.onended = function(){
+        MADDEN.introVideo.currentTime = 10;
+        MADDEN.introVideo.play();
       }
     },
 
@@ -528,9 +541,11 @@
         if(ratio > 0 && ratio < 45 && !element.find('#opener-1').hasClass('triggered')){
           element.find('.triggered').removeClass('triggered');
           element.find('#opener-1').addClass('triggered');
+          element.find('#opener-text').addClass('triggered');
         } else if(ratio >= 45 && ratio < 60 && !element.find('#opener-2').hasClass('triggered')){
           element.find('.triggered').removeClass('triggered');
           element.find('#opener-2').addClass('triggered');
+          element.find
         } else if(ratio >= 60 && ratio < 70 && !element.find('#opener-3').hasClass('triggered')){
           element.find('.triggered').removeClass('triggered');
           element.find('#opener-3').addClass('triggered');

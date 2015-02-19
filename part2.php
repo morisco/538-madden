@@ -1,27 +1,19 @@
 <a name="part2"></a> 
          <section  class="full-screen opener trigger-watch " id="part-2-opener" data-callback="part2Opener">
-          <div class="panel panel-1 triggered" id="opener-1">
+          <div class="panel" id="opener-1"></div>
+          <div class="panel" id="opener-2"></div>
+          <div class="panel" id="opener-3"></div>
+          <div class="panel" id="opener-text" >
             <div class="panel-wrapper">
-              <hr/>
               <h1>The Walk-On</h1>
-              <hr/>
-              <h3>how madden works: part two</h3>
-            </div>
-          </div>
-          <div class="panel panel-2" id="opener-2">
-            <div class="panel-wrapper">
-              <hr/>
-              <h1>The Walk-On</h1>
-              <hr/>
-              <h3>part two</h3>
-            </div>
-          </div>
-          <div class="panel panel-3" id="opener-3">
-            <div class="panel-wrapper">
-              <hr/>
-              <h2>How Madden helped a schlub like me make it into the NFL</h2>
-              <hr/>
-              <h3>by neil paine<br/><span class="photographer">photography by marius bugge</span></h3>
+              <div class="part-2">
+                <h2>How Madden helped a schlub like me make it into the NFL</h2>
+              </div>
+              <div class="part-3">
+                <h3>by walt hickey</h3>
+                <h4>charts by reuben fisher-baum</h4>
+                <h4>photography by marius bugge charts</h4>
+              </div>
             </div>
           </div>
         </section>

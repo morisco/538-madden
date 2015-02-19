@@ -1,24 +1,19 @@
         <a name="part1"></a> 
         <section class="full-screen opener trigger-watch" id="part-1-opener" data-callback="part1Opener">
-          <div class="background"></div>
-
+          <div class="panel video">
+            <video id="intro-video" poster="img/full-screen.jpg">
+              <source src="video/walt-hickey-video.mp4" type="video/mp4">
+            </video>
+          </div>
           <div class="panel-1 panel">
             <div class="panel-wrapper">
-            <hr/>
-            <h1>How Madden Ratings Are Made</h1>
-            <hr/>
-            <h3>THE VIRTUAL NFL: part one</h3>
+              <h1>How Madden Ratings Are Made</h1>
+              <h2>The secret <span class="line-2">process that turns NFL</span> players into digital gods</h2>
+              <h3>by neil paine</h3>
+              <h4>charts by reuben fisher-baum   illustration by mike mcquade</h4>
+            </div>
           </div>
-          </div>
-          <div class="panel-2 panel">
-            <div class="panel-wrapper">
-            <hr/>
-            <h2>The secret process  that turns NFL players into digital gods</h2>
-            <hr/>
-              <h3 class="visible">THE VIRTUAL NFL: part one</h3>
-              <h3 class="hidden">by neil paine<br/>illustration by mike mcquade</h3>
-          </div>
-          </div>
+         
         </section>
         <section id="section-1" class="content-width">
           <p><span class="dropcap">H</span>unched over a keyboard, surrounded by computer monitors, Donny Moore, 37, controls the fate of the National Football League. Its players throw as hard as Moore wants. They run as fast as he says they should. And the stars of America&rsquo;s most popular sport aren&rsquo;t always delighted by his judgments.</p>
@@ -72,15 +67,16 @@
           <p>&ldquo;Basically, all players perform equally,&rdquo; Good said. &ldquo;They just wanted [to know]: ‘Do we have three outs and three strikes? You can throw the ball from third to first to put a guy out?&rsquo; &rdquo;</p>
           <p>But with the advent of licensed games, the stakes were raised. &ldquo;You want <a href="http://www.baseball-reference.com/players/g/gibsoki01.shtml" target="_blank">Kirk Gibson</a> to play differently from <a href="http://www.baseball-reference.com/players/g/gwynnto01.shtml" target="_blank">Tony Gwynn</a>,&rdquo; Good said.</p>
           <p>The method of &ldquo;Micro League Baseball&rdquo; was to algorithmically translate a player&rsquo;s real-world statistical benchmarks -- his batting average or home-run total, for instance -- into skill ratings that would presumably                <a class="footnote-link" data-expandable="entry-footnotes" href="#fn-6"><sup id="ss-6">6</sup></a> spit similar numbers back out on the other side of the simulation. It was effectively the computerized version of older board games like <a href="http://en.wikipedia.org/wiki/All_Star_Baseball" target="_blank">All-Star Baseball</a>, whose colorful <a href="http://www.angelfire.com/oh5/kahnnection/gamespinner4.gif" target="_blank">spinners</a> reduced the essence of a ballplayer to a series of probabilities, locked in an eternal marriage with chance.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-7"><sup id="ss-7">7</sup></a></p>
+          
+          <p>But player performance is <a href="http://skepticalsports.com/?p=478" target="_blank">notoriously</a> more difficult to quantify in football than in baseball. On the gridiron, detailed individual statistics are kept for only a handful of positions, and those numbers frequently <a href="http://fivethirtyeight.com/features/randy-moss-may-well-have-been-the-greatest-receiver-of-all-time/" target="_blank">miss the whole story</a> because of interactions between 11 players on each side of the ball. Game developers quickly realized that football players, in contrast with their cousins in baseball, would need to be graded on a wider variety of skills -- and that ratings-makers would have to temper the science with a whole lot of art.</p>
           <div class="sidebar-wrapper">
             <div class="sidebar">
               <blockquote>
                 Player performance is notoriously more difficult to quantify in football than in baseball.
               </blockquote>
             </div>
-            <p>But player performance is <a href="http://skepticalsports.com/?p=478" target="_blank">notoriously</a> more difficult to quantify in football than in baseball. On the gridiron, detailed individual statistics are kept for only a handful of positions, and those numbers frequently <a href="http://fivethirtyeight.com/features/randy-moss-may-well-have-been-the-greatest-receiver-of-all-time/" target="_blank">miss the whole story</a> because of interactions between 11 players on each side of the ball. Game developers quickly realized that football players, in contrast with their cousins in baseball, would need to be graded on a wider variety of skills -- and that ratings-makers would have to temper the science with a whole lot of art.</p>
+            <p>Early player ratings were simplistic. The <a href="http://www.baconsports.com/tecmo-super-bowl-the-best-video-game-ever/" target="_blank">legendary</a> &ldquo;Tecmo Super Bowl,&rdquo; released in late 1991, kept <a href="http://www.gamefaqs.com/nes/587686-tecmo-super-bowl/faqs/44195" target="_blank">14 ratings</a> per player. But <a href="http://tecmogeek.com/about/rankings/" target="_blank">only a few</a> affected in-game performance for any given position. Meanwhile, the initial version of Sierra&rsquo;s <a href="http://en.wikipedia.org/wiki/Front_Page_Sports_Football#Front_Page_Sports_Football_Pro_.281993.29" target="_blank">Front Page Sports: Football Pro</a>, regarded among the <a href="http://www.gamespot.com/articles/the-history-of-football-games/1100-6130897/" target="_blank">most sophisticated</a> football simulations of the mid-1990s, <a href="http://www.sierrahelp.com/Documents/Manuals/Front_Page_Sports_Football_Pro_-_Manual_Addendum_(fpsfxdoc).txt" target="_blank">tracked</a> just eight rating categories for each player<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-8"><sup id="ss-8">8</sup></a>, with the same traits taking on radically different meanings depending on the player&rsquo;s position. (For instance, a quarterback&rsquo;s strength rating might refer to powerful throws, while the same category for a lineman would control his ability to block.)</p>
           </div>
-          <p>Early player ratings were simplistic. The <a href="http://www.baconsports.com/tecmo-super-bowl-the-best-video-game-ever/" target="_blank">legendary</a> &ldquo;Tecmo Super Bowl,&rdquo; released in late 1991, kept <a href="http://www.gamefaqs.com/nes/587686-tecmo-super-bowl/faqs/44195" target="_blank">14 ratings</a> per player. But <a href="http://tecmogeek.com/about/rankings/" target="_blank">only a few</a> affected in-game performance for any given position. Meanwhile, the initial version of Sierra&rsquo;s <a href="http://en.wikipedia.org/wiki/Front_Page_Sports_Football#Front_Page_Sports_Football_Pro_.281993.29" target="_blank">Front Page Sports: Football Pro</a>, regarded among the <a href="http://www.gamespot.com/articles/the-history-of-football-games/1100-6130897/" target="_blank">most sophisticated</a> football simulations of the mid-1990s, <a href="http://www.sierrahelp.com/Documents/Manuals/Front_Page_Sports_Football_Pro_-_Manual_Addendum_(fpsfxdoc).txt" target="_blank">tracked</a> just eight rating categories for each player<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-8"><sup id="ss-8">8</sup></a>, with the same traits taking on radically different meanings depending on the player&rsquo;s position. (For instance, a quarterback&rsquo;s strength rating might refer to powerful throws, while the same category for a lineman would control his ability to block.)</p>
           <p>This did not lend itself to a great deal of differentiation between players.</p>
           <p>The assortment of skills that needed to be collected for each player grew as football games progressed through the 1990s. By the end of the decade, EA Sports&rsquo; NCAA Football series<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-9"><sup id="ss-9">9</sup></a> assigned <a href="http://www.angelfire.com/yt/thebirk/EAFAQnf.html" target="_blank">14 attributes</a> to every player in the game<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-10"><sup id="ss-10">10</sup></a>, while Madden began <a href="http://www.angelfire.com/tv/madden99/carolinar.html" target="_blank">handing out</a> 17. With the advent of <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(fifth_generation)" target="_blank">fifth-generation consoles</a>, the degree of complexity in simulating football increased dramatically, requiring a wider range of player attributes to feed into the new game engines.</p>
           <div class="sidebar-wrapper trigger-watch chalk-talk" data-callback="chalkTalk">
@@ -214,17 +210,17 @@
           <p>Madden's ratings don&rsquo;t perfectly match each player's seasonal performance, although estimates of a player's underlying &ldquo;quality&rdquo; may be distinct from the more random ups-and-downs of an NFL career. The ratings do appear sensitive to some reputation-based tweaking:  Eli Manning -- with his pedigree and two Super Bowl rings -- outrated Phillip Rivers in six of their 11 seasons, despite putting up a better Expected Points Added figure in just three of those seasons.</p>
           <p>In addition, the effects of the ratings on actual gameplay can be arcane for even the most seasoned Madden veterans. Perhaps no one outside of EA Sports has spent more time contemplating Madden&rsquo;s inner workings than SB Nation&rsquo;s Jon Bois, the creator of <a href="http://www.sbnation.com/breaking-madden" target="_blank">Breaking Madden</a>, a football column that doubles as an absurdist meditation on the game itself. But Bois confessed that he still can&rsquo;t quite figure out what some of the rating categories actually do for players on the virtual gridiron.</p>
           <p>&ldquo;There are definitely more obscure settings,&rdquo; Bois said. &ldquo;There&rsquo;s a slider called ‘press,&rsquo; which I have no idea what it means. I set it to zero every time, and I still have no idea what it does, or what ‘press&rsquo; even is.&rdquo;<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-14"><sup id="ss-14">14</sup></a></p>
-          <p>It&rsquo;s all laughs for Bois, who excels at turning Madden into surreal comedy. But the cryptic nature of the game&rsquo;s growing set of player attributes can also have frustrating consequences for serious gamers. &ldquo;The unfortunate thing for Madden is that a lot of [its] player ratings are opaque,&rdquo; <a href="http://www.usgamer.net" target="_blank">USgamer</a> senior editor <a href="http://www.usgamer.net/archive?author=1105" target="_blank">Kat Bailey</a> told me. &ldquo;There are so many systems going on that you don&rsquo;t always know which [ratings] affect which [systems].&rdquo;</p>
-          <p>Bailey offered an illustration from franchise mode, in which a gamer uses a finite supply of experience points to boost players&rsquo; skills. &ldquo;It can be unclear which ratings you want to increase,&rdquo; she said. Spending experience points on awareness, for instance, will almost always increase a player&rsquo;s overall rating -- but for defensive players and even quarterbacks, that boost won&rsquo;t cause them to play better when they&rsquo;re being controlled in-game. Meanwhile, wide receivers can actually see tangible in-game benefits from a higher awareness score.</p>
-          <p>Confused yet?</p>
           <div class="sidebar-wrapper">
             <div class="sidebar">
               <blockquote>
                 “I’ve heard it speculated that even the Madden team themselves don’t really know what’s going on,” Bailey said.
               </blockquote>
             </div>
-            <p>&ldquo;I&rsquo;ve heard it speculated that even the Madden team themselves don&rsquo;t really know what&rsquo;s going on,&rdquo; Bailey said. &ldquo;Because they&rsquo;ve got years upon years of systems and code just layered on top of one another, where it&rsquo;s not always entirely clear how they&rsquo;re interacting.</p>
+            <p>It&rsquo;s all laughs for Bois, who excels at turning Madden into surreal comedy. But the cryptic nature of the game&rsquo;s growing set of player attributes can also have frustrating consequences for serious gamers. &ldquo;The unfortunate thing for Madden is that a lot of [its] player ratings are opaque,&rdquo; <a href="http://www.usgamer.net" target="_blank">USgamer</a> senior editor <a href="http://www.usgamer.net/archive?author=1105" target="_blank">Kat Bailey</a> told me. &ldquo;There are so many systems going on that you don&rsquo;t always know which [ratings] affect which [systems].&rdquo;</p>
           </div>
+          <p>Bailey offered an illustration from franchise mode, in which a gamer uses a finite supply of experience points to boost players&rsquo; skills. &ldquo;It can be unclear which ratings you want to increase,&rdquo; she said. Spending experience points on awareness, for instance, will almost always increase a player&rsquo;s overall rating -- but for defensive players and even quarterbacks, that boost won&rsquo;t cause them to play better when they&rsquo;re being controlled in-game. Meanwhile, wide receivers can actually see tangible in-game benefits from a higher awareness score.</p>
+          <p>Confused yet?</p>
+          <p>&ldquo;I&rsquo;ve heard it speculated that even the Madden team themselves don&rsquo;t really know what&rsquo;s going on,&rdquo; Bailey said. &ldquo;Because they&rsquo;ve got years upon years of systems and code just layered on top of one another, where it&rsquo;s not always entirely clear how they&rsquo;re interacting.</p>
           <p>&ldquo;It&rsquo;s kind of a crazy system.&rdquo;</p>
           <p>Whatever the virtues and drawbacks of Madden&rsquo;s player ratings, though, they&rsquo;re just a starting point. The game must still be played.</p>
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
@@ -381,17 +377,38 @@
               
           </div><!-- .entry-footnotes-content -->
         </div><!-- .entry-footnotes -->
+        <div id="entry-comments" class="entry-comments fte-expandable">
+            <h3 class="fte-expandable-title">
+              Comments
+              <span class="add-comment">Add Comment</span></h3>
+            <div class="entry-comments-content fte-expandable-content">
+              <div class="fb-comments" data-href="http://fivethirtyeight.com/datalab/charles-barkley-doesnt-love-analytics-but-analytics-sure-love-him/" data-width="491" data-numposts="5" data-colorscheme="light"></div>
+            </div>
+        </div>
         <div class="post-author">
           <div class="post-thumbnail author-avatar">
-            <a href="http://fivethirtyeight.com/contributors/walt-hickey/">
-              <img width="106" height="106" src="https://espnfivethirtyeight.files.wordpress.com/2014/02/walthickey_light.jpg?w=106" class="avatar avatar-106 photo wp-post-image" alt="WALTHICKEY_LIGHT">    </a>
+            <a href="http://fivethirtyeight.com/contributors/neil-paine/">
+              <img width="106" height="106" src="http://espnfivethirtyeight.files.wordpress.com/2014/02/neilpaine_light1.jpg?w=106" class="avatar avatar-106 photo wp-post-image" alt="NEILPAINE_LIGHT">    </a>
           </div>
           <div class="post-info">
             <h3>
-              <a href="http://fivethirtyeight.com/contributors/walt-hickey/">Walt Hickey</a>
-                      <span class="twitter"><a href="https://twitter.com/WaltHickey" target="_blank"><i class="icon icon-twitter"></i> @WaltHickey</a></span>
-                            <span class="mail"><a href="mailto:walter.hickey@fivethirtyeight.com"><i class="icon icon-mail"></i></a></span>
+              <a href="http://fivethirtyeight.com/contributors/neil-paine/">Neil Paine</a>
+                      <span class="twitter"><a href="https://twitter.com/Neil_Paine" target="_blank"><i class="icon icon-twitter"></i> @Neil_Paine</a></span>
+                            <span class="mail"><a href="mailto:neil.paine@fivethirtyeight.com"><i class="icon icon-mail"></i></a></span>
                   </h3>
-            <p>Walt Hickey is FiveThirtyEight’s lead writer for lifestyle.</p>
+            <p>Neil Paine is a senior sportswriter for FiveThirtyEight.</p>
+          </div>
+        </div>
+        <div class="post-author" style="border-top:0px; padding-top:0px; ">
+          <div class="post-thumbnail author-avatar">
+            <a href="http://fivethirtyeight.com/contributors/reuben-fischer-baum/">
+              <img width="106" height="106" src="https://espnfivethirtyeight.files.wordpress.com/2014/07/reuben.png?w=106" class="avatar avatar-106 photo wp-post-image" alt="reuben">    </a>
+          </div>
+          <div class="post-info">
+            <h3>
+              <a href="http://fivethirtyeight.com/contributors/reuben-fischer-baum/">Reuben Fischer-Baum</a>
+                      <span class="twitter"><a href="https://twitter.com/reubenfb" target="_blank"><i class="icon icon-twitter"></i> @reubenfb</a></span>
+                        </h3>
+            <p>Reuben Fischer-Baum is a visual journalist for FiveThirtyEight.</p>
           </div>
         </div>
