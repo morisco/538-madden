@@ -75,7 +75,7 @@
           <div class="sidebar-wrapper">
             <p>Take, for example, a player&rsquo;s trucking score, which captures the ability of a player to run over a defender. Mine ended up being 9 out of 100, which makes me highly unlikely to take on Jadeveon Clowney and prevail. But my interaction with Clowney has an element of randomness -- that weighted dice roll could lead to luck for me and misfortune for him, which would mean I&rsquo;d lower my shoulder and it would somehow push him aside. When I walked on the field to try out for the game, I found this idea oddly comforting.</p>
             <div class="sidebar trigger-watch" id="combines" data-callback="combineVideos">
-              <p>HIckey&rsquo;s average scores for combine drills.</p>
+              <p>Hickey&rsquo;s average scores for combine drills.</p>
               <div class="combine combine-1">
                 <h3>Speed</h3>
                 <img src="img/walt_run.gif" />
@@ -153,7 +153,7 @@
           <p>My avatar played just as strangely as it looked. We&rsquo;re used to playing Madden with athletes who have remarkable skill sets; they move quickly, consistently and responsively. I did not. It was like driving in the snow: You know how the car is supposed to move, but it just doesn&rsquo;t behave as expected. </p>
           <p>This is what happens when your Madden score is 12. A 12 out of 100 is bad. Very bad. The lowest-rated player in &ldquo;Madden NFL 15&rdquo; is Jacksonville Jaguars long snapper Carson Tinker, who has a 41.</p>
           <p class="chart"><img src="img/graphs/hickey-feature-madden-4.png" alt="Madden has some grade inflation" /></p>
-          <p class="chart">And yet I won some games as quarterback. In the 15 seasons that EA simulated with me as QB for the Giants<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-5"><sup id="ss-5">5</sup></a>, the team never had a winning season but did win an average of 2.9 games each year. Head coach Tom Coughlin was also fired every season. So, win some, lose some.</p>
+          <p>And yet I won some games as quarterback. In the 15 seasons that EA simulated with me as QB for the Giants<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-5"><sup id="ss-5">5</sup></a>, the team never had a winning season but did win an average of 2.9 games each year. Head coach Tom Coughlin was also fired every season. So, win some, lose some.</p>
           <p>Moore also simulated me as a receiver, kicker and punter, which also dragged the Giants down. The team had an average of 3.3 wins with me as a receiver, 3.5 wins with me at kicker, and 3.8 wins with me at punter. Somehow, I made 95 percent of extra-point attempts, and my average punt was 27 yards. Skeptical, I emailed Moore to see whether the game might be flawed. &ldquo;It might be one of those things in our simulation where it might not simulate the Extra-Point kicks based off of ratings enough,&rdquo; he said. Even my achievements may have happened in error.</p>
           <p class="chart"><img src="img/graphs/hickey-feature-madden-3.png" alt="How did madden walt do?" /></p>
           <p>Maybe the only thing causing me to play poorly was that I wasn&rsquo;t playing as myself. I challenged Madden&rsquo;s creative director, Rex Dickson, to a scrimmage. Starting at QB for the Giants: Walt Hickey.</p>

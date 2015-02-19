@@ -288,6 +288,7 @@
                 </div>
               </div>
             <a href="#" class="start-gamebreakers next">Next: Michael Vick</a>
+            <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-vick" class="gamebreaker-panel" data-panel-index="3">
               <video id="breaker-video-3" src="video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
@@ -312,6 +313,7 @@
                 </div>
               </div>
             <a href="#" class="start-gamebreakers next">Next: Reggie Wayne</a>
+            <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-wayne" class="gamebreaker-panel" data-panel-index="4">
             <video id="breaker-video-4" src="video/gamebreaker-wayne.mp4" class="gamebreaker-video" data-video-id="4"></video>
@@ -336,6 +338,7 @@
                 </div>
               </div>
               <a href="#" class="start-gamebreakers next final">Continue Reading</a>
+              <a href="#" class="mute-video">Mute Video</a>
             </div>              
         </section>
         <section id="section-3" class="content-width">
