@@ -9,8 +9,8 @@
             <div class="panel-wrapper">
               <h1>How Madden Ratings Are Made</h1>
               <h2>The secret <span class="line-2">process that turns NFL</span> players into digital gods</h2>
-              <h3>by neil paine</h3>
-              <h4>charts by reuben fisher-baum   illustration by mike mcquade</h4>
+              <h3>by Neil Paine</h3>
+              <h4>charts by Reuben Fischer-Baum   illustration by Mike McQuade</h4>
             </div>
           </div>
 
