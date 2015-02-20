@@ -26,10 +26,10 @@
             <p>Actual participation was out of the question. This is no longer <a href="http://www.amazon.com/Paper-Lion-Confessions-Last-String-Quarterback/dp/1599218097" target="_blank">George Plimpton&rsquo;s NFL</a>. The size of an NFL player has ballooned — players are <a href="http://noahveltman.com/nflplayers/" target="_blank">taller and larger</a> than ever before. Between 1974 and 1999, rookie offensive linemen got <a href="http://regressing.deadspin.com/chart-the-average-weight-of-nfl-rookies-by-position-a-1490494148" target="_blank">24 percent heavier</a>. I&rsquo;m not getting near the turf of an actual football field. Plus, my insurance isn&rsquo;t that great.</p>
             <div class="sidebar trigger-watch" data-callback="hickeyStats">
               <div id="hickey-stat">
-                <img src="<?php $fte_madden->special_directory_uri(); ?>/img/hickey-image.png" alt="Walter Hickey" class="hickey-image" />
+                <img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/hickey-image.png" alt="Walter Hickey" class="hickey-image" />
                 <div class="hickey-bio">
-                  <img class="chalk top left" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o.png" />
-                  <img class="chalk top right" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-x.png" />
+                  <img class="chalk top left" src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/chalk-o.png" />
+                  <img class="chalk top right" src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/chalk-x.png" />
                   <div class="stat-wrap solid-border-top">
                     <div class="stat">Walter Hickey</div>
                     <div class="stat-note">Monroe, NY</div>
@@ -70,7 +70,7 @@
               <p>Hickey&rsquo;s average scores for combine drills.</p>
               <div class="combine combine-1">
                 <h3>Speed</h3>
-                <img src="<?php $fte_madden->special_directory_uri(); ?>/img/walt_run.gif" />
+                <img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/walt_run.gif" />
                 <div class="stat">
                   40 Yard Dash <span class="stat-number"><span class="increase-me" data-final-number="6" data-starting-number="0">0</span>.<span class="increase-me" data-final-number="75" data-starting-number="0">0</span> sec</span>
                 </div>
@@ -83,7 +83,7 @@
               </div>
             <div class="combine combine-2">
                 <h3>PASSING</h3>
-                <img src="<?php $fte_madden->special_directory_uri(); ?>/img/walt_pass.gif" />
+                <img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/walt_pass.gif" />
                 <div class="stat">
                   Throw Power <span class="stat-number"><span class="increase-me" data-final-number="20" data-starting-number="0">0</span>'</span>
                 </div>
@@ -96,7 +96,7 @@
               </div>
             <div class="combine combine-3">
                 <h3>Receiving</h3>
-                <img src="<?php $fte_madden->special_directory_uri(); ?>/img/walt_catch.gif" />
+                <img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/walt_catch.gif" />
                 <div class="stat">
                   Short Routes <span class="stat-number"><span class="increase-me" data-final-number="3" data-starting-number="0">0</span>/3</span>
                 </div>
@@ -109,7 +109,7 @@
               </div>
             <div class="combine combine-4">
                 <h3>KICKING/PUNTING</h3>
-                <img src="<?php $fte_madden->special_directory_uri(); ?>/img/walt_kick.gif" />
+                <img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/walt_kick.gif" />
                 <div class="stat">
                   Extra Points <span class="stat-number">0/4</span>
                 </div>
@@ -121,11 +121,11 @@
           </div>
           <p>I strolled onto the gridiron in Orlando wearing old gym clothes and the cheapest sneakers available, which I ordered three days prior. I did the three stretches I remembered from my middle school Presidential Physical Fitness Test -- touch your toes, lunge side to side, twist your arm out of its socket -- and some light jogging.</p>
           <p>That may have tired me out more than I expected. My 40-yard dash and 10-yard split times were poor -- 6.75 seconds and 2.30 seconds, respectively. Those numbers were a problem because they determined my speed and acceleration grades, which are two of the most important ratings in Madden.</p>
-          <p class="chart"><img src="<?php $fte_madden->special_directory_uri(); ?>/img/graphs/hickey-feature-madden-1.png" alt="Walt Doesnt have NFL Speed Graph" /></p>
+          <p class="chart"><img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/graphs/hickey-feature-madden-1.png" alt="Walt Doesnt have NFL Speed Graph" /></p>
           <p>No player to participate in the 40-yard dash at the NFL combine since 1999 had a 40-yard time as bad as mine. The closest was Regis Crawford, a 316-pound offensive guard out of Arizona State who after the 2004 combine went undrafted. Crawford still managed to run the dash 0.70 seconds faster than me.</p>
           <p>Next up came agility drills — one shuttle run with three cones in an L-shape, another a 20-yard back-and-forth — that would determine how agile I wasn&rsquo;t. I have the maneuverability of a rudderless aircraft carrier. Moore charitably characterized my style as &ldquo;a real north and south kind of player.&rdquo;</p>
           <p>Then came a lunging jump, in which I posted a consistent 6-foot, 5-inch leap. Moore seemed less appalled than he had all day. &ldquo;Not bad there,&rdquo; he said. It was one of the only times I felt anything approaching pride. </p>
-          <p class="chart"><img src="<?php $fte_madden->special_directory_uri(); ?>/img/graphs/hickey-feature-madden-2.png" alt="Walter doesn't have the worst jump graph" /></p>
+          <p class="chart"><img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/graphs/hickey-feature-madden-2.png" alt="Walter doesn't have the worst jump graph" /></p>
 
           <!-- Insert hickey feature madden 2 -->
           <p>The quarterback drills brought me back to earth. Asked to throw the ball as far as I could, I threw it pretty consistently between 17 and 20 yards in an often-loose spiral. I then threw the ball toward my colleague Neil Paine, who was trying his hand at receiver, and connected only 40 percent of the time on short, medium and long passes. Watching the drills unfold, Moore said I was throwing the ball too low and would probably end up hitting offensive linemen in the back of the head often.</p>
@@ -138,22 +138,22 @@
           <p>I posed seven ways — one mugshot, left and right profile shots, a natural smile<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-3"><sup id="ss-3">3</sup></a>, one with my mouth slightly open,<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-4"><sup id="ss-4">4</sup></a>, one with a wrinkled forehead and eight chins, and one screaming. When I saw the photos in December, they looked like I had just walked out of an anti-methamphetamine advertisement. The photos came with polarized flashes that stripped my face of any shadow. Zooming in on the high-def shots made it look like I had slept in hot grease. Will Gibson, the technician who took the photos, said they made me look sort of like Ray Romano.</p>
           <p>But this, he said, was the point. &ldquo;Put Brad Pitt in front of this,&rdquo; he said, &ldquo;and he&rsquo;d look like Steve Buscemi.&rdquo;</p>
           <p class="chart">
-            <img src="<?php $fte_madden->special_directory_uri(); ?>/img/face-scan.jpg" alt="Walter Hickey Digital Face Scan" />
+            <img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/face-scan.jpg" alt="Walter Hickey Digital Face Scan" />
             <span class="caption">Clockwise, top left: Hickey poses in front of the cameras; the computer builds a 3D model of Hickey&rsquo;s face based on his photos; skin tone and facial detail are added; Hickey&rsquo;s final rendering</span>
           </p>
           <p>When I first met my avatar, it was like staring into a mirror set up across the uncanny valley. My facial features were nearly exact, down to the barely noticeable scar on my chin. But I looked disoriented -- even more disoriented than I was on the day of the shoot. My neck lolled; my eyes were glazed over; my blinking was algorithmic.</p>
           <p>My avatar played just as strangely as it looked. We&rsquo;re used to playing Madden with athletes who have remarkable skill sets; they move quickly, consistently and responsively. I did not. It was like driving in the snow: You know how the car is supposed to move, but it just doesn&rsquo;t behave as expected. </p>
           <p>This is what happens when your Madden score is 12. A 12 out of 100 is bad. Very bad. The lowest-rated player in &ldquo;Madden NFL 15&rdquo; is Jacksonville Jaguars long snapper Carson Tinker, who has a 41.</p>
-          <p class="chart"><img src="<?php $fte_madden->special_directory_uri(); ?>/img/graphs/hickey-feature-madden-4.png" alt="Madden has some grade inflation" /></p>
+          <p class="chart"><img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/graphs/hickey-feature-madden-4.png" alt="Madden has some grade inflation" /></p>
           <p>And yet I won some games as quarterback. In the 15 seasons that EA simulated with me as QB for the Giants<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-5"><sup id="ss-5">5</sup></a>, the team never had a winning season but did win an average of 2.9 games each year. Head coach Tom Coughlin was also fired every season. So, win some, lose some.</p>
           <p>Moore also simulated me as a receiver, kicker and punter, which also dragged the Giants down. The team had an average of 3.3 wins with me as a receiver, 3.5 wins with me at kicker, and 3.8 wins with me at punter. Somehow, I made 95 percent of extra-point attempts, and my average punt was 27 yards. Skeptical, I emailed Moore to see whether the game might be flawed. &ldquo;It might be one of those things in our simulation where it might not simulate the Extra-Point kicks based off of ratings enough,&rdquo; he said. Even my achievements may have happened in error.</p>
-          <p class="chart"><img src="<?php $fte_madden->special_directory_uri(); ?>/img/graphs/hickey-feature-madden-3.png" alt="How did madden walt do?" /></p>
+          <p class="chart"><img src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/graphs/hickey-feature-madden-3.png" alt="How did madden walt do?" /></p>
           <p>Maybe the only thing causing me to play poorly was that I wasn&rsquo;t playing as myself. I challenged Madden&rsquo;s creative director, Rex Dickson, to a scrimmage. Starting at QB for the Giants: Walt Hickey.</p>
           <p>Hickey did not have a good day. He threw 7 for 25, threw three interceptions and was sacked three times. The Giants lost 42-7. The only points came thanks to wide receiver Odell Beckham Jr., who could make any quarterback look good. He scored on a short pass that he turned into a 94-yard touchdown. My only comfort was to imagine the great headline that the New York Post would put on its back page the next day: &ldquo;Hickey Fails to Leave a Mark.&rdquo;</p>
         </section>
         <section id="video" class="full-screen trigger-watch" data-callback="hickeyVideo">
-          <video id="hickey-video" loop controls poster="<?php $fte_madden->special_directory_uri(); ?>/img/walt-poster.jpg">
-            <source src="<?php $fte_madden->special_directory_uri(); ?>/video/walt-hickey-video.mp4" type="video/mp4">
+          <video id="hickey-video" loop controls poster="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/img/walt-poster.jpg">
+            <source src="<?php esc_url( $fte_madden->special_directory_uri() ); ?>/video/walt-hickey-video.mp4" type="video/mp4">
           </video>
           <div id="video-overlay">
             <div class="stat-wrapper">
