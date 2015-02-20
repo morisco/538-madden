@@ -2,7 +2,7 @@
   <div class="header-wrapper">
     <a class="logo" href="http://fivethirtyeight.com"><img class="words" src="img/538-logo.png" alt="FiveThirtyEight Sports - Home" /><img class="fox" src="img/fox-logo.svg" alt="FiveThirtyEight Sports - Home" /></a>
     <nav>
-      <a class="title-bar">The Virtual NFL: </a>
+      <a class="title-bar">The Virtual NFL:</a>
       <a href="#part1" target="_self" id="part-1-link">Part 1</a>
     </nav>
     <div class="social-links">
