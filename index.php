@@ -18,11 +18,10 @@
 
 				define( 'FTE_MADDEN_DAY_2', true ); // set to true on day 2
 
-				if (! function_exists('get_stylesheet_directory_uri')) {
-					function get_stylesheet_directory_uri() {
-						return '';
-					}
+				class MaddenSpecial {
+					function special_directory_uri() {}
 				}
+				$fte_madden = new MaddenSpecial();
 
 				require('header.php');
 				require('part1.php');
