@@ -132,7 +132,7 @@
                       <div class="adjusted-rating">
                         <p>Adjusted</p>
                         <div class="player-rating" data-final-rating="81" data-starting-rating="64">64</div>
-                      </div>                  
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -166,7 +166,7 @@
                       <div class="adjusted-rating">
                         <p>Adjusted</p>
                         <div class="player-rating" data-final-rating="80" data-starting-rating="75">75</div>
-                      </div>                  
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -327,7 +327,7 @@
           <div class="sidebar-wrapper">
               <div class="sidebar">
                 <blockquote>
-                  “Quarterback decision-making is the most difficult thing to simulate,” Moore said. 
+                  “Quarterback decision-making is the most difficult thing to simulate,” Moore said.
                 </blockquote>
               </div>
             <p>&ldquo;Quarterback decision-making is the most difficult thing to simulate,&rdquo; Moore said. &ldquo;We&rsquo;re trying to simulate strengths and weaknesses as best we can within the game, but how you play the game is still you.&rdquo;</p>

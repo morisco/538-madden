@@ -240,7 +240,7 @@ body{
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-  
+
   #madden #part-1-opener .panel{ opacity:1; }
   #madden .full-screen{ height: 648px; margin:75px 0; }
   #madden .full-screen.quote-1 h2.quote{ width:40%; font-size:26pt; line-height:36pt;}
@@ -251,38 +251,38 @@ body{
   #madden #interactive{ float:right; width:50%; margin:55px 5% 55px 0; height:1600px;}
   #madden #interactive iframe{ height:1600px; }
 
-  
+
 
   #madden .sidebar-wrapper p{ float:none; }
-  
+
   #madden #gamebreakers,#madden #gamebreakers .gamebreaker-panel{ height: 50vh; }
   #madden #gamebreakers .gamebreaker-wrapper{ width:85%; top:50% !important;}
   #madden #gamebreakers .gamebreaker-video{ height:100%;  }
   #madden #gamebreakers .breaker-profile { max-width:25%; left:5%; }
   #madden #gamebreakers .mute-video{ display:none;}
-  #madden #gamebreakers .start-gamebreakers.highlight { 
-    -webkit-animation-name: bounce; 
-    animation-name: bounce; 
-    -webkit-animation-duration: 2s; 
-    animation-duration: 2s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    animation-iteration-count:infinite; 
-    -webkit-animation-iteration-count:infinite; 
-  } 
+  #madden #gamebreakers .start-gamebreakers.highlight {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+  }
 
-  @-webkit-keyframes bounce { 
-      0%, 15%, 45%, 75%, 100%{-webkit-transform: translate(-50%, 0px);} 
+  @-webkit-keyframes bounce {
+      0%, 15%, 45%, 75%, 100%{-webkit-transform: translate(-50%, 0px);}
       30% {-webkit-transform: translate(-50%, -10px);}
       60% {-webkit-transform: translate(-50%, -5px);}
 
-  } 
+  }
 
-  @keyframes bounce { 
-      0%, 15%, 45%, 75%, 100%{transform: translate(-50%, 0px);} 
+  @keyframes bounce {
+      0%, 15%, 45%, 75%, 100%{transform: translate(-50%, 0px);}
       30% {transform: translate(-50%, -10px);}
       60% {transform: translate(-50%, -5px);}
-  } 
+  }
 
   #madden #video #video-overlay{ right:60%; background-size:100%; }
   #madden #video{ height:500px; }
