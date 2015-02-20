@@ -82,7 +82,7 @@ body{
 #madden .content-width .sidebar p, #madden .content-width p.chart{ width:100%; font-size:13px; line-height:140%;  }
 #madden .content-width .sidebar p{ padding-right:10%; }
 
-#madden .content-width .sidebar.chalk-talk{ top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); } 
+#madden .content-width .sidebar.chalk-talk{ top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); }
 #madden .content-width .sidebar.chalk-talk  p{ margin:30px 0 35px; font-weight:normal; letter-spacing:0px;}
 #madden .chalk-talk p{ font-size:13px; margin:0 auto 10px; font-family:'AtlasGroteskWeb'; font-weight:700; letter-spacing:0.03em; }
 #madden .chalk-talk .x-o .x-o-x{ margin-left:20px;}
@@ -126,9 +126,9 @@ body{
 #madden #part-2-opener .panel{ height:100vh; position:absolute; top:0px; width:100%; left:0px; opacity:0; background-size:cover; transition:all 1s; -webkit-transition:all 1s; }
 #madden #part-2-opener.locked .panel{ position:fixed; }
 #madden #part-2-opener .panel.triggered{ opacity:1; }
-#madden #part-2-opener #opener-1{ z-index:1; background-image:url(/madden/img/part-2-opener-3.jpg); z-index:1;}
-#madden #part-2-opener #opener-2{ z-index:1; background-image:url(/madden/img/part-2-opener-2.jpg); z-index:2;}
-#madden #part-2-opener #opener-3{ z-index:1; background-image:url(/madden/img/part-2-opener-1.jpg); z-index:3;}
+#madden #part-2-opener #opener-1{ z-index:1; background-image:url(./madden/img/part-2-opener-3.jpg); z-index:1;}
+#madden #part-2-opener #opener-2{ z-index:1; background-image:url(./madden/img/part-2-opener-2.jpg); z-index:2;}
+#madden #part-2-opener #opener-3{ z-index:1; background-image:url(./madden/img/part-2-opener-1.jpg); z-index:3;}
 #madden #part-2-opener #opener-text{ z-index:2;}
 #madden #part-2-opener.done .panel{ position:absolute; bottom:0; top:auto;  }
 
@@ -189,7 +189,7 @@ body{
 
 #madden #video{position:relative; overflow:hidden;}
 #madden #hickey-video{ min-height:100%; max-width:300%; min-width:100%; position:absolute; top:0px; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); z-index:0; }
-#madden #video #video-overlay{ position:absolute; top:0; right:0; bottom:0; left:0; background-image:url(/madden/img/video-overlay.png); background-position:left top; background-repeat:repeat-y; z-index:2; opacity:0; transition:all 0.5s ease-out; -webkit-transition:all 0.5s ease-out; font-family:'Decima'; letter-spacing:2px;}
+#madden #video #video-overlay{ position:absolute; top:0; right:0; bottom:0; left:0; background-image:url(./madden/img/video-overlay.png); background-position:left top; background-repeat:repeat-y; z-index:2; opacity:0; transition:all 0.5s ease-out; -webkit-transition:all 0.5s ease-out; font-family:'Decima'; letter-spacing:2px;}
 #madden #video #video-overlay.triggered{ opacity:1;}
 #madden #video #video-overlay .stat-wrapper{ position:absolute; left:0px; bottom:5%; }
 #madden #video #video-overlay .stat{ margin:35px 0 20px -50px; font-size:30px; color:#fff; opacity:0; font-size:18px; transition:opacity 0.5s, margin-left 0.5s ease-in-out; -webkit-transition:opacity 0.5s, margin-left 0.5s ease-in-out; vertical-align:middle; text-transform:uppercase; }
@@ -227,28 +227,28 @@ body{
   #madden #gamebreakers .gamebreaker-video{ height:100%;  }
   #madden #gamebreakers .breaker-profile { max-width:25%; left:5%; }
   #madden #gamebreakers .start-gamebreakers.highlight{ background:#fff; color:#000; }
-  #madden #gamebreakers .start-gamebreakers.highlight { 
-    -webkit-animation-name: bounce; 
-    animation-name: bounce; 
-    -webkit-animation-duration: 1s; 
-    animation-duration: 1s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    animation-iteration-count:infinite; 
-    -webkit-animation-iteration-count:infinite; 
-  } 
+  #madden #gamebreakers .start-gamebreakers.highlight {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+  }
 
-  @-webkit-keyframes bounce { 
-      0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-      40% {-webkit-transform: translateY(-30px);} 
-      60% {-webkit-transform: translateY(-15px);} 
-  } 
+  @-webkit-keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+      40% {-webkit-transform: translateY(-30px);}
+      60% {-webkit-transform: translateY(-15px);}
+  }
 
-  @keyframes bounce { 
-      0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-      40% {transform: translateY(-30px);} 
-      60% {transform: translateY(-15px);} 
-  } 
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  }
 
   #madden #video #video-overlay{ right:60%; background-size:100%; }
   #madden #video{ height:500px; }
