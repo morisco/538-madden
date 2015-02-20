@@ -1,8 +1,8 @@
         <a name="part1"></a>
         <section class="full-screen opener trigger-watch" id="part-1-opener" data-callback="part1Opener">
           <div class="panel video">
-            <video id="intro-video" poster="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/full-screen.jpg">
-              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/walt-hickey-video.mp4" type="video/mp4">
+            <video id="intro-video" >
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="video/mp4">
             </video>
           </div>
           <div class="panel-1 panel">
@@ -17,7 +17,7 @@
         </section>
         <section id="section-1" class="content-width">
           <p><span class="dropcap">H</span>unched over a keyboard, surrounded by computer monitors, Donny Moore, 37, controls the fate of the National Football League. Its players throw as hard as Moore wants. They run as fast as he says they should. And the stars of America&rsquo;s most popular sport aren&rsquo;t always delighted by his judgments.</p>
-          <p>Carolina Panthers quarterback Cam Newton, for instance, was upset. &ldquo;I want to talk about my speed,&rdquo; Moore remembers Newton saying as he clambered into Moore&rsquo;s cubicle last offseason.</p>
+          <p>Carolina Panthers quarterback Cam Newton, for instance, was upset. &ldquo;I want to talk about my speed,&rdquo; Moore remembers Newton saying as he clambered into Moore&rsquo;s cubicle last April.</p>
           <p>Despite <a href="http://pfref.com/tiny/exw5W" target="_blank">leading all NFL quarterbacks in rushing yards</a> in 2013, Newton ranked as only the ninth-fastest QB in the league, according to Moore -- hence, Newton&rsquo;s unhappiness. But as Moore wheeled around from his den of screens, he was confronted by not only Newton, but also an enormous boot on Newton&rsquo;s foot, the result of recent <a href="http://www.google.com/url?q=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2000678-breaking-down-cam-newtons-ankle-injury-and-surgery&sa=D&sntz=1&usg=AFQjCNFCjeAQhBXvhbM9uiNoLk6rC7TyIw" target="_blank">ankle surgery</a>.</p>
           <p>&ldquo;Yeah,&rdquo; Moore said as Newton hobbled toward him, &ldquo;let&rsquo;s talk about your speed.&rdquo;</p>
           <p>Eventually, Newton was pleading with Moore to not make him slower.</p>
@@ -36,27 +36,27 @@
         <section id="section-2" class="content-width">
           <p><span class="dropcap">O</span>n the early December day I visited his cramped cubicle, tucked away in a corner of an office building on the EA Sports campus near Orlando, Moore was putting the last touches on a <a herf="http://www.easports.com/madden-nfl/news/2014/mark-sanchez-madden-ratings?utm_campaign=mad15-social-global-ic-tw-rosterupdate-wk14-120414-mad-tw-img-site-sust&utm_source=twitter&utm_medium=social&sourceid=mad15-social-global-ic-tw-rosterupdate-wk14-120414-mad-tw-img-site-sust&cid=31592&ts=1421076967142" target="_blank">roster update</a> that would be downloaded later in the week by PlayStation and Xbox owners around the globe. When he was finished, 577 players saw some aspect of their skills re-evaluated on the basis of the previous week&rsquo;s action. It&rsquo;s an activity that Moore repeats every week of the season in an attempt to ensure that Madden imitates NFL reality.</p>
           <div class="sidebar-wrapper">
-            <div class="sidebar">
-              <div class="trigger-watch tweet-wrapper" data-callback="showTweet">
-                <div class="tweet-intro">
-                  Moore&rsquo;s ratings elicit all sorts of reactions — anger, joy, pride, ridicule. Here, for example, is a sampling of reactions on Twitter to Tom Brady&rsquo;s ratings over the last few years.
-                </div>
-                <div class="tweet-viewer">
-                  <div class="tweet" data-index="1">
-                    <blockquote class="twitter-tweet" lang="en"><p>In the next madden game Tom Brady&#39;s rating is going to be 100</p>&mdash; Zachary Olds (@ZacharyOlds) <a href="https://twitter.com/ZacharyOlds/status/562092242957905920">February 2, 2015</a></blockquote>
+              <div class="sidebar twitter-side trigger-watch" data-callback="showTweet">
+                <div class="tweet-wrapper" >
+                  <div class="tweet-intro">
+                    Moore&rsquo;s ratings elicit all sorts of reactions — anger, joy, pride, ridicule. Here, for example, is a sampling of reactions on Twitter to Tom Brady&rsquo;s ratings over the last few years.
                   </div>
-                  <div class="tweet" data-index="2">
-                    <blockquote class="twitter-tweet" lang="en"><p>Just lost ALL respect for the madden ratings creators! They got russell wilson the same rating as Tom Brady! GTFOH!!!!!</p>&mdash; ☆G.O.A.T☆ (@YoungPrevo) <a href="https://twitter.com/YoungPrevo/status/491644160491802625">July 22, 2014</a></blockquote>
-                  </div>
-                  <div class="tweet" data-index="3">
-                    <blockquote class="twitter-tweet" lang="en"><p>madden rating tom brady a 93 further exemplifies why it is the worst of the EA sports games <a href="https://twitter.com/hashtag/thatsjustdisrespectful?src=hash">#thatsjustdisrespectful</a> <a href="https://twitter.com/hashtag/hesthegreatestever?src=hash">#hesthegreatestever</a></p>&mdash; mackey (@kylemack_) <a href="https://twitter.com/kylemack_/status/240580138700509184">August 28, 2012</a></blockquote>
-                  </div>
-                  <div class="tweet" data-index="4">
-                    <blockquote class="twitter-tweet" lang="en"><p>Congrats Tom Brady for grabbing the 100 rating for accuracy in Madden!!! Can&#39;t wait!</p>&mdash; Bobby (@PlatinumWoods) <a href="https://twitter.com/PlatinumWoods/status/107204264107065344">August 26, 2011</a></blockquote>
+                  <div class="tweet-viewer">
+                    <div class="tweet" data-index="1">
+                      <blockquote class="twitter-tweet" lang="en"><p>In the next madden game Tom Brady&#39;s rating is going to be 100</p>&mdash; Zachary Olds (@ZacharyOlds) <a href="https://twitter.com/ZacharyOlds/status/562092242957905920">February 2, 2015</a></blockquote>
+                    </div>
+                    <div class="tweet" data-index="2">
+                      <blockquote class="twitter-tweet" lang="en"><p>Just lost ALL respect for the madden ratings creators! They got russell wilson the same rating as Tom Brady! GTFOH!!!!!</p>&mdash; ☆G.O.A.T☆ (@YoungPrevo) <a href="https://twitter.com/YoungPrevo/status/491644160491802625">July 22, 2014</a></blockquote>
+                    </div>
+                    <div class="tweet" data-index="3">
+                      <blockquote class="twitter-tweet" lang="en"><p>madden rating tom brady a 93 further exemplifies why it is the worst of the EA sports games <a href="https://twitter.com/hashtag/thatsjustdisrespectful?src=hash">#thatsjustdisrespectful</a> <a href="https://twitter.com/hashtag/hesthegreatestever?src=hash">#hesthegreatestever</a></p>&mdash; mackey (@kylemack_) <a href="https://twitter.com/kylemack_/status/240580138700509184">August 28, 2012</a></blockquote>
+                    </div>
+                    <div class="tweet" data-index="4">
+                      <blockquote class="twitter-tweet" lang="en"><p>Congrats Tom Brady for grabbing the 100 rating for accuracy in Madden!!! Can&#39;t wait!</p>&mdash; Bobby (@PlatinumWoods) <a href="https://twitter.com/PlatinumWoods/status/107204264107065344">August 26, 2011</a></blockquote>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             <p>Moore&rsquo;s employer, Electronic Arts, is the world&rsquo;s <a href="http://www.statista.com/statistics/273838/revenue-of-the-largest-video-game-publishers-worldwide/" target="_blank">sixth-biggest</a> game publisher by revenue, and Madden is among its <a href="http://en.wikipedia.org/wiki/List_of_best-selling_video_game_franchises" target="_blank">most popular</a> titles. The franchise <a href="http://money.cnn.com/2013/09/05/technology/innovation/madden-25/" target="_blank">has generated</a> more than $4 billion in revenue since its debut in 1988. Yet for all of EA&rsquo;s resources, Moore performs his czar duties in surprising solitude. He&rsquo;s assisted by a former Madden tester who oversees players&rsquo; cosmetic details<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-4"><sup id="ss-4">4</sup></a> and the usual barrage of (ever-civil) <a href="https://twitter.com/RaiderGuru/status/124937245810630656" target="_blank">feedback</a> on Twitter. But when it comes to the task of managing a database of more than 100,000 player attributes, one of the <a href="http://www.sportsonearth.com/article/78391872" target="_blank">best-selling sports franchises</a> in gaming history largely leaves matters up to one man.</p>
           </div>
           <p>Moore&rsquo;s job has morphed from a behind-the-scenes technician to a sort of celebrity -- <a href="http://www.gamezone.com/originals/donny-moore-is-the-most-hated-man-on-the-madden-dev-team" target="_blank">and villain</a> -- in gaming circles. And in an increasingly data-heavy sports landscape, it&rsquo;s a role that sits squarely in two intersections of growing importance -- between scouting and analytics, simulation and reality. Because in both Madden and the post-<a href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMoneyball&sa=D&sntz=1&usg=AFQjCNEC2JQw4wex8qG3YqQK2NTUxp4Q3A" target="_blank">Moneyball</a> sports world, humans become a collection of data points and then are turned back into a digital approximation of themselves.</p>
@@ -70,109 +70,103 @@
 
           <p>But player performance is <a href="http://skepticalsports.com/?p=478" target="_blank">notoriously</a> more difficult to quantify in football than in baseball. On the gridiron, detailed individual statistics are kept for only a handful of positions, and those numbers frequently <a href="http://fivethirtyeight.com/features/randy-moss-may-well-have-been-the-greatest-receiver-of-all-time/" target="_blank">miss the whole story</a> because of interactions between 11 players on each side of the ball. Game developers quickly realized that football players, in contrast with their cousins in baseball, would need to be graded on a wider variety of skills -- and that ratings-makers would have to temper the science with a whole lot of art.</p>
           <div class="sidebar-wrapper">
-            <div class="sidebar">
-              <blockquote>
-                Player performance is notoriously more difficult to quantify in football than in baseball.
-              </blockquote>
-            </div>
+              <div class="sidebar">
+                <blockquote>
+                  Player performance is notoriously more difficult to quantify in football than in baseball.
+                </blockquote>
+              </div>
             <p>Early player ratings were simplistic. The <a href="http://www.baconsports.com/tecmo-super-bowl-the-best-video-game-ever/" target="_blank">legendary</a> &ldquo;Tecmo Super Bowl,&rdquo; released in late 1991, kept <a href="http://www.gamefaqs.com/nes/587686-tecmo-super-bowl/faqs/44195" target="_blank">14 ratings</a> per player. But <a href="http://tecmogeek.com/about/rankings/" target="_blank">only a few</a> affected in-game performance for any given position. Meanwhile, the initial version of Sierra&rsquo;s <a href="http://en.wikipedia.org/wiki/Front_Page_Sports_Football#Front_Page_Sports_Football_Pro_.281993.29" target="_blank">Front Page Sports: Football Pro</a>, regarded among the <a href="http://www.gamespot.com/articles/the-history-of-football-games/1100-6130897/" target="_blank">most sophisticated</a> football simulations of the mid-1990s, <a href="http://www.sierrahelp.com/Documents/Manuals/Front_Page_Sports_Football_Pro_-_Manual_Addendum_(fpsfxdoc).txt" target="_blank">tracked</a> just eight rating categories for each player<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-8"><sup id="ss-8">8</sup></a>, with the same traits taking on radically different meanings depending on the player&rsquo;s position. (For instance, a quarterback&rsquo;s strength rating might refer to powerful throws, while the same category for a lineman would control his ability to block.)</p>
           </div>
           <p>This did not lend itself to a great deal of differentiation between players.</p>
           <p>The assortment of skills that needed to be collected for each player grew as football games progressed through the 1990s. By the end of the decade, EA Sports&rsquo; NCAA Football series<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-9"><sup id="ss-9">9</sup></a> assigned <a href="http://www.angelfire.com/yt/thebirk/EAFAQnf.html" target="_blank">14 attributes</a> to every player in the game<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-10"><sup id="ss-10">10</sup></a>, while Madden began <a href="http://www.angelfire.com/tv/madden99/carolinar.html" target="_blank">handing out</a> 17. With the advent of <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(fifth_generation)" target="_blank">fifth-generation consoles</a>, the degree of complexity in simulating football increased dramatically, requiring a wider range of player attributes to feed into the new game engines.</p>
           <div class="sidebar-wrapper trigger-watch chalk-talk" data-callback="chalkTalk">
-            <p>Tecmo Super Bowl</p>
+
             <p><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/tecmo.jpg" alt="Tecmo Super Bowl"  width="530" height="329"/></p>
-            <p><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/front-page-sports.jpg" alt="Front Page Spors: Pro Football" width="530" height="420" /></p>
-            <p>Front Page Sports: Football Pro</p>
+            <p><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/front-page-sports.jpg" alt="Front Page Spors: Pro Football" width="530" height="420" />/p>
             <div class="cb"></div>
             <div class="sidebar chalk-talk">
-              <img class="x-o-o" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o-green.png" />
-              <p>Nintendo&rsquo;s seminal football game was released in 1991, and included only six rating categories. The game wasn&rsquo;t super realistic. Bo Jackson was an all-time great in the NFL; he was superhuman in Tecmo.</p>
-              <div class="x-o">
-                <img class="x-o-o" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o-green.png" />
-                <img class="x-o-o" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o-green.png" />
-                <img class="x-o-x" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x-green.png" />
-              </div>
-              <p>Sierra Online&rsquo;s Front Page Sports: Football Pro, regarded as the most realistic football simulation of its time, came out in 1993 and included eight ratings.</p>
+              <img class="x-o-o" src="img/chalk-o-green.png" />
+              <p><strong>Tecmo Super Bowl</strong><br/>Nintendo&rsquo;s seminal football game was released in 1991, and included only six rating categories. The game wasn&rsquo;t super realistic. Bo Jackson was an all-time great in the NFL; he was superhuman in Tecmo.</p>
+              <p><strong>Front Page Sports: Football Pro</strong><br/>Sierra Online&rsquo;s Front Page Sports: Football Pro, regarded as the most realistic football simulation of its time, came out in 1993 and included eight ratings.</p>
               <img class="x-o-x" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x-green.png" />
             </div>
-
           </div>
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
-          <p><span class="dropcap">I</span>t was against this backdrop that Moore began his professional affiliation with EA. He was still a student at the University of Central Florida, pursuing a degree in political science, when he noticed advertisements for an <a href="https://www.youtube.com/watch?v=btxXRsqL4gc" target="_blank">&ldquo;NCAA Football 99&rdquo;</a> tournament at the student union. Moore and his roommates were devotees of the game -- he recalls elaborate house rules requiring that a witness be present every time a game was played in the friends&rsquo; shared <a href="http://www.chatsports.com/michigan-wolverines/a/Full-review-of-Dynasty-Mode-on-EA-Sports-NCAA-Football-14-10-2-4009" target="_blank">Dynasty Mode</a> savefile. On a whim, he entered the contest and won.</p>
+          <p><span class="dropcap">I</span>t was against this backdrop that Moore began his professional affiliation with EA. He was still a student at the University of Central Florida, pursuing a degree in political science, in November 1998 when he noticed advertisements for an <a href="https://www.youtube.com/watch?v=btxXRsqL4gc" target="_blank">&ldquo;NCAA Football 99&rdquo;</a> tournament at the student union. Moore and his roommates were devotees of the game -- he recalls elaborate house rules requiring that a witness be present every time a game was played in the friends’ shared <a href="http://www.chatsports.com/michigan-wolverines/a/Full-review-of-Dynasty-Mode-on-EA-Sports-NCAA-Football-14-10-2-4009" target="_blank">Dynasty Mode</a> savefile. On a whim, he skipped class, entered the contest using <a href="http://www.sports-reference.com/cfb/schools/florida-state/1998.html" target="_blank">Florida State</a> as his team, and won first prize.</p>
           <p>Moore&rsquo;s detailed knowledge of the game&rsquo;s minutiae impressed NCAA Football developers on hand for the tournament. On the spot, they offered him a part-time job testing the coming edition of the game, a break he would later parlay into a full-time gig as an EA Sports football tester.</p>
-          <p>Testing the games, Moore got a firsthand look at the give-and-take between gameplay and player ratings. He recalls the time a long-forgotten defensive tackle for the University of Kentucky inadvertently became a superstar after a typo assigned him a speed ratingfootnote]EA Sports&rsquo; ratings are on a 1 to 99 scale.[/footnote] of 85 -- blazing for a lineman -- and when the Oakland Raiders, long known for their <a href="http://bleacherreport.com/articles/2036826-speed-was-the-all-consuming-obsession-of-al-davis-raiders" target="_blank">real-life fixation</a> on speed, became unstoppable because the Madden game engine translated the overall velocity of the Raiders&rsquo; roster into far better virtual performances than the team was capable of in reality.</p>
-          <p>Moore would eventually be promoted to a designer and producer along his path to Ratings Czar, but the relationship between Moore&rsquo;s testing background and his current job is clear. &ldquo;The [ratings] are probably the single biggest factor in gameplay,&rdquo; Moore said.</p>
+          <p>Playing and testing the games, Moore got a firsthand look at the give-and-take between gameplay and player ratings. He recalls the time a long-forgotten defensive tackle for the University of Kentucky inadvertently became a superstar after a typo assigned him a speed ratingfootnote]EA Sports&rsquo; ratings are on a 1 to 99 scale.[/footnote] of 85 -- blazing for a lineman -- and when the Oakland Raiders, long known for their <a href="http://bleacherreport.com/articles/2036826-speed-was-the-all-consuming-obsession-of-al-davis-raiders" target="_blank">real-life fixation</a> on speed, became unstoppable because the Madden game engine translated the overall velocity of the Raiders&rsquo; roster into far better virtual performances than the team was capable of in reality.</p>
+          <p>Moore would eventually be promoted to a designer and associate producer along his path to Ratings Czar, but the relationship between Moore&rsquo;s testing background and his current job is clear. &ldquo;The [ratings] are probably the single biggest factor in gameplay,&rdquo; Moore said.</p>
           <p>And the ratings have far more moving parts now than when Moore began working at EA. Each player in the game is graded in <a href="http://maddenratings.weebly.com/uploads/1/4/0/9/14097292/madden_nfl_15_-_full_player_ratings.xlsx" target="_blank">43 categories</a> -- many of which were added when Madden transitioned from the <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(sixth_generation)" target="_blank">sixth generation</a> of consoles to the <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(seventh_generation)" target="_blank">seventh</a>. There are also nearly 20 new player tendency tags, known as <a href="http://www.e-athlete.net/_/madden-nfl-15/madden-15-guide-to-player-ratings-attributes-and-traits-r109" target="_blank">&ldquo;traits,&rdquo;</a> that control specific player behaviors.</p>
           <p class="chart"><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/graphs/paine-feature-madden-3.png" alt="NFL Video Games Have Gotten More Complex Graph" /></p>
           <!-- NFL  VIDEO GAMES CHART HERE -->
-          <div class="sidebar-wrapper" >
+          <div class="sidebar-wrapper">
             <p>Moore lobbied for many of the new rating categories, spurred by the same motivation that drove &ldquo;Micro League Baseball&rdquo; to add player ratings in the first place: greater differentiation between players.</p>
-            <div class="sidebar adjusted-stats trigger-watch" data-callback="adjustedStats">
-              <div class="player-stats first">
-                <div class="stat-card">
-                  <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
-                  <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
-                  <div class="headshot">
-                    <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/brandon-marshall.png" alt="Brandon Marshall" />
-                  </div>
-                  <div class="player-info">
-                    <h4>Case Study<br/><span class="yellow">Brandon Marshall</span></br/>Veteran Player</h4>
-                    <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
-                    <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
-                    <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
-                  </div>
-                </div>
-                <div class="stat-hidden">
-                  <div class="player-bio">
-                    <h5><span class="black">Making the First String</span> <br/>2014-15</h5>
-                    <p>When Madden 15 shipped, the third-year linebacker had a 64 overall rating and was buried on Denver&rsquo;s bench. But after an injury to Danny Trevathan in August, Marshall joined the Broncos&rsquo; starting lineup. After he put together four straight games with a Pro Football Focus grade of +1.0 or better by midseason, Marshall was rated 75 overall with vastly increased awareness, tackling, zone coverage and play recognition ratings. By Week 14, he carried an 81 overall rating, up a league-high 17 from where he&rsquo;d started the season.</p>
-                    <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/brandon-marshall-moment.jpg" />
-                  </div>
-                  <div class="adjustments">
-                    <h5>Madden Rating</h5>
-                    <div class="original-rating">
-                      <p>Original</p>
-                      <div class="player-rating">64</div>
+              <div class="sidebar adjusted-stats trigger-watch" data-callback="adjustedStats">
+                <div class="player-stats first">
+                  <div class="stat-card">
+                    <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                    <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                    <div class="headshot">
+                      <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/brandon-marshall.png" alt="Brandon Marshall" />
                     </div>
-                    <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" alt="arrow right" />
-                    <div class="adjusted-rating">
-                      <p>Adjusted</p>
-                      <div class="player-rating" data-final-rating="81" data-starting-rating="64">64</div>
+                    <div class="player-info">
+                      <h4>Case Study<br/><span class="yellow">Brandon Marshall</span></br/>Veteran Player</h4>
+                      <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
+                      <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                      <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="player-stats second">
-                <div class="stat-card">
-                  <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
-                  <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
-                  <div class="headshot">
-                    <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/odell-beckham.png" alt="Odell Beckham Jr" />
-                  </div>
-                  <div class="player-info">
-                    <h4>Case Study<br/><span class="yellow">Odell Beckham, Jr.</span></br/>Rookie Player</h4>
-                    <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
-                    <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
-                    <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
-                  </div>
-                </div>
-                <div class="stat-hidden">
-                  <div class="player-bio">
-                    <h5><span class="black">A Rating-Changing Moment</span><br/>Nov. 23, 2014</h5>
-                    <p>A 75 overall rating for a rookie receiver is nothing to sneeze at, but that was just the beginning for the Giants wideout. Beckham recorded 31 catches in his first six games, raising his rating to an 80 overall by Week 11. And in front a national TV audience the next week, he hauled in 10 balls for 146 yards against the Dallas Cowboys -- 43 yards of which came on arguably the greatest catch in NFL history. Beckham&rsquo;s rating would increase by 10 more points, and he ended the year with huge upgrades in awareness, route-running, catching in traffic -- and, of course, spectacular catch.</p>
-                    <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/odell-beckham-moment.jpg" />
-                  </div>
-                  <div class="adjustments">
-                    <h5>Madden Rating</h5>
-                    <div class="original-rating">
-                      <p>Original</p>
-                      <div class="player-rating">75</div>
+                  <div class="stat-hidden">
+                    <div class="player-bio">
+                      <h5><span class="black">Making the First String</span> <br/>2014-15</h5>
+                      <p>When Madden 15 shipped, the third-year linebacker had a 64 overall rating and was buried on Denver&rsquo;s bench. But after an injury to Danny Trevathan in August, Marshall joined the Broncos&rsquo; starting lineup. After he put together four straight games with a Pro Football Focus grade of +1.0 or better by midseason, Marshall was rated 75 overall with vastly increased awareness, tackling, zone coverage and play recognition ratings. By Week 14, he carried an 81 overall rating, up a league-high 17 from where he&rsquo;d started the season.</p>
+                      <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/brandon-marshall-moment.jpg" />
                     </div>
-                    <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" alt="arrow right" />
-                    <div class="adjusted-rating">
-                      <p>Adjusted</p>
-                      <div class="player-rating" data-final-rating="80" data-starting-rating="75">75</div>
+                    <div class="adjustments">
+                      <h5>Madden Rating</h5>
+                      <div class="original-rating">
+                        <p>Original</p>
+                        <div class="player-rating">64</div>
+                      </div>
+                      <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" alt="arrow right" />
+                      <div class="adjusted-rating">
+                        <p>Adjusted</p>
+                        <div class="player-rating" data-final-rating="81" data-starting-rating="64">64</div>
+                      </div>                  
+                    </div>
+                  </div>
+                </div>
+                <div class="player-stats second">
+                  <div class="stat-card">
+                    <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                    <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                    <div class="headshot">
+                      <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/odell-beckham.png" alt="Odell Beckham Jr" />
+                    </div>
+                    <div class="player-info">
+                      <h4>Case Study<br/><span class="yellow">Odell Beckham, Jr.</span></br/>Rookie Player</h4>
+                      <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
+                      <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                      <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                    </div>
+                  </div>
+                  <div class="stat-hidden">
+                    <div class="player-bio">
+                      <h5><span class="black">A Rating-Changing Moment</span><br/>Nov. 23, 2014</h5>
+                      <p>A 75 overall rating for a rookie receiver is nothing to sneeze at, but that was just the beginning for the Giants wideout. Beckham recorded 31 catches in his first six games, raising his rating to an 80 overall by Week 11. And in front a national TV audience the next week, he hauled in 10 balls for 146 yards against the Dallas Cowboys -- 43 yards of which came on arguably the greatest catch in NFL history. Beckham&rsquo;s rating would increase by 10 more points, and he ended the year with huge upgrades in awareness, route-running, catching in traffic -- and, of course, spectacular catch.</p>
+                      <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/odell-beckham-moment.jpg" />
+                    </div>
+                    <div class="adjustments">
+                      <h5>Madden Rating</h5>
+                      <div class="original-rating">
+                        <p>Original</p>
+                        <div class="player-rating">75</div>
+                      </div>
+                      <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>img/arrow.svg" alt="arrow right" />
+                      <div class="adjusted-rating">
+                        <p>Adjusted</p>
+                        <div class="player-rating" data-final-rating="80" data-starting-rating="75">75</div>
+                      </div>                  
                     </div>
                   </div>
                 </div>
@@ -200,9 +194,9 @@
           </div>
 
           <p><span class="dropcap">F</span>inally, after all the component categories are set for both rookies and veterans, the numbers are used to generate the fabled Overall Rating.</p>
-          <p>When I asked Moore about this, I expected him to decline comment, citing a proprietary formula shrouded in secrecy. Instead, he cheerfully called up a spreadsheet containing the values that go into computing a player&rsquo;s overall grade. And somewhat anticlimactically, the overall rating is simply a <a href="http://en.wikipedia.org/wiki/Weighted_arithmetic_mean" target="_blank">weighted average</a> of a player&rsquo;s ratings across the 43 skill categories tracked by Madden, with different categories taking on more weight depending on the position.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-13"><sup id="ss-13">13</sup></a></p>
-          <p>For example, the most heavily weighted categories for quarterbacks in &ldquo;Madden NFL 15&rdquo; are awareness (about one-third of a quarterback&rsquo;s overall rating), play action passing, and accuracy by zone (short accuracy is slightly more valuable than medium accuracy, which in turn carries a narrow edge over deep accuracy). Together, those categories make up about 90 percent of the overall grade for QBs, with the rest of the weight given to throwing power, passing on the run, agility and speed.</p>
-          <p>By comparison, wide receivers see a large portion of their value driven by route-running, awareness and catching, which together make up about half of the overall grade at the position. The tail for important ratings at receiver is <a href="http://en.wikipedia.org/wiki/Long_tail" target="_blank">longer</a> than for quarterbacks, though: Catching in traffic, release (which measures a receiver&rsquo;s ability to freely run from the line of scrimmage against <a href="https://www.youtube.com/watch?v=SJdXTzkoVfE" target="_blank">press coverage</a>), and spectacular catching make up more than a quarter of a WR&rsquo;s overall rating, with after-the-catch attributes such as ball-carrier vision, jukes, spin moves, agility, <a href="http://www.maddentips.com/madden-13-tips-truck-stick-running-game/" target="_blank">trucking</a>, elusiveness and even stiff arms also getting about 20 percent weight in the overall formula.</p>
+          <p>When I asked Moore about this, I expected him to decline comment, citing a proprietary formula shrouded in secrecy. Instead, he cheerfully called up a spreadsheet containing the values that go into computing a player&rsquo;s overall grade (and later e-mailed it to us). And somewhat anticlimactically, the overall rating is simply a <a href="http://en.wikipedia.org/wiki/Weighted_arithmetic_mean" target="_blank">weighted average</a> of a player&rsquo;s ratings across the 43 skill categories tracked by Madden, with different categories taking on more weight depending on the position.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-13"><sup id="ss-13">13</sup></a></p>
+          <p>For example, the most heavily weighted categories for quarterbacks in “Madden NFL 15” are awareness and throwing power (each contributes about one-fifth of a quarterback’s overall rating), accuracy by zone (short and medium accuracy are both slightly more valuable than deep accuracy), and play action passing. Together, those categories make up 89 percent of the overall grade for QBs, with the rest of the weight given to throwing on the run, agility, speed and acceleration.</p>
+          <p>By comparison, wide receivers see a large portion of their value driven by speed, route-running, awareness and catching, which together make up about half of the overall grade at the position. The tail for important ratings at receiver is <a href="http://en.wikipedia.org/wiki/Long_tail" target="_blank">longer</a> than for quarterbacks, though: Catching in traffic, jumping, release (which measures a receiver’s ability to freely run from the line of scrimmage against <a href="https://www.youtube.com/watch?v=SJdXTzkoVfE" target="_blank">press coverage</a>), and spectacular catching make up nearly a quarter of a WR’s overall rating, with after-the-catch attributes such as acceleration, agility, carrying, elusiveness, ball-carrier vision, jukes, spin moves, <a href="http://www.maddentips.com/madden-13-tips-truck-stick-running-game/" target="_blank">trucking</a> and even stiff arms also getting 29 percent weight in the overall formula.</p>
           <p>Ever controversial, the overall rating is a proxy for a player&rsquo;s all-around effectiveness on the virtual field (and, presumably, the real one as well). But how well do the ratings track with actual player performance? To get a sense of the relationship between simulation and reality, we compared players&rsquo; overall Madden ratings at the start of each season to their Expected Points Added:</p>
           <p class="chart"><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/graphs/paine-feature-madden-1.png" alt="Madden and NFL QB Performance Graph" /></p>
           <p class="chart"><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/graphs/paine-feature-madden-2.png" alt="Madden and NFL QB Performance Graph" /></p>
@@ -211,11 +205,11 @@
           <p>In addition, the effects of the ratings on actual gameplay can be arcane for even the most seasoned Madden veterans. Perhaps no one outside of EA Sports has spent more time contemplating Madden&rsquo;s inner workings than SB Nation&rsquo;s Jon Bois, the creator of <a href="http://www.sbnation.com/breaking-madden" target="_blank">Breaking Madden</a>, a football column that doubles as an absurdist meditation on the game itself. But Bois confessed that he still can&rsquo;t quite figure out what some of the rating categories actually do for players on the virtual gridiron.</p>
           <p>&ldquo;There are definitely more obscure settings,&rdquo; Bois said. &ldquo;There&rsquo;s a slider called ‘press,&rsquo; which I have no idea what it means. I set it to zero every time, and I still have no idea what it does, or what ‘press&rsquo; even is.&rdquo;<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-14"><sup id="ss-14">14</sup></a></p>
           <div class="sidebar-wrapper">
-            <div class="sidebar">
-              <blockquote>
-                “I’ve heard it speculated that even the Madden team themselves don’t really know what’s going on,” Bailey said.
-              </blockquote>
-            </div>
+              <div class="sidebar">
+                <blockquote>
+                  “I’ve heard it speculated that even the Madden team themselves don’t really know what’s going on,” Bailey said.
+                </blockquote>
+              </div>
             <p>It&rsquo;s all laughs for Bois, who excels at turning Madden into surreal comedy. But the cryptic nature of the game&rsquo;s growing set of player attributes can also have frustrating consequences for serious gamers. &ldquo;The unfortunate thing for Madden is that a lot of [its] player ratings are opaque,&rdquo; <a href="http://www.usgamer.net" target="_blank">USgamer</a> senior editor <a href="http://www.usgamer.net/archive?author=1105" target="_blank">Kat Bailey</a> told me. &ldquo;There are so many systems going on that you don&rsquo;t always know which [ratings] affect which [systems].&rdquo;</p>
           </div>
           <p>Bailey offered an illustration from franchise mode, in which a gamer uses a finite supply of experience points to boost players&rsquo; skills. &ldquo;It can be unclear which ratings you want to increase,&rdquo; she said. Spending experience points on awareness, for instance, will almost always increase a player&rsquo;s overall rating -- but for defensive players and even quarterbacks, that boost won&rsquo;t cause them to play better when they&rsquo;re being controlled in-game. Meanwhile, wide receivers can actually see tangible in-game benefits from a higher awareness score.</p>
@@ -331,11 +325,11 @@
           <p>Bailey confirmed this development. &ldquo;It was true for a long time [that] the little speedy guys could just get open, and that was that,&rdquo; she said. &ldquo;I don&rsquo;t think that&rsquo;s as much of the case anymore.&rdquo;</p>
           <p>But while speed can be mitigated, Moore granted that there&rsquo;s no good way to overcome the problem of simulating a quarterback like Manning, whose most important skills -- reading defenses, calling audibles, seeing things on the field that no one else can, and making sound decisions -- are instantly negated when a gamer picks up the controller.</p>
           <div class="sidebar-wrapper">
-            <div class="sidebar">
-              <blockquote>
-                “Quarterback decision-making is the most difficult thing to simulate,” Moore said.
-              </blockquote>
-            </div>
+              <div class="sidebar">
+                <blockquote>
+                  “Quarterback decision-making is the most difficult thing to simulate,” Moore said. 
+                </blockquote>
+              </div>
             <p>&ldquo;Quarterback decision-making is the most difficult thing to simulate,&rdquo; Moore said. &ldquo;We&rsquo;re trying to simulate strengths and weaknesses as best we can within the game, but how you play the game is still you.&rdquo;</p>
           </div>
           <p>For example, one of the most important categories when computing a quarterback&rsquo;s overall rating is awareness, which is based on experience and attempts to quantify factors like decision-making and depth of playbook knowledge. Awareness clearly affects how computer-controlled quarterbacks play the game; the lower the rating, the more likely a CPU opponent is to throw into coverage or miss open receivers. But despite its heavy weighting in the overall rating formula, a quarterback&rsquo;s awareness score makes no difference when a human is controlling him. When you, the gamer, are in charge, it&rsquo;s up to you to be &ldquo;aware&rdquo; for the avatar you&rsquo;re controlling.</p>
