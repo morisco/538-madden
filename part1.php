@@ -1,8 +1,8 @@
         <a name="part1"></a>
         <section class="full-screen opener trigger-watch" id="part-1-opener" data-callback="part1Opener">
           <div class="panel video">
-            <video id="intro-video" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/full-screen.jpg">
-              <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/walt-hickey-video.mp4" type="video/mp4">
+            <video id="intro-video" poster="<?php $fte_madden->special_directory_uri(); ?>/img/full-screen.jpg">
+              <source src="<?php $fte_madden->special_directory_uri(); ?>/video/walt-hickey-video.mp4" type="video/mp4">
             </video>
           </div>
           <div class="panel-1 panel">
@@ -30,7 +30,7 @@
         </section>
         <section class="trigger-watch quote-1" data-callback="fullQuote" id="quote-image">
           <h2 class="quote">Madden has generated more than $4 billion in revenue over its 26-year lifetime. Yet for all of EA&rsquo;s resources, Moore performs his czar duties in surprising solitude.</h2>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/full-width-1.jpg" alt="Donny Moore at his cubicle at EA" />
+          <img src="<?php $fte_madden->special_directory_uri(); ?>/img/full-width-1.jpg" alt="Donny Moore at his cubicle at EA" />
           <div class="caption">Donny Moore at his cubicle at EA</div>
         </section>
         <section id="section-2" class="content-width">
@@ -81,20 +81,20 @@
           <p>The assortment of skills that needed to be collected for each player grew as football games progressed through the 1990s. By the end of the decade, EA Sports&rsquo; NCAA Football series<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-9"><sup id="ss-9">9</sup></a> assigned <a href="http://www.angelfire.com/yt/thebirk/EAFAQnf.html" target="_blank">14 attributes</a> to every player in the game<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-10"><sup id="ss-10">10</sup></a>, while Madden began <a href="http://www.angelfire.com/tv/madden99/carolinar.html" target="_blank">handing out</a> 17. With the advent of <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(fifth_generation)" target="_blank">fifth-generation consoles</a>, the degree of complexity in simulating football increased dramatically, requiring a wider range of player attributes to feed into the new game engines.</p>
           <div class="sidebar-wrapper trigger-watch chalk-talk" data-callback="chalkTalk">
             <p>Tecmo Super Bowl</p>
-            <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tecmo.jpg" alt="Tecmo Super Bowl"  width="530" height="329"/></p>
-            <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/front-page-sports.jpg" alt="Front Page Spors: Pro Football" width="530" height="420" /></p>
+            <p><img src="<?php $fte_madden->special_directory_uri(); ?>/img/tecmo.jpg" alt="Tecmo Super Bowl"  width="530" height="329"/></p>
+            <p><img src="<?php $fte_madden->special_directory_uri(); ?>/img/front-page-sports.jpg" alt="Front Page Spors: Pro Football" width="530" height="420" /></p>
             <p>Front Page Sports: Football Pro</p>
             <div class="cb"></div>
             <div class="sidebar chalk-talk">
-              <img class="x-o-o" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-o-green.png" />
+              <img class="x-o-o" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o-green.png" />
               <p>Nintendo&rsquo;s seminal football game was released in 1991, and included only six rating categories. The game wasn&rsquo;t super realistic. Bo Jackson was an all-time great in the NFL; he was superhuman in Tecmo.</p>
               <div class="x-o">
-                <img class="x-o-o" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-o-green.png" />
-                <img class="x-o-o" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-o-green.png" />
-                <img class="x-o-x" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-x-green.png" />
+                <img class="x-o-o" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o-green.png" />
+                <img class="x-o-o" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o-green.png" />
+                <img class="x-o-x" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-x-green.png" />
               </div>
               <p>Sierra Online&rsquo;s Front Page Sports: Football Pro, regarded as the most realistic football simulation of its time, came out in 1993 and included eight ratings.</p>
-              <img class="x-o-x" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-x-green.png" />
+              <img class="x-o-x" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-x-green.png" />
             </div>
 
           </div>
@@ -104,30 +104,30 @@
           <p>Testing the games, Moore got a firsthand look at the give-and-take between gameplay and player ratings. He recalls the time a long-forgotten defensive tackle for the University of Kentucky inadvertently became a superstar after a typo assigned him a speed ratingfootnote]EA Sports&rsquo; ratings are on a 1 to 99 scale.[/footnote] of 85 -- blazing for a lineman -- and when the Oakland Raiders, long known for their <a href="http://bleacherreport.com/articles/2036826-speed-was-the-all-consuming-obsession-of-al-davis-raiders" target="_blank">real-life fixation</a> on speed, became unstoppable because the Madden game engine translated the overall velocity of the Raiders&rsquo; roster into far better virtual performances than the team was capable of in reality.</p>
           <p>Moore would eventually be promoted to a designer and producer along his path to Ratings Czar, but the relationship between Moore&rsquo;s testing background and his current job is clear. &ldquo;The [ratings] are probably the single biggest factor in gameplay,&rdquo; Moore said.</p>
           <p>And the ratings have far more moving parts now than when Moore began working at EA. Each player in the game is graded in <a href="http://maddenratings.weebly.com/uploads/1/4/0/9/14097292/madden_nfl_15_-_full_player_ratings.xlsx" target="_blank">43 categories</a> -- many of which were added when Madden transitioned from the <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(sixth_generation)" target="_blank">sixth generation</a> of consoles to the <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(seventh_generation)" target="_blank">seventh</a>. There are also nearly 20 new player tendency tags, known as <a href="http://www.e-athlete.net/_/madden-nfl-15/madden-15-guide-to-player-ratings-attributes-and-traits-r109" target="_blank">&ldquo;traits,&rdquo;</a> that control specific player behaviors.</p>
-          <p class="chart"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/graphs/paine-feature-madden-3.png" alt="NFL Video Games Have Gotten More Complex Graph" /></p>
+          <p class="chart"><img src="<?php $fte_madden->special_directory_uri(); ?>/img/graphs/paine-feature-madden-3.png" alt="NFL Video Games Have Gotten More Complex Graph" /></p>
           <!-- NFL  VIDEO GAMES CHART HERE -->
           <div class="sidebar-wrapper" >
             <p>Moore lobbied for many of the new rating categories, spurred by the same motivation that drove &ldquo;Micro League Baseball&rdquo; to add player ratings in the first place: greater differentiation between players.</p>
             <div class="sidebar adjusted-stats trigger-watch" data-callback="adjustedStats">
               <div class="player-stats first">
                 <div class="stat-card">
-                  <img class="chalk top left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-o.png" />
-                  <img class="chalk top right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-x.png" />
+                  <img class="chalk top left" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o.png" />
+                  <img class="chalk top right" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-x.png" />
                   <div class="headshot">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brandon-marshall.png" alt="Brandon Marshall" />
+                    <img src="<?php $fte_madden->special_directory_uri(); ?>/img/brandon-marshall.png" alt="Brandon Marshall" />
                   </div>
                   <div class="player-info">
                     <h4>Case Study<br/><span class="yellow">Brandon Marshall</span></br/>Veteran Player</h4>
-                    <img class="arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.svg" />
-                    <img class="chalk bottom left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-x.png" />
-                    <img class="chalk bottom right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-o.png" />
+                    <img class="arrow" src="<?php $fte_madden->special_directory_uri(); ?>/img/arrow.svg" />
+                    <img class="chalk bottom left" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-x.png" />
+                    <img class="chalk bottom right" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o.png" />
                   </div>
                 </div>
                 <div class="stat-hidden">
                   <div class="player-bio">
                     <h5><span class="black">Making the First String</span> <br/>2014-15</h5>
                     <p>When Madden 15 shipped, the third-year linebacker had a 64 overall rating and was buried on Denver&rsquo;s bench. But after an injury to Danny Trevathan in August, Marshall joined the Broncos&rsquo; starting lineup. After he put together four straight games with a Pro Football Focus grade of +1.0 or better by midseason, Marshall was rated 75 overall with vastly increased awareness, tackling, zone coverage and play recognition ratings. By Week 14, he carried an 81 overall rating, up a league-high 17 from where he&rsquo;d started the season.</p>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brandon-marshall-moment.jpg" />
+                    <img src="<?php $fte_madden->special_directory_uri(); ?>/img/brandon-marshall-moment.jpg" />
                   </div>
                   <div class="adjustments">
                     <h5>Madden Rating</h5>
@@ -135,7 +135,7 @@
                       <p>Original</p>
                       <div class="player-rating">64</div>
                     </div>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.svg" alt="arrow right" />
+                    <img src="<?php $fte_madden->special_directory_uri(); ?>/img/arrow.svg" alt="arrow right" />
                     <div class="adjusted-rating">
                       <p>Adjusted</p>
                       <div class="player-rating" data-final-rating="81" data-starting-rating="64">64</div>
@@ -145,23 +145,23 @@
               </div>
               <div class="player-stats second">
                 <div class="stat-card">
-                  <img class="chalk top left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-o.png" />
-                  <img class="chalk top right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-x.png" />
+                  <img class="chalk top left" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o.png" />
+                  <img class="chalk top right" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-x.png" />
                   <div class="headshot">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/odell-beckham.png" alt="Odell Beckham Jr" />
+                    <img src="<?php $fte_madden->special_directory_uri(); ?>/img/odell-beckham.png" alt="Odell Beckham Jr" />
                   </div>
                   <div class="player-info">
                     <h4>Case Study<br/><span class="yellow">Odell Beckham, Jr.</span></br/>Rookie Player</h4>
-                    <img class="arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.svg" />
-                    <img class="chalk bottom left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-x.png" />
-                    <img class="chalk bottom right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chalk-o.png" />
+                    <img class="arrow" src="<?php $fte_madden->special_directory_uri(); ?>/img/arrow.svg" />
+                    <img class="chalk bottom left" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-x.png" />
+                    <img class="chalk bottom right" src="<?php $fte_madden->special_directory_uri(); ?>/img/chalk-o.png" />
                   </div>
                 </div>
                 <div class="stat-hidden">
                   <div class="player-bio">
                     <h5><span class="black">A Rating-Changing Moment</span><br/>Nov. 23, 2014</h5>
                     <p>A 75 overall rating for a rookie receiver is nothing to sneeze at, but that was just the beginning for the Giants wideout. Beckham recorded 31 catches in his first six games, raising his rating to an 80 overall by Week 11. And in front a national TV audience the next week, he hauled in 10 balls for 146 yards against the Dallas Cowboys -- 43 yards of which came on arguably the greatest catch in NFL history. Beckham&rsquo;s rating would increase by 10 more points, and he ended the year with huge upgrades in awareness, route-running, catching in traffic -- and, of course, spectacular catch.</p>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/odell-beckham-moment.jpg" />
+                    <img src="<?php $fte_madden->special_directory_uri(); ?>/img/odell-beckham-moment.jpg" />
                   </div>
                   <div class="adjustments">
                     <h5>Madden Rating</h5>
@@ -169,7 +169,7 @@
                       <p>Original</p>
                       <div class="player-rating">75</div>
                     </div>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.svg" alt="arrow right" />
+                    <img src="<?php $fte_madden->special_directory_uri(); ?>/img/arrow.svg" alt="arrow right" />
                     <div class="adjusted-rating">
                       <p>Adjusted</p>
                       <div class="player-rating" data-final-rating="80" data-starting-rating="75">75</div>
@@ -204,8 +204,8 @@
           <p>For example, the most heavily weighted categories for quarterbacks in &ldquo;Madden NFL 15&rdquo; are awareness (about one-third of a quarterback&rsquo;s overall rating), play action passing, and accuracy by zone (short accuracy is slightly more valuable than medium accuracy, which in turn carries a narrow edge over deep accuracy). Together, those categories make up about 90 percent of the overall grade for QBs, with the rest of the weight given to throwing power, passing on the run, agility and speed.</p>
           <p>By comparison, wide receivers see a large portion of their value driven by route-running, awareness and catching, which together make up about half of the overall grade at the position. The tail for important ratings at receiver is <a href="http://en.wikipedia.org/wiki/Long_tail" target="_blank">longer</a> than for quarterbacks, though: Catching in traffic, release (which measures a receiver&rsquo;s ability to freely run from the line of scrimmage against <a href="https://www.youtube.com/watch?v=SJdXTzkoVfE" target="_blank">press coverage</a>), and spectacular catching make up more than a quarter of a WR&rsquo;s overall rating, with after-the-catch attributes such as ball-carrier vision, jukes, spin moves, agility, <a href="http://www.maddentips.com/madden-13-tips-truck-stick-running-game/" target="_blank">trucking</a>, elusiveness and even stiff arms also getting about 20 percent weight in the overall formula.</p>
           <p>Ever controversial, the overall rating is a proxy for a player&rsquo;s all-around effectiveness on the virtual field (and, presumably, the real one as well). But how well do the ratings track with actual player performance? To get a sense of the relationship between simulation and reality, we compared players&rsquo; overall Madden ratings at the start of each season to their Expected Points Added:</p>
-          <p class="chart"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/graphs/paine-feature-madden-1.png" alt="Madden and NFL QB Performance Graph" /></p>
-          <p class="chart"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/graphs/paine-feature-madden-2.png" alt="Madden and NFL QB Performance Graph" /></p>
+          <p class="chart"><img src="<?php $fte_madden->special_directory_uri(); ?>/img/graphs/paine-feature-madden-1.png" alt="Madden and NFL QB Performance Graph" /></p>
+          <p class="chart"><img src="<?php $fte_madden->special_directory_uri(); ?>/img/graphs/paine-feature-madden-2.png" alt="Madden and NFL QB Performance Graph" /></p>
           <!-- Insert QB/WR Comparison Chart -->
           <p>Madden's ratings don&rsquo;t perfectly match each player's seasonal performance, although estimates of a player's underlying &ldquo;quality&rdquo; may be distinct from the more random ups-and-downs of an NFL career. The ratings do appear sensitive to some reputation-based tweaking:  Eli Manning -- with his pedigree and two Super Bowl rings -- outrated Phillip Rivers in six of their 11 seasons, despite putting up a better Expected Points Added figure in just three of those seasons.</p>
           <p>In addition, the effects of the ratings on actual gameplay can be arcane for even the most seasoned Madden veterans. Perhaps no one outside of EA Sports has spent more time contemplating Madden&rsquo;s inner workings than SB Nation&rsquo;s Jon Bois, the creator of <a href="http://www.sbnation.com/breaking-madden" target="_blank">Breaking Madden</a>, a football column that doubles as an absurdist meditation on the game itself. But Bois confessed that he still can&rsquo;t quite figure out what some of the rating categories actually do for players on the virtual gridiron.</p>
@@ -247,10 +247,10 @@
             </div>
           </div>
           <div id="gamebreaker-peyton" class="gamebreaker-panel" data-panel-index="2">
-            <video id="breaker-video-2" src="<?php echo get_stylesheet_directory_uri(); ?>/video/gamebreaker-manning.mp4" class="gamebreaker-video" data-video-id="2"></video>
+            <video id="breaker-video-2" src="<?php $fte_madden->special_directory_uri(); ?>/video/gamebreaker-manning.mp4" class="gamebreaker-video" data-video-id="2"></video>
               <div class="breaker-profile">
                 <div class="headshot">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/manning-headshot.png" alt="Peyton Manning" />
+                  <img src="<?php $fte_madden->special_directory_uri(); ?>/img/manning-headshot.png" alt="Peyton Manning" />
                 </div>
                 <div class="player-bio">
                   <div class="player-name">Peyton Manning</div>
@@ -272,10 +272,10 @@
             <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-vick" class="gamebreaker-panel" data-panel-index="3">
-              <video id="breaker-video-3" src="<?php echo get_stylesheet_directory_uri(); ?>/video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
+              <video id="breaker-video-3" src="<?php $fte_madden->special_directory_uri(); ?>/video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
               <div class="breaker-profile">
                 <div class="headshot">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vick-headshot.png" alt="Michael Vick" />
+                  <img src="<?php $fte_madden->special_directory_uri(); ?>/img/vick-headshot.png" alt="Michael Vick" />
                 </div>
                 <div class="player-bio">
                   <div class="player-name">Michael Vick</div>
@@ -297,10 +297,10 @@
             <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-wayne" class="gamebreaker-panel" data-panel-index="4">
-            <video id="breaker-video-4" src="<?php echo get_stylesheet_directory_uri(); ?>/video/gamebreaker-wayne.mp4" class="gamebreaker-video" data-video-id="4"></video>
+            <video id="breaker-video-4" src="<?php $fte_madden->special_directory_uri(); ?>/video/gamebreaker-wayne.mp4" class="gamebreaker-video" data-video-id="4"></video>
               <div class="breaker-profile">
                 <div class="headshot">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wayne-headshot.png" alt="Reggie Wayne" />
+                  <img src="<?php $fte_madden->special_directory_uri(); ?>/img/wayne-headshot.png" alt="Reggie Wayne" />
                 </div>
                 <div class="player-bio">
                   <div class="player-name">Reggie Wayne</div>
