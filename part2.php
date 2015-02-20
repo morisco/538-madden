@@ -1,11 +1,12 @@
 <a name="part2"></a> 
          <section  class="full-screen opener trigger-watch " id="part-2-opener" data-callback="part2Opener">
+
           <div class="panel" id="opener-1"></div>
           <div class="panel" id="opener-2"></div>
           <div class="panel" id="opener-3"></div>
           <div class="panel" id="opener-text" >
             <div class="panel-wrapper">
-              <h1>The Walk-On</h1>
+              <h1 class="part-1">The Walk-On</h1>
               <div class="part-2">
                 <h2>How Madden helped a schlub like me make it into the NFL</h2>
               </div>
@@ -122,7 +123,7 @@
           <p>I strolled onto the gridiron in Orlando wearing old gym clothes and the cheapest sneakers available, which I ordered three days prior. I did the three stretches I remembered from my middle school Presidential Physical Fitness Test -- touch your toes, lunge side to side, twist your arm out of its socket -- and some light jogging.</p>
           <p>That may have tired me out more than I expected. My 40-yard dash and 10-yard split times were poor -- 6.75 seconds and 2.30 seconds, respectively. Those numbers were a problem because they determined my speed and acceleration grades, which are two of the most important ratings in Madden.</p>
           <p class="chart"><img src="img/graphs/hickey-feature-madden-1.png" alt="Walt Doesnt have NFL Speed Graph" /></p>
-          <p>No player to participate in the 40-yard dash at the NFL combine since 1999 had a 40-yard time as bad as mine. The closest was Regis Crawford, a 316-pound offensive guard out of Arizona State who after the 2004 combine went undrafted. Crawford still managed to run the dash 0.70 seconds faster than me.</p>
+          <p>No player to participate in the 40-yard dash at the NFL combine since 1999 had a <a href="http://nflcombineresults.com/" target="_blank">40-yard time as bad</a> as mine<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-2"><sup id="ss-2">2</sup></a>. The closest was Regis Crawford, a 316-pound offensive guard out of Arizona State who after the 2004 combine went undrafted. Crawford still managed to run the dash 0.70 seconds faster than me.</p>
           <p>Next up came agility drills — one shuttle run with three cones in an L-shape, another a 20-yard back-and-forth — that would determine how agile I wasn&rsquo;t. I have the maneuverability of a rudderless aircraft carrier. Moore charitably characterized my style as &ldquo;a real north and south kind of player.&rdquo;</p>
           <p>Then came a lunging jump, in which I posted a consistent 6-foot, 5-inch leap. Moore seemed less appalled than he had all day. &ldquo;Not bad there,&rdquo; he said. It was one of the only times I felt anything approaching pride. </p>
           <p class="chart"><img src="img/graphs/hickey-feature-madden-2.png" alt="Walter doesn't have the worst jump graph" /></p>
@@ -184,10 +185,14 @@
           <div class="entry-footnotes-content fte-expandable-content">
               <ol class="footnotes">
                 <li id="fn-1"><span>Walker added that he never considered me one of his top rowers. &ldquo;Even though you pushed yourself at practice, you lacked that same self-discipline away from practice and would often stumble into morning practices having not slept the night before,&rdquo; he said. That is entirely correct.<a class="footnote-back" href="#ss-1"> ^</a></span></li>
-                <li id="fn-2"><span>I have not.<a class="footnote-back" href="#ss-2"> ^</a></span></li>
-                <li id="fn-3"><span>Presumably to be used in event of a successful play in-game, so essentially unnecessary.<a class="footnote-back" href="#ss-3"> ^</a></span></li>
-                <li id="fn-4"><span>I just made a Manningface.<a class="footnote-back" href="#ss-4"> ^</a></span></li>
-                <li id="fn-5"><span>Using the 2014 roster each time.<a class="footnote-back" href="#ss-5"> ^</a></span></li>
+                <li id="fn-2"><span>Craig M. Booth’s excellent NFL height/weight charts inspired the scatter-plots in this article came from.<a class="footnote-back" href="#ss-2"> ^</a></span></li>
+                <li id="fn-3"><span>I have not.<a class="footnote-back" href="#ss-3"> ^</a></span></li>
+                <li id="fn-4"><span>Presumably to be used in event of a successful play in-game, so essentially unnecessary.<a class="footnote-back" href="#ss-4"> ^</a></span></li>
+                <li id="fn-5"><span>I just made a Manningface.<a class="footnote-back" href="#ss-5"> ^</a></span></li>
+                <li id="fn-6"><span>Using the 2014 roster each time.<a class="footnote-back" href="#ss-6"> ^</a></span></li>
+
+                
+                
               </ol>
              </div><!-- .entry-footnotes-content -->
         </div><!-- .entry-footnotes -->

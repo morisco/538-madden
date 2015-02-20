@@ -13,6 +13,11 @@
         <link rel="stylesheet" href="assets/css/madden.css">
     </head>
     <body>
+      <?
+      require_once 'Mobile_Detect.php';
+      $detect = new Mobile_Detect;
+      if ( $detect->isMobile() ) { $isMobile = true; } else { $isMobile = false; }
+      ?>
       <div id="madden" class="entry-content">
         <?php require('header-part-2.php'); ?>
         <?php require('part1.php'); ?>

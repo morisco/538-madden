@@ -7,6 +7,8 @@
 
     tweetTimeout: false,
 
+    tweetOutro: false,
+
     currentTime: 0,
 
     currentVideo: false,
@@ -32,6 +34,9 @@
 
     initEvents:function(){
       $('.start-gamebreakers').on('click',MADDEN.nextBreaker);
+      $('header a').on('click',function(event){
+        event.stopPropagation();
+      });
       $('#video-overlay').on('click',function(){
         if(navigator.userAgent.match(/iPad/i) != null){
           var hickVid = document.getElementById('hickey-video');
@@ -50,8 +55,15 @@
     },
 
     initHeader: function(){
-      if(($(window).scrollTop() + 100) >= $('#part-2-opener').offset().top){
+      if(window.location.hash == '#part2'){
+        $('header').addClass('triggered');
         $('nav').addClass('part-2');
+        MADDEN.triggerPart2();
+        return;
+      }
+
+      if(($(window).scrollTop() + 100) >= $('#part-2-opener').offset().top || window.location.hash == '#part2'){
+        $('nav').addClass('part-2');  
       } else{
         $('nav').addClass('part-1');
       }
@@ -71,7 +83,8 @@
     },
 
     trackHeader: function(){
-      if($(window).scrollTop() > ($('#part-1-opener').height()/2)){
+      console.log(($(window).scrollTop() >= $('#part-2-opener').offset().top && $(window).scrollTop() < ($('#part-2-opener').offset().top + ($(window).height()/4))));
+      if(($(window).scrollTop() > ($('#part-1-opener').height()/2) && $(window).scrollTop() < $('#part-2-opener').offset().top) || !($(window).scrollTop() >= $('#part-2-opener').offset().top && $(window).scrollTop() < ($('#part-2-opener').offset().top + ($(window).height()/4)))){
         $('header .words').addClass('triggered');
         setTimeout(function(){
           $('header').removeClass('triggered');
@@ -145,6 +158,8 @@
         MADDEN[callback](element);
       } else if(scrollTop < enterPoint){
         MADDEN[callback](element,true);
+      } else if(scrollTop > exitPoint){
+        MADDEN[callback](element,false,true);
       }
     },
 
@@ -156,16 +171,19 @@
       return ratio;
     },
 
-    part1Opener:function(element,reset){
-      if( reset && element.attr('data-trigger') ) {
+    part1Opener:function(element,reset,done){
+      if(done){
+        element.removeClass('locked').removeClass('done');
+      } else if( reset && element.attr('data-trigger') ) {
         element.removeAttr('data-trigger');
       } else if(!reset) {
         element.attr('data-trigger',true);
         var ratio = MADDEN.getRatio(element);
-        if(ratio > 36 && ratio < 38){
+        if(ratio < 45){
           element.find('.panel-1').addClass('triggered');
           if(!MADDEN.introVideo.paused){
-            MADDEN.introVideo.load();
+            MADDEN.introVideo.pause();
+            MADDEN.introVideo.currentTime = 0;
             MADDEN.videoPlaying = false;
           }
         } else if(ratio >= 38 && ratio < 60 && !MADDEN.videoPlaying){
@@ -197,13 +215,13 @@
     },
 
     watchIntro: function(){
-      MADDEN.introVideo.onended = function(){
-        MADDEN.introVideo.currentTime = 10;
-        MADDEN.introVideo.play();
-      }
+      // MADDEN.introVideo.onended = function(){
+      //   MADDEN.introVideo.currentTime = 10;
+      //   MADDEN.introVideo.play();
+      // }
     },
 
-    fullQuote: function(element,reset){
+    fullQuote: function(element,reset,done){
       if( reset && element.attr('data-trigger') ) {
         element.removeAttr('data-trigger').removeClass('triggered');
       } else if(!reset && !element.attr('data-trigger')) {
@@ -240,55 +258,72 @@
       } 
     },
 
-    showTweet: function(element,reset){
-      if(reset && element.attr('data-trigger')){
+    showTweet: function(element,reset,done){
+      if(done){
+        if(!element.hasClass('finished')){
+          element.addClass('finished');
+          element.find('.tweet-wrapper').animate({'top':'-500px'},250,function(){
+            $(this).removeClass('fixed');
+            $(this).removeAttr('style');
+            element.addClass('finished');
+          });
+        }
+        return;
+      } else if(reset && element.attr('data-trigger')){
+        element.removeClass('finished');
         element.removeAttr('data-trigger');
         element.removeClass('triggered');
         element.find('.tweet-intro').css('top','0');
         return;
       } else if(!reset){
+        element.removeClass('finished');
         element.attr('data-trigger',true);
         var ratio = MADDEN.getRatio(element);
         var enterPoint = element.offset().top;
-        var scrollTop = $(window).scrollTop();
-        if((enterPoint - scrollTop) < 65){
-          var adjustedHeader = 0 - (enterPoint - scrollTop) + 65;
-          if(0 - (enterPoint - scrollTop) < 65){
-            adjusteHeader = 0 - (enterPoint - scrollTop);
-          }
-          element.find('.tweet-intro').css('top',adjustedHeader);
-          element.find('.tweet-viewer').css('top',adjustedHeader + element.find('.tweet-intro').height());
+        var exitPoint = element.offset().top + element.height();
+        var scrollTop = $(window).scrollTop()
+        // if((enterPoint - scrollTop) < 65){
+        //   var adjustedHeader = 0 - (enterPoint - scrollTop) + 65;
+        //   if(0 - (enterPoint - scrollTop) < 65){
+        //     adjusteHeader = 0 - (enterPoint - scrollTop);
+        //   }
+        //   element.find('.tweet-intro').css('top',adjustedHeader);
+        //   element.find('.tweet-viewer').css('top',adjustedHeader + element.find('.tweet-intro').height());
+        // }
+
+        if((scrollTop + 50) >= enterPoint && scrollTop <= (enterPoint + element.height()) ){
+          $('.tweet-wrapper').addClass('fixed');
+        } else if(scrollTop < exitPoint){
+          $('.tweet-wrapper').removeClass('fixed');
         }
+
         if(ratio > 0 && ratio < 30){
           window.clearTimeout(MADDEN.tweetTimeout);
           MADDEN.tweetTimeout = window.setTimeout(function(){
-            element.find('.tweet.trig').animate({'opacity':0}).removeClass('trig');
-          },100);
+            element.find('.tweet.trig').removeClass('trig');
+          },50);
         } else if(ratio >= 30 && ratio < 45 && !element.find('.tweet[data-index="1"]').hasClass('trig')){
           window.clearTimeout(MADDEN.tweetTimeout);
           MADDEN.tweetTimeout = window.setTimeout(function(){
             MADDEN.triggerTweet(1,element)
-          },100);
+          },50);
         } else if(ratio >= 45 && ratio < 60 && !element.find('.tweet[data-index="2"]').hasClass('trig')){
           window.clearTimeout(MADDEN.tweetTimeout);
           MADDEN.tweetTimeout = window.setTimeout(function(){
             MADDEN.triggerTweet(2,element)
-          },100);
+          },50);
         } else if(ratio >= 60 && ratio < 75 && !element.find('.tweet[data-index="3"]').hasClass('trig')){
           window.clearTimeout(MADDEN.tweetTimeout);
           MADDEN.tweetTimeout = window.setTimeout(function(){
             MADDEN.triggerTweet(3,element)
-          },100);
+          },50);
         } else if(ratio >= 75 && ratio < 97 && !element.find('.tweet[data-index="4"]').hasClass('trig')){
           window.clearTimeout(MADDEN.tweetTimeout);
           MADDEN.tweetTimeout = window.setTimeout(function(){
             MADDEN.triggerTweet(4,element)
-          },100);
+          },50);
         } else if(ratio >= 97){
-          window.clearTimeout(MADDEN.tweetTimeout);
-          MADDEN.tweetTimeout = window.setTimeout(function(){
-            element.find('.tweet.trig').animate({'opacity':0}).removeClass('trig');
-          },100);
+          
         }
 
         
@@ -300,14 +335,12 @@
         return;
       }
       if(element.find('.tweet.trig').length > 0){
-        element.find(".tweet.trig").animate({'opacity':0},function(){
-          element.find(".tweet.trig").removeClass('trig');
-          element.find('.tweet[data-index="'+index+'"]').delay(500).animate({'opacity':1},function(){
-            element.find('.tweet[data-index="'+index+'"]').addClass('trig');
-          });
-        });  
+        element.find(".tweet.trig").removeClass('trig');
+        setTimeout(function(){
+          element.find('.tweet[data-index="'+index+'"]').addClass('trig');
+        },250);
       } else{
-        element.find('.tweet[data-index="'+index+'"]').addClass('trig').animate({'opacity':1});
+        element.find('.tweet[data-index="'+index+'"]').addClass('trig');
       }
     },
 
@@ -433,31 +466,27 @@
         if(!MADDEN.muted){
           $(MADDEN.currentVideo).animate({volume: 1});
         }
-        $(MADDEN.currentVideo).on('timeupdate',function(){
-          if($('.gamebreaker-panel.active').attr('data-panel-index') == 4){
-            if(this.currentTime > (this.duration - 1.5) && !fading){
+
+        if(navigator.userAgent.match(/iPad/i) != null){
+          MADDEN.currentVideo.onended = function(e) {
+            $('.gamebreaker-panel.active .start-gamebreakers').addClass('highlight');
+          }
+        } else {
+
+          $(MADDEN.currentVideo).on('timeupdate',function(){
+            if($('.gamebreaker-panel.active').attr('data-panel-index') == 4){
+              if(this.currentTime > (this.duration - 1.5) && !fading){
+                fading=true;
+                $('.gamebreaker-panel.active .start-gamebreakers').click();
+              }
+            } else if(this.currentTime > (this.duration - 1) && !fading){
               fading=true;
+              $(MADDEN.currentVideo).animate({volume:0})
               $('.gamebreaker-panel.active .start-gamebreakers').click();
             }
-          } else if(this.currentTime > (this.duration - 1) && !fading){
-            fading=true;
-            $(MADDEN.currentVideo).animate({volume:0})
-            $('.gamebreaker-panel.active .start-gamebreakers').click();
-          }
-        });
-        MADDEN.currentVideo.onended = function(e) {
-          if($('.gamebreaker-panel.active .start-gamebreakers').length > 0){
-            if(navigator.userAgent.match(/iPad/i) != null){
-              $('.gamebreaker-panel.active .start-gamebreakers').addClass('highlight');
-            } else{
-              // $('.gamebreaker-panel.active .start-gamebreakers').click();
-            }
-
-          } else{
-            MADDEN.currentID = 1;
-            MADDEN.resetGamebreakers();  
-          }
+          });
         }
+       
 
       }
       $('.gamebreaker-panel[data-panel-index="'+currentIndex+'"]').addClass('previous');
@@ -530,6 +559,13 @@
       }, timeout);
     },
 
+    triggerPart2: function(){
+      $('#opener-1').addClass('triggered');
+      $('#part-2-opener .part-1').addClass('trig');
+      $('#part-2-opener .part-2').addClass('trig');
+
+    },
+
     part2Opener:function(element,reset){
       if(reset && element.attr('data-trigger')){
         element.removeAttr('data-trigger');
@@ -538,29 +574,40 @@
       } else if(!reset){
         element.attr('data-trigger',true);
         var ratio = MADDEN.getRatio(element);
-        if(ratio > 0 && ratio < 45 && !element.find('#opener-1').hasClass('triggered')){
-          element.find('.triggered').removeClass('triggered');
+        if(ratio > 0 && ratio < 30 && !element.find('#opener-1').hasClass('triggered')){
+          element.find('#opener-3').removeClass('triggered');
+          element.find('#opener-2').removeClass('triggered');
           element.find('#opener-1').addClass('triggered');
-          element.find('#opener-text').addClass('triggered');
-        } else if(ratio >= 45 && ratio < 60 && !element.find('#opener-2').hasClass('triggered')){
-          element.find('.triggered').removeClass('triggered');
+          element.find(".part-3").removeClass('trig');
+          element.find('.part-2').removeClass('trig');
+          element.find('.part-1').removeClass('trig');
+        } else if(ratio > 0 && ratio < 30){
+          element.find('.part-1').removeClass('trig');
+          element.find('.part-2').removeClass('trig');
+        } else if(ratio >= 30 && ratio < 40){
+          element.find('.part-1').addClass('trig');
+          element.find('.part-2').addClass('trig');
+        } else if(ratio >= 40 && ratio < 55 && !element.find('#opener-2').hasClass('triggered')){ 
+          element.find('#opener-3').removeClass('triggered');
+          element.find('#opener-1').removeClass('triggered');
           element.find('#opener-2').addClass('triggered');
-          element.find
-        } else if(ratio >= 60 && ratio < 70 && !element.find('#opener-3').hasClass('triggered')){
-          element.find('.triggered').removeClass('triggered');
+          element.find(".part-2").addClass('trig');
+          element.find(".part-3").removeClass('trig');
+          element.find('#opener-3').removeAttr('style');
+        } else if(ratio >= 52 && ratio < 75 && !element.find('#opener-3').hasClass('triggered')){
+          element.find('#opener-1').removeClass('triggered');
+          element.find('#opener-2').removeClass('triggered');
           element.find('#opener-3').addClass('triggered');
-        } else if( ratio >= 70){
-          var adjustmentRatio = 1 - ((100 - ratio)/30);
-          var adjustedTop = 50 + (adjustmentRatio * 30) + '%';
-          if(parseInt(adjustedTop) < 51){
-            adjustedTop = 50 + '%';
-          }
-          element.find('.panel-3 .panel-wrapper').css('top',adjustedTop);
-        }
+          element.find(".part-3").addClass('trig');
+          element.find('#opener-3').removeAttr('style');
+        } 
         if($(window).scrollTop() >= element.offset().top && $(window).scrollTop() < (element.offset().top + element.height() - $(window).height())){
           element.removeClass('done').addClass('locked');
         } else if($(window).scrollTop() >= (element.offset().top + element.height() - $(window).height())) {
+
           element.removeClass('locked').addClass('done');
+          var exitPoint = (element.offset().top + element.height()) - $(window).scrollTop();
+          element.find('#opener-3').css('height',exitPoint);
         } else if($(window).scrollTop() < element.offset().top){
           element.removeClass('locked').removeClass('done');
         } 
