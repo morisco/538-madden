@@ -202,7 +202,7 @@ body{
 #madden #combines .combine{ margin:0 0 100px; }
 #madden #combines video{ max-width:100%; }
 #madden #combines .combine h3{ font-size:26px; letter-spacing:2px; }
-#madden #combines .combine .stat{ width:100%; padding:20px 0; border-bottom:1px dashed #000; font-size:13px; vertical-align:middle; font-weight:700; letter-spacing:0.03em; background:url(/madden/img/arrow.svg); background-size:10px; background-repeat:no-repeat; background-position:left center; padding-left:15px;}
+#madden #combines .combine .stat{ width:100%; padding:20px 0; border-bottom:1px dashed #000; font-size:13px; vertical-align:middle; font-weight:700; letter-spacing:0.03em; background:url(../madden/img/arrow.svg); background-size:10px; background-repeat:no-repeat; background-position:left center; padding-left:15px;}
 #madden #combines .combine .stat .stat-number{ font-size:26px; display:inline-block; text-align:right; vertical-align:middle; float:right; font-family:'Decima'; letter-spacing:2px; font-weight:normal; }
 
 #madden #video{position:relative; overflow:hidden;}
