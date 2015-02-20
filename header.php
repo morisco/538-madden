@@ -1,6 +1,6 @@
 <header>
   <div class="header-wrapper">
-    <a class="logo" href="/"><img class="words" src="<?php echo get_stylesheet_directory_uri(); ?>img/538-logo.png" alt="FiveThirtyEight Sports - Home" /><img class="fox" src="img/fox-logo.svg" alt="FiveThirtyEight Sports - Home" /></a>
+    <a class="logo" href="/"><img class="words" src="<?php echo get_stylesheet_directory_uri(); ?>img/538-logo.png" alt="FiveThirtyEight Sports - Home" /><img class="fox" src="<?php echo get_stylesheet_directory_uri(); ?>img/fox-logo.svg" alt="FiveThirtyEight Sports - Home" /></a>
     <nav>
       <a class="title-bar">The Virtual NFL:</a>
       <a href="#part1" target="_self" id="part-1-link">Part 1</a>
