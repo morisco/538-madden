@@ -152,8 +152,8 @@
           <p>Hickey did not have a good day. He threw 7 for 25, threw three interceptions and was sacked three times. The Giants lost 42-7. The only points came thanks to wide receiver Odell Beckham Jr., who could make any quarterback look good. He scored on a short pass that he turned into a 94-yard touchdown. My only comfort was to imagine the great headline that the New York Post would put on its back page the next day: &ldquo;Hickey Fails to Leave a Mark.&rdquo;</p>
         </section>
         <section id="video" class="full-screen trigger-watch" data-callback="hickeyVideo">
-          <video id="hickey-video" loop controls poster="img/walt-poster.jpg">
-            <source src="video/walt-hickey-video.mp4" type="video/mp4">
+          <video id="hickey-video" loop controls poster="<?php echo get_stylesheet_directory_uri(); ?>/img/walt-poster.jpg">
+            <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/walt-hickey-video.mp4" type="video/mp4">
           </video>
           <div id="video-overlay">
             <div class="stat-wrapper">

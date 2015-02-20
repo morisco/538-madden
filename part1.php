@@ -1,8 +1,8 @@
         <a name="part1"></a>
         <section class="full-screen opener trigger-watch" id="part-1-opener" data-callback="part1Opener">
           <div class="panel video">
-            <video id="intro-video" poster="img/full-screen.jpg">
-              <source src="video/walt-hickey-video.mp4" type="video/mp4">
+            <video id="intro-video" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/full-screen.jpg">
+              <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/walt-hickey-video.mp4" type="video/mp4">
             </video>
           </div>
           <div class="panel-1 panel">
@@ -247,7 +247,7 @@
             </div>
           </div>
           <div id="gamebreaker-peyton" class="gamebreaker-panel" data-panel-index="2">
-            <video id="breaker-video-2" src="video/gamebreaker-manning.mp4" class="gamebreaker-video" data-video-id="2"></video>
+            <video id="breaker-video-2" src="<?php echo get_stylesheet_directory_uri(); ?>/video/gamebreaker-manning.mp4" class="gamebreaker-video" data-video-id="2"></video>
               <div class="breaker-profile">
                 <div class="headshot">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/manning-headshot.png" alt="Peyton Manning" />
@@ -272,7 +272,7 @@
             <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-vick" class="gamebreaker-panel" data-panel-index="3">
-              <video id="breaker-video-3" src="video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
+              <video id="breaker-video-3" src="<?php echo get_stylesheet_directory_uri(); ?>/video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
               <div class="breaker-profile">
                 <div class="headshot">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vick-headshot.png" alt="Michael Vick" />
@@ -297,7 +297,7 @@
             <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-wayne" class="gamebreaker-panel" data-panel-index="4">
-            <video id="breaker-video-4" src="video/gamebreaker-wayne.mp4" class="gamebreaker-video" data-video-id="4"></video>
+            <video id="breaker-video-4" src="<?php echo get_stylesheet_directory_uri(); ?>/video/gamebreaker-wayne.mp4" class="gamebreaker-video" data-video-id="4"></video>
               <div class="breaker-profile">
                 <div class="headshot">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wayne-headshot.png" alt="Reggie Wayne" />
