@@ -37,7 +37,7 @@ body{
 #madden .full-screen.opener{ margin-top:0px; }
 
 #madden #part-1-opener{ height:175vh; overflow:hidden; }
-#madden #part-1-opener .background{ width:100%; height:100vh; position:absolute; top:0; bottom:0; right:0; left:0; background-image:url(/madden/img/full-screen.jpg); z-index:0; background-position:center top; background-size:cover;}
+#madden #part-1-opener .background{ width:100%; height:100vh; position:absolute; top:0; bottom:0; right:0; left:0; background-image:url(./madden/img/full-screen.jpg); z-index:0; background-position:center top; background-size:cover;}
 #madden #part-1-opener.locked .panel{position:fixed;}
 #madden #part-1-opener.done .panel{position:absolute; top:auto; bottom:0;}
 #madden #part-1-opener.locked .background{ position:fixed; }
@@ -142,7 +142,7 @@ body{
 #madden #gamebreakers.done  .gamebreaker-panel{ bottom:0; top:auto; }
 #madden #gamebreakers .gamebreaker-video{ min-height:100%; max-width:300%; min-width:100%; position:absolute; top:0px; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); z-index:0; }
 
-#madden #gamebreakers #gamebreaker-intro{ background-image:url(/madden/img/gamebreakers.jpg); background-position: center center;  }
+#madden #gamebreakers #gamebreaker-intro{ background-image:url(./madden/img/gamebreakers.jpg); background-position: center center;  }
 #madden #gamebreakers #gamebreaker-manning{ top:100%; }
 
 #madden #gamebreakers audio{ position:absolute; left:-5555px;}
