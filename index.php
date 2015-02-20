@@ -14,9 +14,17 @@
     </head>
     <body>
       <div id="madden" class="entry-content">
-        <?php require('header-part-2.php'); ?>
-        <?php require('part1.php'); ?>
-        <?php require('part2.php'); ?>
+				<?php
+
+				define( 'FTE_MADDEN_DAY_2', true ); // set to true on day 2
+
+
+				require('header.php');
+				require('part1.php');
+				if ( FTE_MADDEN_DAY_2 ) {
+					require('part2.php');
+				}
+				?>
       </div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

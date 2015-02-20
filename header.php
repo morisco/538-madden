@@ -4,6 +4,9 @@
     <nav>
       <a class="title-bar">The Virtual NFL:</a>
       <a href="#part1" target="_self" id="part-1-link">Part 1</a>
+      <?php if (FTE_MADDEN_DAY_2 ) : ?>
+      <a href="#part2" target="_self" id="part-2-link">Part 2</a>
+      <?php endif; ?>
     </nav>
     <div class="social-links">
       <a href="#" class="social"><img src="img/twitter.svg" alt="Share on Twitter" /></a>
