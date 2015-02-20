@@ -45,13 +45,18 @@
           } else{
             hickVid.pause();
           }
-        } 
+        }
       });
       $(window).on('scroll',MADDEN.trackHeader);
       $('.mute-video').on('click',MADDEN.muteVideo);
       $('.gamebreaker-video').each(function(){
         $(this)[0].volume = 0;
-      })
+      });
+
+      $('header nav a').on('click',function(){
+        $('header nav a').removeClass('active');
+        $(this).addClass('active');
+      });
     },
 
     initHeader: function(){
@@ -63,9 +68,11 @@
       }
 
       if(($(window).scrollTop() + 100) >= $('#part-2-opener').offset().top || window.location.hash == '#part2'){
-        $('nav').addClass('part-2');  
+        $('header nav a').removeClass('active');
+        $('#part-2-link').addClass('active');
       } else{
-        $('nav').addClass('part-1');
+        $('header nav a').removeClass('active');
+        $('#part-1-link').addClass('active');
       }
       if($(window).scrollTop() > 100 && window.location.hash != 'part2'){
         $('header .words').addClass('triggered');
@@ -83,7 +90,6 @@
     },
 
     trackHeader: function(){
-      console.log(($(window).scrollTop() >= $('#part-2-opener').offset().top && $(window).scrollTop() < ($('#part-2-opener').offset().top + ($(window).height()/4))));
       if(($(window).scrollTop() > ($('#part-1-opener').height()/2) && $(window).scrollTop() < $('#part-2-opener').offset().top) || !($(window).scrollTop() >= $('#part-2-opener').offset().top && $(window).scrollTop() < ($('#part-2-opener').offset().top + ($(window).height()/4)))){
         $('header .words').addClass('triggered');
         setTimeout(function(){
@@ -99,11 +105,11 @@
       }
 
       if($(window).scrollTop() > $('#part-2-opener').offset().top){
-        $('nav').addClass('part-2');
-        $('nav').removeClass('part-1');
+        $('header nav a').removeClass('active');
+        $('#part-2-link').addClass('active');
       } else{
-        $('nav').addClass('part-1');
-        $('nav').removeClass('part-2');
+        $('header nav a').removeClass('active');
+        $('#part-1-link').addClass('active');
       }
     },
 
@@ -143,7 +149,7 @@
 
     preTrigger: function(element){
       switch(element.attr('data-callback')){
-        case 'adjustedStats': 
+        case 'adjustedStats':
           element.find('.player-stats').addClass('triggered');
           element.attr('data-trigger',true);
         break;
@@ -192,7 +198,7 @@
           element.find('.panel-1').removeClass('triggered');
           MADDEN.introVideo.play();
         } else if(ratio >=60 && ratio < 70 && !element.find('.panel-3').hasClass('triggered')){
-          element.find('.panel-2 h3.hidden').removeClass('hidden');          
+          element.find('.panel-2 h3.hidden').removeClass('hidden');
           element.find('.panel-2 h3.visible').addClass('hidden');
         } else if(ratio >= 70 ){
           var adjustmentRatio = 1 - ((100 - ratio)/30);
@@ -255,7 +261,7 @@
         if(currentRatio > 10){
           element.addClass('triggered');
         }
-      } 
+      }
     },
 
     showTweet: function(element,reset,done){
@@ -323,10 +329,10 @@
             MADDEN.triggerTweet(4,element)
           },50);
         } else if(ratio >= 97){
-          
+
         }
 
-        
+
       }
     },
 
@@ -363,7 +369,7 @@
           var adjustedStat = parseInt(element.find('.player-stats.first .adjusted-rating .player-rating').attr('data-final-rating'));
           var difference = adjustedStat - originalStat;
           for(var i=originalStat; i<=adjustedStat; i++){
-            MADDEN.increaseNumber(originalStat, i, element.find('.player-stats.first .adjusted-rating .player-rating'),difference);  
+            MADDEN.increaseNumber(originalStat, i, element.find('.player-stats.first .adjusted-rating .player-rating'),difference);
           }
           element.find('.player-stats.first .adjustments').addClass('triggered');
         } else if(currentRatio > 70 && !element.find('.player-stats.second').hasClass('triggered')){
@@ -373,7 +379,7 @@
           var adjustedStat = parseInt(element.find('.player-stats.second .adjusted-rating .player-rating').attr('data-final-rating'));
           var difference = adjustedStat - originalStat;
           for(var i=originalStat; i<=adjustedStat; i++){
-            MADDEN.increaseNumber(originalStat, i, element.find('.player-stats.second .adjusted-rating .player-rating'),difference);  
+            MADDEN.increaseNumber(originalStat, i, element.find('.player-stats.second .adjusted-rating .player-rating'),difference);
           }
           element.find('.player-stats.second .adjustments').addClass('triggered');
         }
@@ -412,7 +418,7 @@
         if(currentVid){
           if(currentVid.paused){
             currentVid.play();
-          }   
+          }
         }
 
         if(ratio > 95){
@@ -420,7 +426,7 @@
             currentVid.pause();
           }
         }
-             
+
         if($(window).scrollTop() >= element.offset().top && $(window).scrollTop() < (element.offset().top + element.height() - $(window).height())){
           element.removeClass('done').addClass('locked');
         } else if($(window).scrollTop() >= (element.offset().top + element.height() - $(window).height())) {
@@ -439,7 +445,7 @@
       }
       if($(event.target).hasClass('final')){
         $(MADDEN.currentVideo).animate({volume: 0}, 1000);
-        MADDEN.resetGamebreakers();            
+        MADDEN.resetGamebreakers();
 
         setTimeout(function(){
           MADDEN.currentID = 1;
@@ -486,7 +492,7 @@
             }
           });
         }
-       
+
 
       }
       $('.gamebreaker-panel[data-panel-index="'+currentIndex+'"]').addClass('previous');
@@ -510,10 +516,10 @@
       event.preventDefault();
       if(MADDEN.muted){
         MADDEN.muted = false;
-        $(MADDEN.currentVideo).stop().animate({volume: 1});  
+        $(MADDEN.currentVideo).stop().animate({volume: 1});
       } else{
         MADDEN.muted = true;
-        $(MADDEN.currentVideo).stop().animate({volume: 0});  
+        $(MADDEN.currentVideo).stop().animate({volume: 0});
       }
     },
 
@@ -522,9 +528,9 @@
         var vidID = parseInt($(this).attr('data-video-id'));
         if(vidID != MADDEN.currentID){
           $('.highlight').removeClass('highlight');
-          document.getElementById('breaker-video-'+vidID).pause();    
+          document.getElementById('breaker-video-'+vidID).pause();
           setTimeout(function(){
-            document.getElementById('breaker-video-'+vidID).currentTime = 0;    
+            document.getElementById('breaker-video-'+vidID).currentTime = 0;
           },1000);
         }
       });
@@ -537,13 +543,13 @@
         var timeout = 1000;
       } else{
         var timeout = 0;
-      }  
+      }
       setTimeout(function(){
         $('.gamebreaker-panel.active').animate({'opacity':0},250,function(){
-          
+
           $('.gamebreaker-panel.active').removeAttr('style');
           MADDEN.currentID = 1;
-          
+
           $('#gamebreaker-intro').addClass('active');
           $('.gamebreaker-panel.active').addClass('faded');
 
@@ -563,7 +569,7 @@
       $('#opener-1').addClass('triggered');
       $('#part-2-opener .part-1').addClass('trig');
       $('#part-2-opener .part-2').addClass('trig');
-
+      $('#part-2-opener .part-3').addClass('trig');
     },
 
     part2Opener:function(element,reset){
@@ -584,23 +590,22 @@
         } else if(ratio > 0 && ratio < 30){
           element.find('.part-1').removeClass('trig');
           element.find('.part-2').removeClass('trig');
+          element.find('.part-3').removeClass('trig');
         } else if(ratio >= 30 && ratio < 40){
           element.find('.part-1').addClass('trig');
           element.find('.part-2').addClass('trig');
-        } else if(ratio >= 40 && ratio < 55 && !element.find('#opener-2').hasClass('triggered')){ 
+          element.find('.part-3').addClass('trig');
+        } else if(ratio >= 40 && ratio < 55 && !element.find('#opener-2').hasClass('triggered')){
           element.find('#opener-3').removeClass('triggered');
           element.find('#opener-1').removeClass('triggered');
           element.find('#opener-2').addClass('triggered');
-          element.find(".part-2").addClass('trig');
-          element.find(".part-3").removeClass('trig');
           element.find('#opener-3').removeAttr('style');
         } else if(ratio >= 52 && ratio < 75 && !element.find('#opener-3').hasClass('triggered')){
           element.find('#opener-1').removeClass('triggered');
           element.find('#opener-2').removeClass('triggered');
           element.find('#opener-3').addClass('triggered');
-          element.find(".part-3").addClass('trig');
           element.find('#opener-3').removeAttr('style');
-        } 
+        }
         if($(window).scrollTop() >= element.offset().top && $(window).scrollTop() < (element.offset().top + element.height() - $(window).height())){
           element.removeClass('done').addClass('locked');
         } else if($(window).scrollTop() >= (element.offset().top + element.height() - $(window).height())) {
@@ -610,7 +615,7 @@
           element.find('#opener-3').css('height',exitPoint);
         } else if($(window).scrollTop() < element.offset().top){
           element.removeClass('locked').removeClass('done');
-        } 
+        }
       }
     },
 
@@ -647,7 +652,7 @@
         var ratio = MADDEN.getRatio(element);
         if(ratio > 20 && ratio < 30 && !element.hasClass('triggered')){
           var video = document.getElementById('hickey-video');
-          video.play();  
+          video.play();
         } else if(ratio >= 30 && !element.find('#video-overlay').hasClass('triggered')){
           element.find('#video-overlay').addClass('triggered');
           element.find('.stat').each(function(index,stat){
@@ -696,7 +701,7 @@
               MADDEN.increaseNumber(original, i,$(this),difference);
             }
           });
-          
+
           // var vid2 = document.getElementById('combine-video-2');
           // if(vid2){
           //   vid2.play();
@@ -746,7 +751,7 @@
     },1000);
 
     // $('video').each(function() {
-              
+
     //           $($(this)[0]).attr('src', false);
     //           $(this)[0].pause();
     //           $(this)[0].load();

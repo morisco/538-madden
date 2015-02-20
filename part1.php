@@ -1,6 +1,6 @@
-        <a name="part1"></a> 
+        <a name="part1"></a>
         <section class="full-screen opener trigger-watch" id="part-1-opener" data-callback="part1Opener">
-          
+
           <?php if(!$isMobile){ ?>
             <div class="panel video">
               <video id="intro-video" >
@@ -8,17 +8,16 @@
               </video>
             </div>
           <?php } ?>
-          
+
           <div class="panel-1 panel">
             <div class="panel-wrapper">
               <h1>How Madden Ratings Are Made</h1>
               <h2>The secret <span class="line-2">process that turns </span> NFL players into digital gods</h2>
               <h3>by neil paine</h3>
-              <h4>charts by reuben fisher-baum</h4>
               <h4>illustration by mike mcquade</h4>
             </div>
           </div>
-         
+
         </section>
         <section id="section-1" class="content-width">
           <p><span class="dropcap">H</span>unched over a keyboard, surrounded by computer monitors, Donny Moore, 37, controls the fate of the National Football League. Its players throw as hard as Moore wants. They run as fast as he says they should. And the stars of America&rsquo;s most popular sport aren&rsquo;t always delighted by his judgments.</p>
@@ -74,7 +73,7 @@
           <p>&ldquo;Basically, all players perform equally,&rdquo; Good said. &ldquo;They just wanted [to know]: ‘Do we have three outs and three strikes? You can throw the ball from third to first to put a guy out?&rsquo; &rdquo;</p>
           <p>But with the advent of licensed games, the stakes were raised. &ldquo;You want <a href="http://www.baseball-reference.com/players/g/gibsoki01.shtml" target="_blank">Kirk Gibson</a> to play differently from <a href="http://www.baseball-reference.com/players/g/gwynnto01.shtml" target="_blank">Tony Gwynn</a>,&rdquo; Good said.</p>
           <p>The method of &ldquo;Micro League Baseball&rdquo; was to algorithmically translate a player&rsquo;s real-world statistical benchmarks -- his batting average or home-run total, for instance -- into skill ratings that would presumably                <a class="footnote-link" data-expandable="entry-footnotes" href="#fn-6"><sup id="ss-6">6</sup></a> spit similar numbers back out on the other side of the simulation. It was effectively the computerized version of older board games like <a href="http://en.wikipedia.org/wiki/All_Star_Baseball" target="_blank">All-Star Baseball</a>, whose colorful <a href="http://www.angelfire.com/oh5/kahnnection/gamespinner4.gif" target="_blank">spinners</a> reduced the essence of a ballplayer to a series of probabilities, locked in an eternal marriage with chance.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-7"><sup id="ss-7">7</sup></a></p>
-          
+
           <p>But player performance is <a href="http://skepticalsports.com/?p=478" target="_blank">notoriously</a> more difficult to quantify in football than in baseball. On the gridiron, detailed individual statistics are kept for only a handful of positions, and those numbers frequently <a href="http://fivethirtyeight.com/features/randy-moss-may-well-have-been-the-greatest-receiver-of-all-time/" target="_blank">miss the whole story</a> because of interactions between 11 players on each side of the ball. Game developers quickly realized that football players, in contrast with their cousins in baseball, would need to be graded on a wider variety of skills -- and that ratings-makers would have to temper the science with a whole lot of art.</p>
           <div class="sidebar-wrapper">
             <?php if(!$isMobile){ ?>
@@ -141,7 +140,7 @@
                       <div class="adjusted-rating">
                         <p>Adjusted</p>
                         <div class="player-rating" data-final-rating="81" data-starting-rating="64">64</div>
-                      </div>                  
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -175,14 +174,14 @@
                       <div class="adjusted-rating">
                         <p>Adjusted</p>
                         <div class="player-rating" data-final-rating="80" data-starting-rating="75">75</div>
-                      </div>                  
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             <?php } ?>
           </div>
-          
+
           <p>&ldquo;Some designers and producers complain that there are too many ratings,&rdquo; Moore said of his colleagues. &ldquo;They ask, ‘How can we limit the number of ratings?&rsquo; But I would argue you make players more vanilla with fewer numbers.&rdquo;</p>
           <p>That&rsquo;s why Moore wants to continue adding categories even if it makes his job progressively more daunting. &ldquo;The developers and programmers hate this,&rdquo; he said, &ldquo;but it would be great to do more ratings.&rdquo; He then launched into an only-half-joking suggestion that the game might add a <a href="https://www.youtube.com/watch?v=sC8J6xmmhXU" target="_blank">long-snapping</a> rating someday.</p>
           <p>When Moore sits down to build a player&rsquo;s ratings for the newest version of Madden, he goes through one of two separate processes, depending on whether the player is a veteran or a rookie. Each type of player offers its own challenges. Veterans have existing ratings from previous games, but the degree to which each of their categories must be changed is uncertain. Rookies, meanwhile, must be created completely from scratch.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-11"><sup id="ss-11">11</sup></a></p>
@@ -327,7 +326,7 @@
               </div>
               <a href="#" class="start-gamebreakers next final">Continue Reading</a>
               <a href="#" class="mute-video">Mute Video</a>
-            </div>              
+            </div>
         </section>
         <?php } ?>
         <section id="section-3" class="content-width">
@@ -342,7 +341,7 @@
             <?php if(!$isMobile){ ?>
               <div class="sidebar">
                 <blockquote>
-                  “Quarterback decision-making is the most difficult thing to simulate,” Moore said. 
+                  “Quarterback decision-making is the most difficult thing to simulate,” Moore said.
                 </blockquote>
               </div>
             <?php } ?>
@@ -369,7 +368,7 @@
                 <li id="fn-2"><span>Including practice-squad members, free agents and other fringe players.<a class="footnote-back" href="#ss-2"> ^</a></span></li>
                 <li id="fn-3"><span>The namesake of retired coach and commentator John Madden.<a class="footnote-back" href="#ss-3"> ^</a></span></li>
                 <li id="fn-4"><span>Their equipment styles, for instance.<a class="footnote-back" href="#ss-4"> ^</a></span></li>
-                <li id="fn-5"><span>Good rightly cautioned me about the imprudence of declaring anything in gaming a definitive &ldquo;first,&rdquo; given the variety -- and, just as often, the obscurity -- of games and platforms in the medium&rsquo;s history.<a class="footnote-back" href="#ss-5"> ^</a></span></li>                
+                <li id="fn-5"><span>Good rightly cautioned me about the imprudence of declaring anything in gaming a definitive &ldquo;first,&rdquo; given the variety -- and, just as often, the obscurity -- of games and platforms in the medium&rsquo;s history.<a class="footnote-back" href="#ss-5"> ^</a></span></li>
                 <li id="fn-6"><span>It&rsquo;s impossible to say because &ldquo;Micro League&rdquo; didn&rsquo;t actually have the capacity to track statistics from simulated games.<a class="footnote-back" href="#ss-6"> ^</a></span></li>
                 <li id="fn-7"><span>Perhaps it&rsquo;s no coincidence that in another region of the baseball universe, the field of sabermetrics was tracing a parallel path at roughly the same time. Both endeavors were seeking to distill a player&rsquo;s on-field performance to its numerical core, albeit for somewhat different purposes.<a class="footnote-back" href="#ss-7"> ^</a></span></li>
                 <li id="fn-8"><span>Acceleration, agility, hands, strength, speed, endurance, intelligence and discipline.<a class="footnote-back" href="#ss-8"> ^</a></span></li>
@@ -384,7 +383,7 @@
                 <li id="fn-17"><span>Brady and Rodgers boast throwing power ratings of 93 and 95, respectively; Manning sits at 85.<a class="footnote-back" href="#ss-17"> ^</a></span></li>
                 <li id="fn-18"><span>Both Wayne and White boast speed ratings beneath the average of 90 for receivers in Madden 15.<a class="footnote-back" href="#ss-18"> ^</a></span></li>
               </ol>
-              
+
           </div><!-- .entry-footnotes-content -->
         </div><!-- .entry-footnotes -->
         <div id="entry-comments" class="entry-comments fte-expandable">
