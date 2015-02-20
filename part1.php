@@ -82,7 +82,7 @@
           <div class="sidebar-wrapper trigger-watch chalk-talk" data-callback="chalkTalk">
             <p>Tecmo Super Bowl</p>
             <p><img src="img/tecmo.jpg" alt="Tecmo Super Bowl"  width="530" height="329"/></p>
-            <p><img src="img/front-page-sports.jpg" alt="Font Page Spors: Pro Football" width="530" height="420" /></p>
+            <p><img src="img/front-page-sports.jpg" alt="Front Page Spors: Pro Football" width="530" height="420" /></p>
             <p>Front Page Sports: Football Pro</p>
             <div class="cb"></div>
             <div class="sidebar chalk-talk">
