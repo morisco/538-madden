@@ -78,7 +78,7 @@ body{
 #madden .content-width{ width:97.5%; max-width:1250px; margin:0 auto; }
 #madden .content-width p{ width:45%; max-width:530px; margin:0 auto 1em; }
 #madden .content-width p.chart{ margin:50px auto;}
-#madden .caption{ display:inline-block; margin-top:10px; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:13px;}
+#madden .caption{ display:inline-block; margin-top:10px; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; color:#999; }
 #madden .dropcap { float: left; font-size: 64pt; line-height: 50%; padding-top: 19px; padding-right: 20px; padding-left: 0px; padding-bottom:10px; }
 
 #madden .ornamental-rule{ width:45%; max-width:530px; margin:0px auto 40px; padding:20px 0 0;}
@@ -112,7 +112,7 @@ body{
 #madden .chalk.bottom{ bottom:10px; }
 #madden .adjusted-stats .player-stats{ position:relative; margin:0 0 100px;}
 #madden .adjusted-stats .stat-card h4{ font-size:16px; font-family:'Decima'; letter-spacing:2px; line-height:140%; }
-#madden .adjusted-stats .stat-card h4 .yellow{ font-size:18px; font-family:'AtlasGroteskWeb'; letter-spacing:0.03em; font-weight:bold; }
+#madden .adjusted-stats .stat-card h4 .yellow{ font-size:16px; font-family:'AtlasGroteskWeb'; letter-spacing:1px; font-weight:bold; }
 #madden .adjusted-stats .stat-card{ margin:0; background:#007b3f; width:100%; color:#fff; text-align:center; padding-bottom:15px; text-transform:uppercase;}
 #madden .adjusted-stats .stat-card .headshot{ position:relative; height:75px; display:block; width:100%; ; }
 #madden .adjusted-stats .stat-card .headshot img{ position:absolute; top:-40px; left:50%; display:block;  vertical-align:bottom; transform:translateX(-50%); -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%);}
@@ -124,10 +124,10 @@ body{
 #madden .adjusted-stats .player-bio h5{ font-size:15px; margin-bottom:15px; font-weight:700; line-height:140%;}
 #madden .adjusted-stats .player-bio h5 .black{ color:#000; font-size:16px;}
 #madden .adjusted-stats .adjustments{ width:100%; border-bottom:1px solid #007b3f; text-align:center; padding:0 0 10px; color:#000;}
-#madden .adjusted-stats .adjustments h5{ border-top:1px solid #007b3f; border-bottom:1px dashed #007b3f; width:100%; padding:5px 0; font-size:15px; letter-spacing:0.03em; text-align:center; font-weight:700; }
+#madden .adjusted-stats .adjustments h5{ border-top:1px solid #007b3f; border-bottom:1px dashed #007b3f; width:100%; padding:5px 0; font-size:14px; letter-spacing:0.03em; text-align:center; font-weight:700; }
 #madden .adjusted-stats .adjustments .original-rating, #madden .adjusted-stats .adjustments .adjusted-rating{ display:inline-block; padding:11px 20px; width:100px; }
 #madden .adjusted-stats .adjustments p{ margin:0 0 15px; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px; padding:0;}
-#madden .adjusted-stats .adjustments img{ display:inline-block; width:35px; margin-left:10px;}
+#madden .adjusted-stats .adjustments img{ display:inline-block; width:30px; margin-left:10px;}
 #madden .adjusted-stats .adjustments .player-rating{ font-size:55px; font-family:'Decima';letter-spacing:2px; }
 #madden .adjusted-stats .stat-hidden{  max-height:0; height:0; opacity:0; overflow:hidden; transition:all 1s ease-in; -webkit-transition:all 1s ease-in; }
 #madden .adjusted-stats .player-stats.triggered .stat-hidden{ display:block;height:auto; max-height:10000px; opacity:1;}
@@ -183,10 +183,11 @@ body{
 #madden #gamebreakers .breaker-profile .talent .yellow{ color:#fff100; line-height:26px; }
 #madden #gamebreakers .breaker-profile .talent:nth-child(1){ border:0px; }
 
-
-#madden #interactive{ width:1024px; max-width:98%; height:600px; margin:55px auto 100px;}
+#madden #interactive{ width:1024px; max-width:98%; margin:55px auto 100px;}
 #madden #interactive h3{ text-align:center; color:#40ad48; letter-spacing: 2px; font-size: 16px; margin-bottom: -10px; z-index: 5; position: relative}
-#madden #interactive iframe{ width:100%; height:600px; position:relative; z-index:0;}
+#madden #interactive iframe{ width:100%; position:relative; z-index:0;}
+
+#madden #doublewide{ width:1024px; max-width:98%; margin:50px auto; }
 
 #madden #hickey-stat{ opacity:0; transition:all 1s; -webkit-transition:all 1s; }
 #madden .triggered #hickey-stat{ opacity:1; }
@@ -200,9 +201,9 @@ body{
 #madden #combines p{ margin-bottom:50px; font-weight:bold; letter-spacing:0.03em; }
 #madden #combines .combine{ margin:0 0 100px; }
 #madden #combines video{ max-width:100%; }
-#madden #combines .combine h3{ font-size:26px; letter-spacing:2px; }
-#madden #combines .combine .stat{ width:100%; padding:20px 0; border-bottom:1px dashed #000; font-size:13px; vertical-align:middle; font-weight:700; letter-spacing:0.03em; background:url(/madden/img/arrow.svg); background-size:10px; background-repeat:no-repeat; background-position:left center; padding-left:15px;}
-#madden #combines .combine .stat .stat-number{ font-size:26px; display:inline-block; text-align:right; vertical-align:middle; float:right; font-family:'Decima'; letter-spacing:2px; font-weight:normal; }
+#madden #combines .combine h3{ font-size:20px; letter-spacing:2px; }
+#madden #combines .combine .stat{ width:100%; padding:20px 0; border-bottom:1px dashed #999; font-size:13px; vertical-align:middle; font-weight:700; letter-spacing:0.03em; background:url(/madden/img/arrow.svg); background-size:10px; background-repeat:no-repeat; background-position:left center; padding-left:15px;}
+#madden #combines .combine .stat .stat-number{ font-size:20px; display:inline-block; text-align:right; vertical-align:middle; float:right; font-family:'Decima'; letter-spacing:2px; font-weight:normal; }
 
 #madden #video{position:relative; overflow:hidden;}
 #madden #hickey-video{ min-height:100%; max-width:300%; min-width:100%; position:absolute; top:0px; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); z-index:0; }

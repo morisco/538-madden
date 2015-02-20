@@ -35,7 +35,7 @@
         <section class="trigger-watch quote-1" data-callback="fullQuote" id="quote-image">
           <h2 class="quote">Madden has generated more than $4 billion in revenue over its 26-year lifetime. Yet for all of EA&rsquo;s resources, Moore performs his czar duties in surprising solitude.</h2>
           <img src="img/full-width-1.jpg" alt="Donny Moore at his cubicle at EA" />
-          <div class="caption">Donny Moore at his cubicle at EA</div>
+          <div class="caption">Donny Moore at his cubicle at EA / Photo by Erika Larsen</div>
         </section>
         <section id="section-2" class="content-width">
           <p><span class="dropcap">O</span>n the early December day I visited his cramped cubicle, tucked away in a corner of an office building on the EA Sports campus near Orlando, Moore was putting the last touches on a <a herf="http://www.easports.com/madden-nfl/news/2014/mark-sanchez-madden-ratings?utm_campaign=mad15-social-global-ic-tw-rosterupdate-wk14-120414-mad-tw-img-site-sust&utm_source=twitter&utm_medium=social&sourceid=mad15-social-global-ic-tw-rosterupdate-wk14-120414-mad-tw-img-site-sust&cid=31592&ts=1421076967142" target="_blank">roster update</a> that would be downloaded later in the week by PlayStation and Xbox owners around the globe. When he was finished, 577 players saw some aspect of their skills re-evaluated on the basis of the previous week&rsquo;s action. It&rsquo;s an activity that Moore repeats every week of the season in an attempt to ensure that Madden imitates NFL reality.</p>
@@ -79,7 +79,7 @@
             <?php if(!$isMobile){ ?>
               <div class="sidebar">
                 <blockquote>
-                  Player performance is notoriously more difficult to quantify in football than in baseball.
+                  Player <br/>performance is <br/>notoriously<br/> more difficult<br/> to quantify in<br/> football than<br/> in baseball.
                 </blockquote>
               </div>
             <?php } ?>
@@ -198,7 +198,6 @@
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
           <div id="interactive">
             <h3>Interactive</h3>
-            <iframe src="http://staging.projects.fivethirtyeight.com.s3-website-us-east-1.amazonaws.com/madden-scores/" scrolling="no"></iframe>
             <!-- Insert Interactive Here -->
           </div>
 
@@ -207,8 +206,9 @@
           <p>For example, the most heavily weighted categories for quarterbacks in “Madden NFL 15” are awareness and throwing power (each contributes about one-fifth of a quarterback’s overall rating), accuracy by zone (short and medium accuracy are both slightly more valuable than deep accuracy), and play action passing. Together, those categories make up 89 percent of the overall grade for QBs, with the rest of the weight given to throwing on the run, agility, speed and acceleration.</p>
           <p>By comparison, wide receivers see a large portion of their value driven by speed, route-running, awareness and catching, which together make up about half of the overall grade at the position. The tail for important ratings at receiver is <a href="http://en.wikipedia.org/wiki/Long_tail" target="_blank">longer</a> than for quarterbacks, though: Catching in traffic, jumping, release (which measures a receiver’s ability to freely run from the line of scrimmage against <a href="https://www.youtube.com/watch?v=SJdXTzkoVfE" target="_blank">press coverage</a>), and spectacular catching make up nearly a quarter of a WR’s overall rating, with after-the-catch attributes such as acceleration, agility, carrying, elusiveness, ball-carrier vision, jukes, spin moves, <a href="http://www.maddentips.com/madden-13-tips-truck-stick-running-game/" target="_blank">trucking</a> and even stiff arms also getting 29 percent weight in the overall formula.</p>
           <p>Ever controversial, the overall rating is a proxy for a player&rsquo;s all-around effectiveness on the virtual field (and, presumably, the real one as well). But how well do the ratings track with actual player performance? To get a sense of the relationship between simulation and reality, we compared players&rsquo; overall Madden ratings at the start of each season to their Expected Points Added:</p>
-          <p class="chart"><img src="img/graphs/paine-feature-madden-1.png" alt="Madden and NFL QB Performance Graph" /></p>
-          <p class="chart"><img src="img/graphs/paine-feature-madden-2.png" alt="Madden and NFL QB Performance Graph" /></p>
+          <div id="doublewide">
+            <img src="img/graphs/paine-feature-madden-4.png" />
+          </div>
           <!-- Insert QB/WR Comparison Chart -->
           <p>Madden's ratings don&rsquo;t perfectly match each player's seasonal performance, although estimates of a player's underlying &ldquo;quality&rdquo; may be distinct from the more random ups-and-downs of an NFL career. The ratings do appear sensitive to some reputation-based tweaking:  Eli Manning -- with his pedigree and two Super Bowl rings -- outrated Phillip Rivers in six of their 11 seasons, despite putting up a better Expected Points Added figure in just three of those seasons.</p>
           <p>In addition, the effects of the ratings on actual gameplay can be arcane for even the most seasoned Madden veterans. Perhaps no one outside of EA Sports has spent more time contemplating Madden&rsquo;s inner workings than SB Nation&rsquo;s Jon Bois, the creator of <a href="http://www.sbnation.com/breaking-madden" target="_blank">Breaking Madden</a>, a football column that doubles as an absurdist meditation on the game itself. But Bois confessed that he still can&rsquo;t quite figure out what some of the rating categories actually do for players on the virtual gridiron.</p>

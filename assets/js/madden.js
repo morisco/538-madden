@@ -192,7 +192,7 @@
             MADDEN.introVideo.currentTime = 0;
             MADDEN.videoPlaying = false;
           }
-        } else if(ratio >= 38 && ratio < 60 && !MADDEN.videoPlaying){
+        } else if(ratio >= 45 && ratio < 60 && !MADDEN.videoPlaying){
           MADDEN.videoPlaying = true;
           MADDEN.watchIntro();
           element.find('.panel-1').removeClass('triggered');
@@ -747,8 +747,10 @@
       window.finalTweet = false;
 
       MADDEN.initApp();
+      var pymParent = new pym.Parent('interactive', 'http://staging.projects.fivethirtyeight.com.s3-website-us-east-1.amazonaws.com/madden-scores/', {});
 
     },1000);
+
 
     // $('video').each(function() {
 
