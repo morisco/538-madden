@@ -85,7 +85,7 @@
             <p><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/front-page-sports.jpg" alt="Front Page Spors: Pro Football" width="530" height="420" />/p>
             <div class="cb"></div>
             <div class="sidebar chalk-talk">
-              <img class="x-o-o" src="img/chalk-o-green.png" />
+              <img class="x-o-o" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>img/chalk-o-green.png" />
               <p><strong>Tecmo Super Bowl</strong><br/>Nintendo&rsquo;s seminal football game was released in 1991, and included only six rating categories. The game wasn&rsquo;t super realistic. Bo Jackson was an all-time great in the NFL; he was superhuman in Tecmo.</p>
               <p><strong>Front Page Sports: Football Pro</strong><br/>Sierra Online&rsquo;s Front Page Sports: Football Pro, regarded as the most realistic football simulation of its time, came out in 1993 and included eight ratings.</p>
               <img class="x-o-x" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x-green.png" />
