@@ -1,4 +1,4 @@
-<a name="part2"></a> 
+<a name="part2"></a>
          <section  class="full-screen opener trigger-watch " id="part-2-opener" data-callback="part2Opener">
           <div class="panel" id="opener-1"></div>
           <div class="panel" id="opener-2"></div>
@@ -176,7 +176,7 @@
           <p>Despite the praise during practice — that I had more of an offensive-guard skill set, that I could be a tight end, that I was &ldquo;a real north and south kind of player&rdquo; — when it comes down to it, I&rsquo;m clumsy and awkward, my limbs don&rsquo;t quite go where I want them to go, and at best, it&rsquo;s just fun to watch me. Generally speaking, I don&rsquo;t think a regular person could compete with the pros. Most people are, at best, somewhat good at something. But greatness — regularly scheduled weekly articulations of greatness — is something that just can&rsquo;t be turned on.</p>
           <p>I asked Moore whether there were any sports that regular people could jump into and be somewhat competitive. </p>
           <p>&ldquo;Poker, if you consider that a sport,&rdquo; he said.</p>
-          <p>Mohegan Sun has <a href="http://mohegansun.com/playing/poker.html" target="_blank">a poker tournament</a> at the end of the month. How hard can that be?</p>  
+          <p>Mohegan Sun has <a href="http://mohegansun.com/playing/poker.html" target="_blank">a poker tournament</a> at the end of the month. How hard can that be?</p>
         </section>
 
         <div id="entry-footnotes" class="fte-expandable">
@@ -205,4 +205,3 @@
             <p>Walt Hickey is FiveThirtyEight’s lead writer for lifestyle.</p>
           </div>
         </div>
-     
