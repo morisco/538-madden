@@ -82,7 +82,7 @@
           <div class="sidebar-wrapper trigger-watch chalk-talk" data-callback="chalkTalk">
 
             <p><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/tecmo.jpg" alt="Tecmo Super Bowl"  width="530" height="329"/></p>
-            <p><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/front-page-sports.jpg" alt="Front Page Spors: Pro Football" width="530" height="420" />/p>
+            <p><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/front-page-sports.jpg" alt="Front Page Sports: Pro Football" width="530" height="420" /></p>
             <div class="cb"></div>
             <div class="sidebar chalk-talk">
               <img class="x-o-o" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o-green.png" />
