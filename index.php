@@ -18,6 +18,12 @@
 
 				define( 'FTE_MADDEN_DAY_2', true ); // set to true on day 2
 
+				if ( ! function_exists( 'esc_url' ) ) {
+					function esc_url( $s ) {
+						return $s;
+					}
+				}
+
 				class MaddenSpecial {
 					function special_directory_uri() {}
 				}
