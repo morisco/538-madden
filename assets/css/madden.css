@@ -16,13 +16,15 @@ body{
 #madden header.triggered{ background:#c4380c;}
 #madden header .header-wrapper{ width: 100%; padding:0 15px;   margin:0 auto; }
 #madden header .logo{ position:relative; display:inline-block; padding:12px 20px 12px 0; }
-#madden header .logo .words{ opacity:1; transition:opacity 0.5s; -webkit-transition:opacity 0.5s; }
-#madden header .logo .words.triggered{ opacity:0; }
-#madden header .logo .fox{ position:absolute; top:10px; left:20px; height:20px; opacity:0; transition:all 0.5s; -webkit-transition:all 0.5s; }
-#madden header .logo .fox.triggered{ opacity:1; }
-#madden header nav{ position:absolute; top:8px; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); font-size:16px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; }
+#madden header .logo .words{ opacity:0; transition:opacity 0.5s; -webkit-transition:opacity 0.5s; }
+#madden header.triggered .logo .words{ opacity:1; }
+#madden header .logo .fox{ position:absolute; top:10px; left:20px; height:20px; opacity:1; transition:all 0.5s; -webkit-transition:all 0.5s; }
+#madden header.triggered .logo .fox{ opacity:0; }
+#madden header nav{ position:absolute; top:8px; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); font-size:16px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; opacity:1; transition:opacity 1s; -webkit-transition:opacity 1s; }
+#madden header.triggered nav{ opacity:0; }
 #madden header .social-links a,
-#madden header nav a{ display:inline-block; padding:0px 0 0 10px; line-height:105%; color:#fff; font-size:14px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; vertical-align:middle; transition:all 1s; -webkit-transition:all 1s;}
+#madden header nav a{ display:inline-block; padding:0px 10px 0 0; line-height:105%; color:#fff; font-size:14px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; vertical-align:middle; transition:all 1s; -webkit-transition:all 1s;}
+#madden header nav a.title-bar{ padding:0px 5px 0 0;}
 #madden header nav a.active{ color:#fff100; }
 #madden header .social-links a.title-bar{ cursor:default; text-decoration:none;}
 #madden header .social-links a.social{ padding:12px 5px 12px 0; }
@@ -37,6 +39,8 @@ body{
 #madden section{ clear:both; }
 
 #madden blockquote{ font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:24px; color:#40ad48; text-decoration:none; line-height:130%; font-weight:bold; padding:0; max-width:80%;}
+
+#madden sup{ font-family:"AtlasGroteskWeb"; font-size:12px;}
 
 #madden .full-screen{ position:relative; width:100%; height:100vh; margin:110px 0;  background-size:cover; background-position:center center; }
 #madden .full-screen.opener{ margin-top:0px; }
@@ -70,7 +74,7 @@ body{
 #madden #quote-image h2.quote{ position:absolute; top:2%; opacity:0; left:3%; width: 20%; color:#40ad48; text-decoration:none; font-size:24px; line-height:130%; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; transition:all 1s ease-in-out; -webkit-transition:all 1s ease-in-out; }
 #madden #quote-image.triggered h2.quote{ top:5%; opacity:1;}
 #madden #quote-image img{ display: inline-block;  vertical-align: bottom;}
-#madden #quote-image .caption{ text-align:right; width:100%; }
+#madden #quote-image .caption{ text-align:right; width:100%; font-size:12px;  }
 /*#madden #quote-image .caption{ position:absolute; bottom:20px; left:3%; color:#fff; font-size:13px; }*/
 
 #madden .percent{ width:0%; height:20px; background:red; transition:width 0.001s; -webkit-transition:all 1s ease-in-out;}
@@ -127,7 +131,7 @@ body{
 #madden .adjusted-stats .adjustments h5{ border-top:1px solid #007b3f; border-bottom:1px dashed #007b3f; width:100%; padding:5px 0; font-size:14px; letter-spacing:0.03em; text-align:center; font-weight:700; }
 #madden .adjusted-stats .adjustments .original-rating, #madden .adjusted-stats .adjustments .adjusted-rating{ display:inline-block; padding:11px 20px; width:100px; }
 #madden .adjusted-stats .adjustments p{ margin:0 0 15px; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px; padding:0;}
-#madden .adjusted-stats .adjustments img{ display:inline-block; width:30px; margin-left:10px;}
+#madden .adjusted-stats .adjustments img{ display:inline-block; width:25px; margin-left:10px; margin-bottom:4px;}
 #madden .adjusted-stats .adjustments .player-rating{ font-size:55px; font-family:'Decima';letter-spacing:2px; }
 #madden .adjusted-stats .stat-hidden{  max-height:0; height:0; opacity:0; overflow:hidden; transition:all 1s ease-in; -webkit-transition:all 1s ease-in; }
 #madden .adjusted-stats .player-stats.triggered .stat-hidden{ display:block;height:auto; max-height:10000px; opacity:1;}
@@ -171,7 +175,8 @@ body{
 #madden #gamebreakers .start-gamebreakers, #madden #gamebreakers .start-gamebreakers.trigger{ position:relative; padding:8px 22px; margin:0 auto; left:auto; bottom:auto; width:auto; height:auto; color:#fff100; font-size:16px; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px; border: 2px solid #fff100;  background:transparent; cursor:pointer; transform:translate(0,0); -webkit-transform:translate(0,0); transition:all 1s; -webkit-transition:all 1s;}
 #madden #gamebreakers .start-gamebreakers.next{ position:absolute; bottom:20px; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); }
 #madden #gamebreakers .start-gamebreakers:hover{ color:#fff; text-decoration:none;}
-#madden #gamebreakers .mute-video{position:absolute; bottom:20px; right:20px; background:#fff; color:#000;}
+#madden #gamebreakers .mute-video{position:absolute; bottom:5px; right:20px; height:30px; width:30px; background-image:url(/madden/img/mute.gif); background-size:100%; text-indent:-55555px; cursor:pointer;}
+#madden #gamebreakers .mute-video.muted{ background-image:url(/madden/img/muted.gif); }
 
 #madden #gamebreakers .breaker-profile{ position:absolute; top:50%; left:10%; width:300px; transform:translateY(150%); -webkit-transform:translateY(150%); background:rgba(0,58,13,0.8); padding:10px 15px;  overflow:visible; color:#fff; transition:opacity 0.75s, transform 0.75s ease-in-out; -webkit-transition:opacity 0.75s, transform 0.75s ease-in-out; }
 #madden #gamebreakers .show-bio .breaker-profile{ opacity:1; transform:translateY(-45%); -webkit-transform:translateY(-45%);}
@@ -189,14 +194,14 @@ body{
 
 #madden #doublewide{ width:1024px; max-width:98%; margin:50px auto; }
 
-#madden #hickey-stat{ opacity:0; transition:all 1s; -webkit-transition:all 1s; }
+#madden #hickey-stat{ opacity:0; width:175px; margin:0 auto; transition:all 1s; -webkit-transition:all 1s; }
 #madden .triggered #hickey-stat{ opacity:1; }
 #madden #hickey-stat .hickey-image{ position:relative; display:block; margin:0 auto; z-index:1;}
-#madden #hickey-stat .hickey-bio{ position:relative; margin:-55px 0 0; padding:70px 15px 0; background:#007b3f; width:100%; color:#fff; text-align:center; padding-bottom:15px;  z-index:0; text-align:left; }
-#madden #hickey-stat .stat-wrap{  border-top:1px dashed #fff; padding:13px 0; text-align:center; }
-#madden #hickey-stat .stat-wrap.solid-border-top{  border-top:2px solid #fff; }
-#madden #hickey-stat .stat-wrap .stat{ font-size:22px; color:#fff100; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px;}
-#madden #hickey-stat .stat-wrap .stat-note{ font-size:14px; color:#fff; letter-spacing:0.03em; }
+#madden #hickey-stat .hickey-bio{ position:relative; margin:-55px 0 0; padding:70px 15px 0;  width:100%; color:#fff; text-align:center; padding-bottom:15px;  z-index:0; text-align:left; }
+#madden #hickey-stat .stat-wrap{  border-top:1px dashed #007b3f; padding:10px 0; text-align:center; line-height:115%; }
+#madden #hickey-stat .stat-wrap.solid-border-top{  border-top:2px solid #007b3f; }
+#madden #hickey-stat .stat-wrap .stat{ font-size:16px; color:#000; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px;}
+#madden #hickey-stat .stat-wrap .stat-note{ font-size:14px; color:#999; letter-spacing:0.03em; line-height:100%;}
 
 #madden #combines p{ margin-bottom:50px; font-weight:bold; letter-spacing:0.03em; }
 #madden #combines .combine{ margin:0 0 100px; }
@@ -217,9 +222,14 @@ body{
 #madden #video #video-overlay .stat.triggered,
 #madden #video #video-overlay .stat.name.triggered{ margin-left:50px; opacity:1; }
 
-#madden #entry-footnotes, #madden #entry-comments{ width:95%; max-width: 530px; margin: 60px auto 20px; clear:both; }
+#madden #entry-footnotes, #madden #entry-comments{ width:95%; max-width: 1024px; margin: 60px auto 20px; clear:both; }
 #madden #entry-footnotes li{  margin-top:-50px; padding-top:50px; }
-#madden .post-author{ width:95%; max-width:530px; margin:0 auto 30px; padding-top:20px; border-top:1px solid #D1D3D4;}
+#madden .post-author{ width:95%; max-width:1024px; margin:0 auto 30px; padding-top:20px; border-top:1px solid #D1D3D4;}
+
+@media (max-width : 1100px){
+  #madden .content-width p{ float:right; clear:both; margin-right:10%;}
+  #madden .content-width p.chart{ width:45%; margin-right:10%;}
+}
 
 @media (max-width : 768px){
   #madden #part-1-opener,
@@ -231,6 +241,8 @@ body{
   #madden #part-1-opener.done .panel,
   #madden #part-2-opener.locked .panel,
   #madden #part-2-opener.done .panel{ position:absolute; top:0;}
+  #madden #part-2-opener .part-3{ transform:translate(0,0); -webkit-transform:translate(0,0);}
+
   #madden .content-width p{ float:right; clear:both; width:50%; margin-right:5%; }
   #madden .ornamental-rule{ float:right; clear:both; margin-right:5%; width:50%;}
   #madden .content-width .sidebar p{ float:none; margin-right:auto;}
@@ -240,16 +252,28 @@ body{
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-
+  #madden #part-1-opener{ background:url(/madden/img/full-screen.jpg); background-size:cover; background-position:center center; }
   #madden #part-1-opener .panel{ opacity:1; }
+  #madden .panel .panel-wrapper{ top:calc(50% + 20px); }
+  #madden .panel h1,
+  #madden .panel h2{ font-size:94px; max-width:100%; line-height:98%; }
+  #madden .panel h3{ font-size:30px; margin-top:20px; }
+
+  #madden #part-2-opener #opener-1,
+  #madden #part-2-opener #opener-3{ display:none; }
+  #madden #part-2-opener #opener-2{ opacity:1 !important; background-position:center center;}
+
+
+  #madden .panel h2 .line-2{display:inline;}
   #madden .full-screen{ height: 648px; margin:75px 0; }
   #madden .full-screen.quote-1 h2.quote{ width:40%; font-size:26pt; line-height:36pt;}
   #madden .content-width p{ float:right; clear:both; width:50%; margin-right:5%; }
   #madden .ornamental-rule{ float:right; clear:both; margin-right:5%; width:50%;}
   #madden .content-width .sidebar p{ float:none; margin-right:auto;}
   #madden .content-width p.chart{ width:50%;  margin:20px 5% 50px 0;}
-  #madden #interactive{ float:right; width:50%; margin:55px 5% 55px 0; height:1600px;}
-  #madden #interactive iframe{ height:1600px; }
+  #madden #interactive{  margin:55px auto 55px; }
+  #madden #combines .combine{ margin-bottom:50px;}
+  #madden #combines p{ margin-bottom:20px; }
 
 
 
@@ -289,13 +313,47 @@ body{
   #madden #video video{ height:100%; }
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+  #madden #part-1-opener,
+  #madden #part-2-opener{ height:100vh; }
+  #madden #part-2-opener .part-1,
+  #madden #part-2-opener .part-2,
+  #madden #part-2-opener .part-3{ opacity:1; }
+  #madden #part-1-opener.locked .panel,
+  #madden #part-1-opener.done .panel,
+  #madden #part-2-opener.locked .panel,
+  #madden #part-2-opener.done .panel{ position:absolute; top:0;}
+  #madden #part-1-opener{ background:url(/madden/img/full-screen.jpg); background-size:cover; background-position:center center; height:100vh; }
+  #madden .panel h1,
+  #madden .panel h2{ font-size:90px; max-width:100%; line-height:95%; }
+  #madden .panel h3{ font-size:30px; margin-top:20px; }
+  #madden #part-2-opener #opener-1,
+  #madden #part-2-opener #opener-3{ display:none; }
+  #madden #part-2-opener #opener-2{ opacity:1 !important;}
+  #madden .panel h2 .line-2{display:inline;}
+  #madden .content-width p.chart{ width:45%; }
+
+}
+
 @media( max-width: 600px ){
-  #madden #part-1-opener.done .panel
+  #madden #part-1-opener{ background:url(/madden/img/full-screen.jpg); background-size:cover; background-position:-230px center; height:100vh; }
+  #madden #part-2-opener{ background-color:#000; background-image:url(/madden/img/mobile-part-1.jpg); background-position:center bottom; background-size:100%; background-repeat:no-repeat;}
+  #madden #part-2-opener #opener-1,
+  #madden #part-2-opener #opener-2,
+  #madden #part-2-opener #opener-3{ display:none;}
+  #madden #part-2-opener .panel-wrapper{ top:60px; transform:translate(0); -webkit-transform:translate(0);}
+  #madden #part-1-opener .panel-wrapper{ top:50%; }
+  #madden .panel h1,
+  #madden .panel h2{ font-size:40px; line-height:95%; letter-spacing:1px;}
+  #madden .panel h3{ margin:0; }
+  #madden .panel h4{ display:none; }
+
+  #madden #part-1-opener .panel-1{ opacity:1 !important;}
   #madden header .header-wrapper{ padding:0; }
   #madden header nav{top:5px; }
   #madden header nav a{ padding:5px 8px; }
   #madden header .logo .words{ display:none; }
-  #madden header .logo .fox{ opacity:1; }
+  #madden header .logo .fox{ opacity:1 !important; }
   #madden .content-width p{ width:98%; margin:0 auto 1em; float:none;}
   #madden #quote-image h2.quote{display:none;}
   #madden .panel h2 .line-2{ max-width: 98%;}
@@ -307,16 +365,25 @@ body{
   #madden #quote-image{ margin:50px 0;}
   #madden #video-overlay{ display:none; }
   #madden header a.title-bar.parttwo{ display:none;}
+  #madden .content-width p.chart{ width:97.5%; margin:0 auto; }
+
   .x-o-o,.x-o-x{display:none;}
   #part-2-link{ border-left:1px solid #fff; }
 
   #madden #hickey-stat{ opacity:1; }
 
   #madden #combines .combine img{ width:100%; }
+  #madden #combines p{ margin-bottom:20px; }
+  #madden #combines .combine{ margin-bottom:20px; }
 
   #madden .content-width .sidebar{ width:97.5%; margin:50px auto; position:relative; }
   #madden .content-width .sidebar.chalk-talk{ margin:0 auto; }
   #madden .content-width .sidebar.chalk-talk p{ margin-right:auto; }
 
   #madden .content-width .sidebar.chalk-talk{ position:relative; top:auto; transform:translate(0,0); -webkit-transform:translate(0,0);}
+}
+
+@media( max-height:400px ){
+  #madden .panel h1,
+  #madden .panel h2{ font-size:36px; line-height:95%; letter-spacing:1px;}
 }

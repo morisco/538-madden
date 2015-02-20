@@ -16,7 +16,7 @@
       <?
       require_once 'Mobile_Detect.php';
       $detect = new Mobile_Detect;
-      if ( $detect->isMobile() ) { $isMobile = true; } else { $isMobile = false; }
+      if ( $detect->isMobile() && !$detect->isTablet() ) { $isMobile = true; } else { $isMobile = false; }
       ?>
       <div id="madden" class="entry-content">
         <?php require('header-part-2.php'); ?>

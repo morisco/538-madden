@@ -75,33 +75,19 @@
         $('#part-1-link').addClass('active');
       }
       if($(window).scrollTop() > 100 && window.location.hash != 'part2'){
-        $('header .words').addClass('triggered');
-        setTimeout(function(){
-          $('header').removeClass('triggered');
-          $('header .fox').addClass('triggered');
-        },250);
+        $('header').removeClass('triggered');
       } else{
-        $('header .fox').removeClass('triggered');
-        setTimeout(function(){
-          $('header').addClass('triggered');
-          $('header .words').removeClass('triggered');
-        },250);
+        $('header').addClass('triggered');
       }
     },
 
     trackHeader: function(){
-      if(($(window).scrollTop() > ($('#part-1-opener').height()/2) && $(window).scrollTop() < $('#part-2-opener').offset().top) || !($(window).scrollTop() >= $('#part-2-opener').offset().top && $(window).scrollTop() < ($('#part-2-opener').offset().top + ($(window).height()/4)))){
-        $('header .words').addClass('triggered');
-        setTimeout(function(){
-          $('header').removeClass('triggered');
-          $('header .fox').addClass('triggered');
-        },250);
+      if($(window).scrollTop() < ($('#part-1-opener').height()/2)){
+        $('header').addClass('triggered');
+      } else if(($(window).scrollTop() > ($('#part-1-opener').height()/2) && $(window).scrollTop() < $('#part-2-opener').offset().top) || !(($(window).scrollTop() + 40) >= $('#part-2-opener').offset().top && $(window).scrollTop() < ($('#part-2-opener').offset().top + ($(window).height()/2)))){
+        $('header').removeClass('triggered');
       } else{
-        $('header .fox').removeClass('triggered');
-        setTimeout(function(){
-          $('header').addClass('triggered');
-          $('header .words').removeClass('triggered');
-        },250);
+        $('header').addClass('triggered');
       }
 
       if($(window).scrollTop() > $('#part-2-opener').offset().top){
@@ -187,11 +173,9 @@
         var ratio = MADDEN.getRatio(element);
         if(ratio < 45){
           element.find('.panel-1').addClass('triggered');
-          if(!MADDEN.introVideo.paused){
-            MADDEN.introVideo.pause();
-            MADDEN.introVideo.currentTime = 0;
-            MADDEN.videoPlaying = false;
-          }
+          MADDEN.introVideo.pause();
+          MADDEN.introVideo.currentTime = 0;
+          MADDEN.videoPlaying = false;
         } else if(ratio >= 45 && ratio < 60 && !MADDEN.videoPlaying){
           MADDEN.videoPlaying = true;
           MADDEN.watchIntro();
@@ -516,9 +500,11 @@
       event.preventDefault();
       if(MADDEN.muted){
         MADDEN.muted = false;
+        $('.mute-video').removeClass('muted');
         $(MADDEN.currentVideo).stop().animate({volume: 1});
       } else{
         MADDEN.muted = true;
+        $('.mute-video').addClass('muted');
         $(MADDEN.currentVideo).stop().animate({volume: 0});
       }
     },

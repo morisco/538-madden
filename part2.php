@@ -12,7 +12,7 @@
               </div>
               <div class="part-3">
                 <h3>by walt hickey</h3>
-                <h4>photography by marius bugge charts</h4>
+                <h4>photography by marius bugge</h4>
               </div>
             </div>
           </div>
@@ -35,16 +35,16 @@
                     <div class="stat-note">Monroe, NY</div>
                   </div>
                   <div class="stat-wrap">
-                    <div class="stat-note">Age</div>
                     <div class="stat">24 Years</div>
+                    <div class="stat-note">Age</div>
                   </div>
                   <div class="stat-wrap">
-                    <div class="stat-note">Height</div>
                     <div class="stat">6'1"</div>
+                    <div class="stat-note">Height</div>
                   </div>
                   <div class="stat-wrap">
-                    <div class="stat-note">Weight</div>
                     <div class="stat">205 Pounds</div>
+                    <div class="stat-note">Weight</div>
                   </div>
                 </div>
               </div>
@@ -81,7 +81,7 @@
                   Broad Jump <span class="stat-number"><span class="increase-me" data-final-number="6" data-starting-number="0">0</span>'<span class="increase-me" data-final-number="5" data-starting-number="0">0</span>"</span>
                 </div>
               </div>
-            <div class="combine combine-2">
+              <div class="combine combine-2">
                 <h3>PASSING</h3>
                 <img src="img/walt_pass.gif" />
                 <div class="stat">
@@ -94,7 +94,8 @@
                   Deep Accuracy <span class="stat-number"><span class="increase-me" data-final-number="2" data-starting-number="0">0</span>/5</span>
                 </div>
               </div>
-            <div class="combine combine-3">
+              <?php if(!$isMobile){ ?>
+              <div class="combine combine-3">
                 <h3>Receiving</h3>
                 <img src="img/walt_catch.gif" />
                 <div class="stat">
@@ -107,7 +108,7 @@
                   Deep Routes <span class="stat-number">0/2</span>
                 </div>
               </div>
-            <div class="combine combine-4">
+              <div class="combine combine-4">
                 <h3>KICKING/PUNTING</h3>
                 <img src="img/walt_kick.gif" />
                 <div class="stat">
@@ -117,6 +118,7 @@
                   Long <span class="stat-number"><span class="increase-me" data-final-number="11" data-starting-number="0">0</span> yds</span>
                 </div>
               </div>
+              <?php } ?>
             </div>
           </div>
           <p>I strolled onto the gridiron in Orlando wearing old gym clothes and the cheapest sneakers available, which I ordered three days prior. I did the three stretches I remembered from my middle school Presidential Physical Fitness Test -- touch your toes, lunge side to side, twist your arm out of its socket -- and some light jogging.</p>
