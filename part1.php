@@ -170,7 +170,7 @@
                       <img src="img/arrow.svg" alt="arrow right" />
                       <div class="adjusted-rating">
                         <p>Adjusted</p>
-                        <div class="player-rating" data-final-rating="80" data-starting-rating="75">75</div>
+                        <div class="player-rating" data-final-rating="90" data-starting-rating="75">75</div>
                       </div>
                     </div>
                   </div>
