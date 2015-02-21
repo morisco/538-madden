@@ -1,13 +1,12 @@
 <header>
   <div class="header-wrapper">
-    <a class="logo" href="/"><img class="words" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/538-logo.png" alt="FiveThirtyEight Sports - Home" /><img class="fox" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/fox-logo.svg" alt="FiveThirtyEight Sports - Home" /></a>
+    <a class="logo" href="/"><img class="words" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/538-logo.png" alt="Five Thirty Eight Sports - Home" /><img class="fox" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/fox-logo.svg" alt="Five Thirty Eight SPorts - Home" /></a>
     <nav>
       <?php if (FTE_MADDEN_DAY_2 ) : ?>
-        <a class="title-bar">The Virtual NFL:</a>
-        <a href="#part1" target="_self" id="part-1-link">Part 1</a>
-        <a href="#part2" target="_self" id="part-2-link">Part 2</a>
+      <a class="title-bar parttwo">The Virtual NFL:</a>
+      <a href="#part1" id="part-1-link">Part 1</a><a href="#part2" id="part-2-link">Part 2</a>
       <?php else : ?>
-      <a class="title-bar">The Virtual NFL</a>
+      <a class="title-bar partone">The Virtual NFL</a>
       <?php endif; ?>
     </nav>
     <div class="social-links">
