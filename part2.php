@@ -154,7 +154,7 @@
         </section>
         <section id="video" class="full-screen trigger-watch" data-callback="hickeyVideo">
           <video id="hickey-video" loop controls poster="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/walt-poster.jpg">
-            <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/walt-hickey-video.mp4" type="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/mp4">
+            <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/walt-hickey-video.mp4" type="video/mp4">
           </video>
           <div id="video-overlay">
             <div class="stat-wrapper">

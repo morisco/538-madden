@@ -4,7 +4,7 @@
           <?php if(!$isMobile){ ?>
             <div class="panel video">
               <video id="intro-video">
-                <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/mp4">
+                <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="video/mp4">
               </video>
             </div>
           <?php } ?>
@@ -248,7 +248,7 @@
           </div>
           <div id="gamebreaker-peyton" class="gamebreaker-panel" data-panel-index="2">
             <video id="breaker-video-2" class="gamebreaker-video" data-video-id="2">
-              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-manning.mp4" type="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/mp4">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-manning.mp4" type="video/mp4">
             </video>
               <div class="breaker-profile">
                 <div class="headshot">
@@ -300,7 +300,7 @@
           </div>
           <div id="gamebreaker-wayne" class="gamebreaker-panel" data-panel-index="4">
             <video id="breaker-video-4" class="gamebreaker-video" data-video-id="4">
-              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.mp4" type="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/mp4">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.mp4" type="video/mp4">
               <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.webm" type="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/webm">
             </video>
               <div class="breaker-profile">
