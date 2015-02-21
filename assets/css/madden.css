@@ -20,7 +20,7 @@ body{
 #madden header.triggered .logo .words{ opacity:1; }
 #madden header .logo .fox{ position:absolute; top:10px; left:20px; height:20px; opacity:1; transition:all 0.5s; -webkit-transition:all 0.5s; }
 #madden header.triggered .logo .fox{ opacity:0; }
-#madden header nav{ position:absolute; top:8px; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); font-size:16px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; opacity:1; transition:opacity 1s; -webkit-transition:opacity 1s; }
+#madden header nav{ position:absolute; top:8px; left:50%; transform:translateX(-50%); -ms-transform:translateX(-50%); -webkit-transform:translateX(-50%); font-size:16px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; opacity:1; transition:opacity 1s; -webkit-transition:opacity 1s; }
 #madden header.triggered nav{ opacity:0; }
 #madden header .social-links a,
 #madden header nav a{ display:inline-block; padding:0px 10px 0 0; line-height:105%; color:#fff; font-size:14px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; vertical-align:middle; transition:all 1s; -webkit-transition:all 1s;}
@@ -52,7 +52,7 @@ body{
 #madden #part-1-opener.locked .background{ position:fixed; }
 #madden #part-1-opener.done .background{ position:absolute; bottom:0px; top:auto; }
 #madden .panel{ position:absolute; height:100vh; width:100%; top:0;  opacity:0; font-family:'Decima'; text-align:center; text-transform:uppercase; transition:opacity 1s; -webkit-transition:opacity 1s; }
-#madden .panel .panel-wrapper{ position:absolute; top:calc(50% + 40px); left:5%; width:95%; text-align:; transform:translateY(-50%); -webkit-transform:translateY(-50%) }
+#madden .panel .panel-wrapper{ position:absolute; top:calc(50% + 40px); left:5%; width:95%; text-align:; transform:translateY(-50%); -ms-transform:translateY(-50%); -webkit-transform:translateY(-50%) }
 #madden .panel .panel.triggered{ opacity:1; }
 #madden .panel hr{ border:0px; border-top:5px solid #000; background:transparent; max-width:500px; margin:0 auto; }
 #madden .panel h1{ font-size:50px; color:#fff100;  letter-spacing:8px; font-family:'Decima'; line-height:115%; padding:0; text-transform:uppercase; width:98%; max-width:550px; text-align:left; }
@@ -92,10 +92,10 @@ body{
 
 #madden .content-width .sidebar-wrapper{ position:relative; clear:both; }
 #madden .content-width .sidebar{ position:absolute; top:0px; left:0; width:255px; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-#madden .content-width .sidebar p, #madden .content-width p.chart{ width:100%; font-size:13px; line-height:140%;  }
+#madden .content-width .sidebar p, #madden .content-width p.chart{ width:100%; font-size:12px; line-height:140%; letter-spacing:0.03em; }
 #madden .content-width .sidebar p{ padding-right:10%; color:#999; }
 
-#madden .content-width .sidebar.chalk-talk{ top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); }
+#madden .content-width .sidebar.chalk-talk{ top:50%; transform:translateY(-50%); -ms-transform:translateY(-50%); -webkit-transform:translateY(-50%); }
 #madden .content-width .sidebar.chalk-talk  p{ margin:30px 0 35px; font-weight:normal; letter-spacing:0px;}
 #madden .chalk-talk p{ font-size:13px; margin:0 auto 10px; font-family:'AtlasGroteskWeb'; font-weight:700; letter-spacing:0.03em; }
 #madden .chalk-talk .x-o .x-o-x{ margin-left:20px;}
@@ -121,8 +121,8 @@ body{
 #madden .adjusted-stats .stat-card .headshot{ position:relative; height:75px; display:block; width:100%; ; }
 #madden .adjusted-stats .stat-card .headshot img{ position:absolute; top:-40px; left:50%; display:block;  vertical-align:bottom; transform:translateX(-50%); -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%);}
 #madden .adjusted-stats .stat-card .yellow{ color:#fff100; }
-#madden .adjusted-stats .stat-card .arrow{ width:15px; height:15px; margin:5px 0 0; transform:rotate(0deg); -webkit-transform:rotate(0deg); transition:all 0.5s ease-in-out;}
-#madden .adjusted-stats .player-stats.triggered .stat-card .arrow{ transform:rotate(90deg); -webkit-transform:rotate(90deg);}
+#madden .adjusted-stats .stat-card .arrow{ width:15px; height:15px; margin:5px 0 0; transform:rotate(0deg); -ms-transform:rotate(0deg); -webkit-transform:rotate(0deg); transition:all 0.5s ease-in-out;}
+#madden .adjusted-stats .player-stats.triggered .stat-card .arrow{ transform:rotate(90deg); -webkit-transform:rotate(90deg); -ms-transform:rotate(90deg);}
 #madden .adjusted-stats .player-info{ position:relative; width:98%; margin:0 auto; padding:10px 0 0; border-top:2px solid #fff; border-bottom:1px dashed #fff; }
 #madden .adjusted-stats .player-bio{ margin:20px 0 0; padding:20px 0; border-top:2px solid #007b3f;}
 #madden .adjusted-stats .player-bio h5{ font-size:15px; margin-bottom:15px; font-weight:700; line-height:140%;}
@@ -147,11 +147,11 @@ body{
 #madden #part-2-opener.done .panel{ position:absolute; bottom:0; top:auto;  }
 #madden #part-2-opener .part-1,
 #madden #part-2-opener .part-2,
-#madden #part-2-opener .part-3{ opacity:0; transform: translateY(10px); -webkit-transform: translateY(10px); transition:all 1s ease-out; -webkit-transition:all 1s ease-out; }
+#madden #part-2-opener .part-3{ opacity:0; transform: translateY(10px); -ms-transform: translateY(10px); -webkit-transform: translateY(10px); transition:all 1s ease-out; -webkit-transition:all 1s ease-out; }
 
 #madden #part-2-opener .part-1.trig,
 #madden #part-2-opener .part-2.trig,
-#madden #part-2-opener .part-3.trig{ opacity:1; padding-top:0; transform: translateY(0px); -webkit-transform: translateY(0px);}
+#madden #part-2-opener .part-3.trig{ opacity:1; padding-top:0; transform: translateY(0px); -ms-transform: translateY(0px); -webkit-transform: translateY(0px);}
 
 #madden #gamebreakers{ position:relative; text-align:center; height:150vh; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 #madden #gamebreakers .gamebreaker-panel{ position:absolute; top:0px; width:100%; height:100vh; background-size:cover; z-index:0; overflow:hidden; opacity:0; transition:all 0.5s ease-out; -webkit-transition:all 0.5s ease-out; }
@@ -171,15 +171,15 @@ body{
 #madden #gamebreakers p{ font-size:18px; color:#fff; line-height:175%; }
 /*#madden #gamebreakers .start-gamebreakers{ width:30px; height:30px; position:absolute; bottom:20px; left:50%; margin-left:-15px; transform:rotate(90deg); -webkit-transform:rotate(90deg); transition:all 0.75s; -webkit-transition:all 0.75s; }
 #madden #gamebreakers .start-gamebreakers.trigger{ bottom:10px; }*/
-#madden #gamebreakers .gamebreaker-wrapper{ position:absolute; top:70%; left:50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); }
-#madden #gamebreakers .start-gamebreakers, #madden #gamebreakers .start-gamebreakers.trigger{ position:relative; padding:8px 22px; margin:0 auto; left:auto; bottom:auto; width:auto; height:auto; color:#fff100; font-size:16px; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px; border: 2px solid #fff100;  background:transparent; cursor:pointer; transform:translate(0,0); -webkit-transform:translate(0,0); transition:all 1s; -webkit-transition:all 1s;}
-#madden #gamebreakers .start-gamebreakers.next{ position:absolute; bottom:20px; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); }
+#madden #gamebreakers .gamebreaker-wrapper{ position:absolute; top:70%; left:50%; transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); }
+#madden #gamebreakers .start-gamebreakers, #madden #gamebreakers .start-gamebreakers.trigger{ position:relative; padding:8px 22px; margin:0 auto; left:auto; bottom:auto; width:auto; height:auto; color:#fff100; font-size:16px; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px; border: 2px solid #fff100;  background:transparent; cursor:pointer; transform:translate(0,0); -ms-transform:translate(0,0); -webkit-transform:translate(0,0); transition:all 1s; -webkit-transition:all 1s;}
+#madden #gamebreakers .start-gamebreakers.next{ position:absolute; bottom:20px; left:50%; transform:translateX(-50%); -ms-transform:translateX(-50%); -webkit-transform:translateX(-50%); }
 #madden #gamebreakers .start-gamebreakers:hover{ color:#fff; text-decoration:none;}
 #madden #gamebreakers .mute-video{position:absolute; bottom:5px; right:20px; height:30px; width:30px; background-image:url(/madden/img/mute.gif); background-size:100%; text-indent:-55555px; cursor:pointer;}
 #madden #gamebreakers .mute-video.muted{ background-image:url(/madden/img/muted.gif); }
 
-#madden #gamebreakers .breaker-profile{ position:absolute; top:50%; left:10%; width:300px; transform:translateY(150%); -webkit-transform:translateY(150%); background:rgba(0,58,13,0.8); padding:10px 15px;  overflow:visible; color:#fff; transition:opacity 0.75s, transform 0.75s ease-in-out; -webkit-transition:opacity 0.75s, transform 0.75s ease-in-out; }
-#madden #gamebreakers .show-bio .breaker-profile{ opacity:1; transform:translateY(-45%); -webkit-transform:translateY(-45%);}
+#madden #gamebreakers .breaker-profile{ position:absolute; top:50%; left:10%; width:300px; transform:translateY(150%); -ms-transform:translateY(150%); -webkit-transform:translateY(150%); background:rgba(0,58,13,0.8); padding:10px 15px;  overflow:visible; color:#fff; transition:opacity 0.75s, transform 0.75s ease-in-out; -webkit-transition:opacity 0.75s, transform 0.75s ease-in-out; }
+#madden #gamebreakers .show-bio .breaker-profile{ opacity:1; transform:translateY(-45%); -ms-transform:translateY(-45%); -webkit-transform:translateY(-45%);}
 #madden #gamebreakers .hide-bio .breaker-profile{ opacity:0; }
 #madden #gamebreakers .breaker-profile .headshot{ height:18px; }
 #madden #gamebreakers .breaker-profile .headshot img{ margin:-100px auto 0;}
@@ -201,7 +201,7 @@ body{
 #madden #hickey-stat .stat-wrap{  border-top:1px dashed #007b3f; padding:10px 0; text-align:center; line-height:115%; }
 #madden #hickey-stat .stat-wrap.solid-border-top{  border-top:2px solid #007b3f; }
 #madden #hickey-stat .stat-wrap .stat{ font-size:16px; color:#000; font-family:'Decima'; text-transform:uppercase; letter-spacing:2px;}
-#madden #hickey-stat .stat-wrap .stat-note{ font-size:14px; color:#999; letter-spacing:0.03em; line-height:100%;}
+#madden #hickey-stat .stat-wrap .stat-note{ font-size:12px; color:#999; letter-spacing:0.03em; line-height:100%;}
 
 #madden #combines p{ margin-bottom:50px; font-weight:bold; letter-spacing:0.03em; }
 #madden #combines .combine{ margin:0 0 100px; }
@@ -222,7 +222,8 @@ body{
 #madden #video #video-overlay .stat.triggered,
 #madden #video #video-overlay .stat.name.triggered{ margin-left:50px; opacity:1; }
 
-#madden #entry-footnotes, #madden #entry-comments{ width:95%; max-width: 1024px; margin: 60px auto 20px; clear:both; }
+#madden #entry-footnotes, #madden #entry-comments{ width:95%; max-width: 1024px; margin: 60px auto 20px; clear:both; font-family:'AtlasGroteskWeb'; }
+#madden #entry-footnotes .entry-footnotes-content{ padding:0; }
 #madden #entry-footnotes li{  margin-top:-50px; padding-top:50px; }
 #madden .post-author{ width:95%; max-width:1024px; margin:0 auto 30px; padding-top:20px; border-top:1px solid #D1D3D4;}
 
@@ -241,7 +242,7 @@ body{
   #madden #part-1-opener.done .panel,
   #madden #part-2-opener.locked .panel,
   #madden #part-2-opener.done .panel{ position:absolute; top:0;}
-  #madden #part-2-opener .part-3{ transform:translate(0,0); -webkit-transform:translate(0,0);}
+  #madden #part-2-opener .part-3{ transform:translate(0,0); -ms-transform:translate(0,0); -webkit-transform:translate(0,0);}
 
   #madden .content-width p{ float:right; clear:both; width:50%; margin-right:5%; }
   #madden .ornamental-rule{ float:right; clear:both; margin-right:5%; width:50%;}
@@ -341,7 +342,7 @@ body{
   #madden #part-2-opener #opener-1,
   #madden #part-2-opener #opener-2,
   #madden #part-2-opener #opener-3{ display:none;}
-  #madden #part-2-opener .panel-wrapper{ top:60px; transform:translate(0); -webkit-transform:translate(0);}
+  #madden #part-2-opener .panel-wrapper{ top:60px; transform:translate(0); -ms-transform:translate(0); -webkit-transform:translate(0);}
   #madden #part-1-opener .panel-wrapper{ top:50%; }
   #madden .panel h1,
   #madden .panel h2{ font-size:40px; line-height:95%; letter-spacing:1px;}
@@ -360,7 +361,7 @@ body{
   #madden .ornamental-rule{ width:98%; margin:0 auto 30px; float:none; }
   #madden #interactive{ height:auto; }
   #madden #interactive iframe{ max-width:95%; height:1650px; }
-  #madden #hickey-video{ min-height:0px; min-width:0px; height:auto; width:100%;  position:relative; top:auto; left:auto; transform:translate(0,0); -webkit-transform:translate(0,0);}
+  #madden #hickey-video{ min-height:0px; min-width:0px; height:auto; width:100%;  position:relative; top:auto; left:auto; transform:translate(0,0); -ms-transform:translate(0,0); -webkit-transform:translate(0,0);}
   #madden #video{ height:auto; margin:50px 0;}
   #madden #quote-image{ margin:50px 0;}
   #madden #video-overlay{ display:none; }
@@ -380,7 +381,7 @@ body{
   #madden .content-width .sidebar.chalk-talk{ margin:0 auto; }
   #madden .content-width .sidebar.chalk-talk p{ margin-right:auto; }
 
-  #madden .content-width .sidebar.chalk-talk{ position:relative; top:auto; transform:translate(0,0); -webkit-transform:translate(0,0);}
+  #madden .content-width .sidebar.chalk-talk{ position:relative; top:auto; transform:translate(0,0); -ms-transform:translate(0,0); -webkit-transform:translate(0,0);}
 }
 
 @media( max-height:400px ){

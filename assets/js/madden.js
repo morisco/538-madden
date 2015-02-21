@@ -30,6 +30,8 @@
       MADDEN.initEvents();
       MADDEN.initOpener();
       MADDEN.initHeader();
+      var pymParent = new pym.Parent('interactive', 'http://staging.projects.fivethirtyeight.com.s3-website-us-east-1.amazonaws.com/madden-scores/', {});
+
     },
 
     initEvents:function(){
@@ -47,7 +49,6 @@
           }
         }
       });
-      $(window).on('scroll',MADDEN.trackHeader);
       $('.mute-video').on('click',MADDEN.muteVideo);
       $('.gamebreaker-video').each(function(){
         $(this)[0].volume = 0;
@@ -56,25 +57,32 @@
       $('header nav a').on('click',function(){
         $('header nav a').removeClass('active');
         $(this).addClass('active');
+        if($(this).attr('id') == 'part-2-link'){
+          MADDEN.triggerPart2();
+        }
       });
     },
 
     initHeader: function(){
       if(window.location.hash == '#part2'){
         $('header').addClass('triggered');
-        $('nav').addClass('part-2');
+        $('header nav a').removeClass('active');
+        $('#part-2-link').addClass('active');
         MADDEN.triggerPart2();
+        $(window).on('scroll',MADDEN.trackHeader);
         return;
+      } else{
+        $(window).on('scroll',MADDEN.trackHeader);
       }
 
-      if(($(window).scrollTop() + 100) >= $('#part-2-opener').offset().top || window.location.hash == '#part2'){
+      if(($(window).scrollTop()) >= ($('#part-2-opener').offset().top - 40) || window.location.hash == '#part2'){
         $('header nav a').removeClass('active');
         $('#part-2-link').addClass('active');
       } else{
         $('header nav a').removeClass('active');
         $('#part-1-link').addClass('active');
       }
-      if($(window).scrollTop() > 100 && window.location.hash != 'part2'){
+      if($(window).scrollTop() > 100 && window.location.hash != '#part2'){
         $('header').removeClass('triggered');
       } else{
         $('header').addClass('triggered');
@@ -82,15 +90,19 @@
     },
 
     trackHeader: function(){
-      if($(window).scrollTop() < ($('#part-1-opener').height()/2)){
+      var scrollPos = $(window).scrollTop();
+      if(scrollPos < ($('#part-1-opener').height()/2)){
         $('header').addClass('triggered');
-      } else if(($(window).scrollTop() > ($('#part-1-opener').height()/2) && $(window).scrollTop() < $('#part-2-opener').offset().top) || !(($(window).scrollTop() + 40) >= $('#part-2-opener').offset().top && $(window).scrollTop() < ($('#part-2-opener').offset().top + ($(window).height()/2)))){
+      } else if(scrollPos > ($('#part-1-opener').height()/2) && scrollPos < ($('#part-2-opener').offset().top - 40) ){
+        console.log('hi');
         $('header').removeClass('triggered');
-      } else{
+      } else if(scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos <  ($('#part-2-opener').offset().top + $('#part-2-opener').height()/3)){
         $('header').addClass('triggered');
+      } else{
+        $('header').removeClass('triggered');
       }
 
-      if($(window).scrollTop() > $('#part-2-opener').offset().top){
+      if($(window).scrollTop() > $('#part-2-opener').offset().top - 40 ){
         $('header nav a').removeClass('active');
         $('#part-2-link').addClass('active');
       } else{
@@ -729,24 +741,8 @@
   }
 
   jQuery(function() {
-    setTimeout(function(){
-      window.finalTweet = false;
 
       MADDEN.initApp();
-      var pymParent = new pym.Parent('interactive', 'http://staging.projects.fivethirtyeight.com.s3-website-us-east-1.amazonaws.com/madden-scores/', {});
-
-    },1000);
-
-
-    // $('video').each(function() {
-
-    //           $($(this)[0]).attr('src', false);
-    //           $(this)[0].pause();
-    //           $(this)[0].load();
-    //       });
-    // if($('#part-2-opener')){
-    //   MADDEN.part2Opener();
-    // }
 
   });
 }(jQuery));
