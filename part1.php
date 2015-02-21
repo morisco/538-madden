@@ -103,7 +103,6 @@
           <p>Moore would eventually be promoted to a designer and associate producer along his path to Ratings Czar, but the relationship between Moore&rsquo;s testing background and his current job is clear. &ldquo;The [ratings] are probably the single biggest factor in gameplay,&rdquo; Moore said.</p>
           <p>And the ratings have far more moving parts now than when Moore began working at EA. Each player in the game is graded in <a href="http://maddenratings.weebly.com/madden-nfl-15.html" target="_blank">43 categories</a> -- many of which were added when Madden transitioned from the <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(sixth_generation)" target="_blank">sixth generation</a> of consoles to the <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(seventh_generation)" target="_blank">seventh</a>. There are also nearly 20 new player-tendency tags, known as <a href="http://www.e-athlete.net/_/madden-nfl-15/madden-15-guide-to-player-ratings-attributes-and-traits-r109" target="_blank">&ldquo;traits,&rdquo;</a> that control specific player behaviors.</p>
           <p class="chart"><img src="img/graphs/paine-feature-madden-3.png" alt="NFL Video Games Have Gotten More Complex Graph" /></p>
-          <!-- NFL  VIDEO GAMES CHART HERE -->
           <div class="sidebar-wrapper">
             <p>Moore lobbied for many of the new rating categories, spurred by the same motivation that drove &ldquo;Micro League Baseball&rdquo; to add player ratings in the first place: greater differentiation among players.</p>
             <?php if(!$isMobile){ ?>
@@ -196,14 +195,10 @@
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
           <div id="interactive">
             <h3>Interactive</h3>
-            <!-- Insert Interactive Here -->
           </div>
-
           <p><span class="dropcap">F</span>inally, after all the component categories are set for both rookies and veterans, the numbers are used to generate the fabled Overall Rating.</p>
           <p>When I asked Moore about this, I expected him to decline to comment, citing a proprietary formula shrouded in secrecy. Instead, he cheerfully called up a spreadsheet containing the values that go into computing a player&rsquo;s overall grade (and later e-mailed it to us). And somewhat anticlimactically, the overall rating is simply a <a href="http://en.wikipedia.org/wiki/Weighted_arithmetic_mean" target="_blank">weighted average</a> of a player&rsquo;s ratings across the 43 skill categories tracked by Madden, with different categories taking on more weight depending on the position.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-14"><sup id="ss-14">14</sup></a></p>
           <p>For example, the most heavily weighted categories for quarterbacks in “Madden NFL 15” are awareness and throwing power (each contributes about one-fifth of a quarterback’s overall rating), accuracy by zone (short and medium accuracy are both slightly more valuable than deep accuracy), and play-action passing. Together, those categories make up 89 percent of the overall grade for QBs, with the rest of the weight given to throwing on the run, agility, speed and acceleration.</p>
-          <p>By comparison, wide receivers see a large portion of their value driven by speed, route-running, awareness and catching, which together make up about half the overall grade at the position. The tail for important ratings at receiver is <a href="http://en.wikipedia.org/wiki/Long_tail" target="_blank">longer</a> than for quarterbacks, though: Catching in traffic, jumping, release (which measures a receiver’s ability to freely run from the line of scrimmage against <a href="https://www.youtube.com/watch?v=SJdXTzkoVfE" target="_blank">press coverage</a>), and spectacular catching make up nearly a quarter of a WR’s overall rating, with after-the-catch attributes such as acceleration, agility, carrying, elusiveness, ball-carrier vision, jukes, spin moves, <a href="http://www.maddentips.com/madden-13-tips-truck-stick-running-game/" target="_blank">trucking</a> and even stiff arms also getting 29 percent weight in the overall formula.</p>
-          <p>Ever controversial, the overall rating is a proxy for a player&rsquo;s all-around effectiveness on the virtual field (and, presumably, the real one as well). But how well do the ratings track with actual player performance? To get a sense of the relationship between simulation and reality, we compared players&rsquo; overall Madden ratings at the start of each season to their Expected Points Added:</p>
           <div id="doublewide">
             <?php if(!$isMobile){ ?>
               <img src="img/graphs/paine-feature-madden-4.png" />
@@ -211,9 +206,7 @@
               <img src="img/graphs/paine-feature-madden-4-mobile.png" />
             <?php } ?>
           </div>
-          <!-- Insert QB/WR Comparison Chart -->
-          <p>Madden's ratings don&rsquo;t perfectly match each player's seasonal performance, although estimates of a player's underlying &ldquo;quality&rdquo; may be distinct from the more random ups-and-downs of an NFL career. The ratings do appear sensitive to some reputation-based tweaking:  Eli Manning -- with his pedigree and two Super Bowl rings -- outrated Phillip Rivers in six of their 11 seasons, despite putting up a better Expected Points Added figure in just three of those seasons.</p>
-          <p>In addition, the effects of the ratings on actual gameplay can be arcane for even the most seasoned Madden veterans. Perhaps no one outside of EA Sports has spent more time contemplating Madden&rsquo;s inner workings than SB Nation&rsquo;s Jon Bois, the creator of <a href="http://www.sbnation.com/breaking-madden" target="_blank">Breaking Madden</a>, a football column that doubles as an absurdist meditation on the game itself. But Bois confessed that he still can&rsquo;t quite figure out what some of the rating categories actually do for players on the virtual gridiron.</p>
+          <p>The effects of the ratings on actual gameplay can be arcane for even the most seasoned Madden veterans. Perhaps no one outside of EA Sports has spent more time contemplating Madden&rsquo;s inner workings than SB Nation&rsquo;s Jon Bois, the creator of <a href="http://www.sbnation.com/breaking-madden" target="_blank">Breaking Madden</a>, a football column that doubles as an absurdist meditation on the game itself. But Bois confessed that he still can&rsquo;t quite figure out what some of the rating categories actually do for players on the virtual gridiron.</p>
           <p>&ldquo;There are definitely more obscure settings,&rdquo; Bois said. &ldquo;There&rsquo;s a slider called ‘press,&rsquo; which I have no idea what it means. I set it to zero every time, and I still have no idea what it does, or what ‘press&rsquo; even is.&rdquo;<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-15"><sup id="ss-15">15</sup></a></p>
           <div class="sidebar-wrapper">
             <?php if(!$isMobile){ ?>
@@ -244,7 +237,6 @@
           <p>On one level, sports video games give regular Joes and Jills the opportunity to perform athletic feats that most could only dream about in real life -- blazing runs, high-flying dunks, cannon-armed throws -- and games have gotten pretty good at simulating these aspects of what it means to be a professional athlete.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-17"><sup id="ss-17">17</sup></a> But sports video games will always struggle to accurately replicate the cerebral side of sports; that&rsquo;s why it&rsquo;s more difficult to <a href="https://feelingsarentnumbers.wordpress.com/2012/01/12/the-disappointment-of-digital-rubio/" target="_blank">simulate being Ricky Rubio than LeBron James</a>.</p>
           <p>When I asked Moore what types of players Madden had the most difficulty simulating, two archetypes sprung to his mind. &ldquo;There&rsquo;s the Peyton Manning guy -- not [Tom] Brady or [Aaron] Rodgers because they have strong arms<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-18"><sup id="ss-18">18</sup></a> -- but the quarterback that&rsquo;s pure decision-making, accuracy and touch,&rdquo; Moore said. &ldquo;And the crafty veteran wide receiver with the ability to find holes in zone [coverage], like Reggie Wayne or Roddy White.&rdquo;<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-19"><sup id="ss-19">19</sup></a></p>
         </section>
-        <!-- GAME BREAKER!! -->
         <?php if(!$isMobile){ ?>
         <section class="full-screen trigger-watch" data-callback="gameBreakers" id="gamebreakers">
           <div id="gamebreaker-intro" class="gamebreaker-panel active" data-panel-index="1">
@@ -335,6 +327,8 @@
               <a href="#" class="mute-video">Mute Video</a>
             </div>
         </section>
+        <?php } else {?>
+          <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
         <?php } ?>
         <section id="section-3" class="content-width">
           <p><span class="dropcap">A</span>s he is wont to do, Moore suggested the latter could be better simulated with even more ratings or traits. &ldquo;We could rate if a receiver was on the same wavelength with his QB,&rdquo; he offered. After all, Moore loves to add to Madden&rsquo;s stable of ratings.</p>
@@ -392,8 +386,8 @@
                 <li id="fn-19"><span>Both Wayne and White boast speed ratings beneath the average of 90 for receivers in &ldquo;Madden NFL 15&rdquo;.<a class="footnote-back" href="#ss-19"> ^</a></span></li>
               </ol>
 
-          </div><!-- .entry-footnotes-content -->
-        </div><!-- .entry-footnotes -->
+          </div>
+        </div>
         <div id="entry-comments" class="entry-comments fte-expandable">
             <h3 class="fte-expandable-title">
               Comments

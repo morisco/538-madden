@@ -94,10 +94,12 @@
       if(scrollPos < ($('#part-1-opener').height()/2)){
         $('header').addClass('triggered');
       } else if(scrollPos > ($('#part-1-opener').height()/2) && scrollPos < ($('#part-2-opener').offset().top - 40) ){
-        console.log('hi');
-        $('header').removeClass('triggered');
-      } else if(scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos <  ($('#part-2-opener').offset().top + $('#part-2-opener').height()/3)){
+        $('header').removeClass('triggered locked');
+      } else if(scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height()/2)){
+        $('header').addClass('locked');
+      } else if(scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos > ($('#part-2-opener').offset().top + $('#part-2-opener').height()/2) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height())){
         $('header').addClass('triggered');
+        $('header').removeClass('locked');
       } else{
         $('header').removeClass('triggered');
       }

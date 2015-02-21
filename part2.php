@@ -129,7 +129,6 @@
           <p>Then came a lunging jump, in which I posted a consistent 6-foot, 5-inch leap. Moore seemed less appalled than he had all day. &ldquo;Not bad there,&rdquo; he said. It was one of the only times I felt anything approaching pride. </p>
           <p class="chart"><img src="img/graphs/hickey-feature-madden-2.png" alt="Walter doesn't have the worst jump graph" /></p>
 
-          <!-- Insert hickey feature madden 2 -->
           <p>The quarterback drills brought me back to earth. Asked to throw the ball as far as I could, I threw it pretty consistently between 17 and 20 yards in an often-loose spiral. I then threw the ball toward my colleague Neil Paine, who was trying his hand at receiver, and connected only 40 percent of the time on short, medium and long passes. Watching the drills unfold, Moore said I was throwing the ball too low and would probably end up hitting offensive linemen in the back of the head often.</p>
           <p>When I had exhausted my arm, I did some receiving drills -- or attempted to. I was useless beyond 10 yards but caught each of the three short passes thrown my way. Brad Hilderbrand, a communications specialist for EA, said I could possibly be a great tight end. My pride swelled again.</p>
           <p>And then it withered the moment my foot touched a football. My range was so pathetic that I couldn&rsquo;t boot it more than 20 yards, which at least doesn&rsquo;t preclude me from being one of the league&rsquo;s great onside kickers. Punting was no better. Any team with me as its punter would go for it on fourth down every time because I couldn&rsquo;t kick it farther than 11 yards.</p>
@@ -195,8 +194,8 @@
 
 
               </ol>
-             </div><!-- .entry-footnotes-content -->
-        </div><!-- .entry-footnotes -->
+             </div>
+        </div>
         <div class="post-author">
           <div class="post-thumbnail author-avatar">
             <a href="http://fivethirtyeight.com/contributors/walt-hickey/">

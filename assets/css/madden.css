@@ -12,16 +12,20 @@ body{
 
 #madden{ opacity:0; }
 
-#madden header{ position:fixed; top:0; width:100%; height:40px; color:#fff; background:#1b1a1b; transition:background 0.5s; -webkit-transition:background 0.5s; z-index:10; vertical-align:middle;}
-#madden header.triggered{ background:#c4380c;}
+#madden header{ position:fixed; top:0; width:100%; height:40px; color:#fff; background:#1b1a1b;  z-index:10; vertical-align:middle; }
+#madden header.triggered{ background:#c4380c; transition:background 0.5s; -webkit-transition:background 0.5s}
+#madden header.locked{  background:#c4380c; transition:background 0s; -webkit-transition:background 0s}
 #madden header .header-wrapper{ width: 100%; padding:0 15px;   margin:0 auto; }
 #madden header .logo{ position:relative; display:inline-block; padding:12px 20px 12px 0; }
 #madden header .logo .words{ opacity:0; transition:opacity 0.5s; -webkit-transition:opacity 0.5s; }
-#madden header.triggered .logo .words{ opacity:1; }
+#madden header.triggered .logo .words,
+#madden header.locked .logo .words{ opacity:1; }
 #madden header .logo .fox{ position:absolute; top:10px; left:20px; height:20px; opacity:1; transition:all 0.5s; -webkit-transition:all 0.5s; }
-#madden header.triggered .logo .fox{ opacity:0; }
+#madden header.triggered .logo .fox,
+#madden header.locked .logo .fox{ opacity:0; }
 #madden header nav{ position:absolute; top:8px; left:50%; transform:translateX(-50%); -ms-transform:translateX(-50%); -webkit-transform:translateX(-50%); font-size:16px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; opacity:1; transition:opacity 1s; -webkit-transition:opacity 1s; }
-#madden header.triggered nav{ opacity:0; }
+#madden header.triggered nav,
+#madden header.locked nav{ opacity:0; }
 #madden header .social-links a,
 #madden header nav a{ display:inline-block; padding:0px 10px 0 0; line-height:105%; color:#fff; font-size:14px; font-family:'Decima'; letter-spacing:2px; text-transform:uppercase; vertical-align:middle; transition:all 1s; -webkit-transition:all 1s;}
 #madden header nav a.title-bar{ padding:0px 5px 0 0;}
@@ -82,6 +86,8 @@ body{
 #madden .content-width{ width:97.5%; max-width:1250px; margin:0 auto; }
 #madden .content-width p{ width:45%; max-width:530px; margin:0 auto 1em; }
 #madden .content-width p.chart{ margin:50px auto;}
+#madden .content-width p.chart.tecmo,
+#madden .content-width p.chart.pro-football{ margin:20px auto; }
 #madden .caption{ display:inline-block; margin-top:10px; font-family:"AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; color:#999; }
 #madden .dropcap { float: left; font-size: 64pt; line-height: 50%; padding-top: 19px; padding-right: 20px; padding-left: 0px; padding-bottom:10px; }
 
@@ -230,6 +236,7 @@ body{
 @media (max-width : 1100px){
   #madden .content-width p{ float:right; clear:both; margin-right:10%;}
   #madden .content-width p.chart{ width:45%; margin-right:10%;}
+  #madden #quote-image h2.quote{ width:260px; }
 }
 
 @media (max-width : 768px){
@@ -247,7 +254,6 @@ body{
   #madden .content-width p{ float:right; clear:both; width:50%; margin-right:5%; }
   #madden .ornamental-rule{ float:right; clear:both; margin-right:5%; width:50%;}
   #madden .content-width .sidebar p{ float:none; margin-right:auto;}
-  #madden #quote-image h2.quote{ width:30%; }
   #madden .sidebar-wrapper p{ float:none; }
   #madden #quote-image .caption{ max-width:98%; margin:0 auto; }
 }
@@ -349,6 +355,12 @@ body{
   #madden .panel h3{ margin:0; }
   #madden .panel h4{ display:none; }
 
+  #madden blockquote,
+  #madden #quote-image h2,
+  #madden .twitter-side,
+  #madden .adjusted-stats,
+  #madden #gamebreakers{ display:none; }
+
   #madden #part-1-opener .panel-1{ opacity:1 !important;}
   #madden header .header-wrapper{ padding:0; }
   #madden header nav{top:5px; }
@@ -366,7 +378,7 @@ body{
   #madden #quote-image{ margin:50px 0;}
   #madden #video-overlay{ display:none; }
   #madden header a.title-bar.parttwo{ display:none;}
-  #madden .content-width p.chart{ width:97.5%; margin:0 auto; }
+  #madden .content-width p.chart{ width:97.5%; margin:0 auto 30px; }
 
   .x-o-o,.x-o-x{display:none;}
   #part-2-link{ border-left:1px solid #fff; }
