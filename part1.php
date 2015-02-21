@@ -13,8 +13,8 @@
             <div class="panel-wrapper">
               <h1>How Madden Ratings Are Made</h1>
               <h2>The secret <span class="line-2">process that turns </span> NFL players into digital gods</h2>
-              <h3>by neil paine</h3>
-              <h4>illustration by mike mcquade</h4>
+              <h3>by Neil Paine</h3>
+              <h4>illustration by Mike McQuade</h4>
             </div>
           </div>
 
