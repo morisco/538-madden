@@ -62,8 +62,8 @@
 
     initHeader: function() {
       if (window.location.hash === '#part2') {
-        $('.share-twitter').attr('href',MADDEN.twitter_part2);
-        $('.share-facebook').attr('href',MADDEN.facebook_part2);
+        $('.share-twitter').attr('href', MADDEN.twitter_part2);
+        $('.share-facebook').attr('href', MADDEN.facebook_part2);
         $('header').addClass('triggered');
         $('header nav a').removeClass('active');
         $('#part-2-link').addClass('active');
@@ -71,30 +71,30 @@
         $(window).on('scroll', MADDEN.trackHeader);
         return;
       } else {
-        $('.share-twitter').attr('href',MADDEN.twitter_part1);
-        $('.share-facebook').attr('href',MADDEN.facebook_part1);
+        $('.share-twitter').attr('href', MADDEN.twitter_part1);
+        $('.share-facebook').attr('href', MADDEN.facebook_part1);
         $(window).on('scroll', MADDEN.trackHeader);
       }
 
       if (($(window).scrollTop()) >= ($('#part-2-opener').offset().top - 40) || window.location.hash === '#part2') {
         $('header nav a').removeClass('active');
         $('#part-2-link').addClass('active');
-        $('.share-twitter').attr('href',MADDEN.twitter_part2);
-        $('.share-facebook').attr('href',MADDEN.facebook_part2);
+        $('.share-twitter').attr('href', MADDEN.twitter_part2);
+        $('.share-facebook').attr('href', MADDEN.facebook_part2);
       } else {
         $('header nav a').removeClass('active');
         $('#part-1-link').addClass('active');
-        $('.share-twitter').attr('href',MADDEN.twitter_part1);
-        $('.share-facebook').attr('href',MADDEN.facebook_part1);
+        $('.share-twitter').attr('href', MADDEN.twitter_part1);
+        $('.share-facebook').attr('href', MADDEN.facebook_part1);
       }
       if ($(window).scrollTop() > 100 && window.location.hash !== '#part2') {
         $('header').removeClass('triggered');
-        $('.share-twitter').attr('href',MADDEN.twitter_part1);
-        $('.share-facebook').attr('href',MADDEN.facebook_part1);
+        $('.share-twitter').attr('href', MADDEN.twitter_part1);
+        $('.share-facebook').attr('href', MADDEN.facebook_part1);
       } else {
         $('header').addClass('triggered');
-        $('.share-twitter').attr('href',MADDEN.twitter_part2);
-        $('.share-facebook').attr('href',MADDEN.facebook_part2);
+        $('.share-twitter').attr('href', MADDEN.twitter_part2);
+        $('.share-facebook').attr('href', MADDEN.facebook_part2);
       }
     },
 
@@ -104,8 +104,8 @@
         $('header').addClass('triggered');
       } else if (scrollPos > ($('#part-1-opener').height() / 2) && scrollPos < ($('#part-2-opener').offset().top - 40)) {
         $('header').removeClass('triggered locked');
-        $('.share-twitter').attr('href',MADDEN.twitter_part1);
-        $('.share-facebook').attr('href',MADDEN.facebook_part1);
+        $('.share-twitter').attr('href', MADDEN.twitter_part1);
+        $('.share-facebook').attr('href', MADDEN.facebook_part1);
         if(history.pushState) {
           history.pushState(null, null, '#');
         }
@@ -114,8 +114,8 @@
         }
       } else if (scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height() / 2)) {
         $('header').addClass('locked');
-        $('.share-twitter').attr('href',MADDEN.twitter_part2);
-        $('.share-facebook').attr('href',MADDEN.facebook_part2);
+        $('.share-twitter').attr('href', MADDEN.twitter_part2);
+        $('.share-facebook').attr('href', MADDEN.facebook_part2);
         if(history.pushState) {
             history.pushState(null, null, '#part2');
         }
