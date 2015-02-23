@@ -89,11 +89,11 @@
           <p>The assortment of skills that needed to be collected for each player grew as football games progressed through the 1990s. By the end of the decade, EA Sports&rsquo; NCAA Football series<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-9"><sup id="ss-9">9</sup></a> assigned <a href="http://www.angelfire.com/yt/thebirk/EAFAQnf.html" target="_blank">14 attributes</a> to every player in the game,<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-10"><sup id="ss-10">10</sup></a> while Madden began <a href="http://www.angelfire.com/tv/madden99/carolinar.html" target="_blank">handing out</a> 17. With the advent of <a href="http://en.wikipedia.org/wiki/History_of_video_game_consoles_(fifth_generation)" target="_blank">fifth-generation consoles</a>, the degree of complexity in simulating football increased dramatically, requiring a wider range of player attributes to feed into the new game engines.</p>
             <p class="chart tecmo">
               <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/tecmo.jpg" alt="Tecmo Super Bowl"  width="530" height="329"/>
-              <span class="caption"><strong>Front Page Sports: Football Pro</strong> Sierra Online&rsquo;s &ldquo;Front Page Sports: Football Pro,&rdquo; regarded as the most realistic football simulation of its time, came out in 1993 and included eight ratings.</span>
+              <span class="caption"><strong>Tecmo Super Bowl</strong> Nintendo&rsquo;s seminal football game was released in 1991 and included only six rating categories. The game wasn&rsquo;t super realistic. Bo Jackson was an all-time great in the NFL; he was superhuman in Tecmo.</span>
             </p>
             <p class="chart pro-football">
               <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/front-page-sports.jpg" alt="Font Page Spors: Pro Football" width="530" height="420" />
-              <span class="caption"><strong>Tecmo Super Bowl</strong> Nintendo&rsquo;s seminal football game was released in 1991 and included only six rating categories. The game wasn&rsquo;t super realistic. Bo Jackson was an all-time great in the NFL; he was superhuman in Tecmo.</span>
+              <span class="caption"><strong>Front Page Sports: Football Pro</strong> Sierra Online&rsquo;s &ldquo;Front Page Sports: Football Pro,&rdquo; regarded as the most realistic football simulation of its time, came out in 1993 and included eight ratings.</span>
             </p>
 
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
