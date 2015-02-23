@@ -114,27 +114,25 @@
         } else{
           $('header').addClass('triggered');
         }
-      } else{
+      } else {
         if (scrollPos < ($('#part-1-opener').height() / 2)) {
           $('header').addClass('triggered');
         } else if (scrollPos > ($('#part-1-opener').height() / 2) && scrollPos < ($('#part-2-opener').offset().top - 40)) {
           $('header').removeClass('triggered locked');
           $('.share-twitter').attr('href', MADDEN.twitter_part1);
           $('.share-facebook').attr('href', MADDEN.facebook_part1);
-          if(history.pushState) {
+          if (history.pushState) {
             history.pushState(null, null, '#');
-          }
-          else {
+          } else {
             location.hash = '#';
           }
         } else if (scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height() / 2)) {
           $('header').addClass('locked');
           $('.share-twitter').attr('href', MADDEN.twitter_part2);
           $('.share-facebook').attr('href', MADDEN.facebook_part2);
-          if(history.pushState) {
+          if (history.pushState) {
               history.pushState(null, null, '#part2');
-          }
-          else {
+          } else {
               location.hash = '#part2';
           }
         } else if (scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos > ($('#part-2-opener').offset().top + $('#part-2-opener').height() / 2) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height())) {
