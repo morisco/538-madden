@@ -576,6 +576,7 @@
       if(reset && element.attr('data-trigger')){
         element.removeAttr('data-trigger');
         element.find('.player-stats').removeClass('triggered');
+        element.removeClass('locked').removeClass('done');
         return;
       } else if(!reset){
         element.attr('data-trigger',true);
