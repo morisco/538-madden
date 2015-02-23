@@ -4,7 +4,7 @@
           <?php if ( ! $isMobile ) { ?>
             <div class="panel video">
               <video id="intro-video">
-                <source src="video/opener.mp4" type="video/mp4">
+                <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="video/mp4">
               </video>
             </div>
 			<?php } ?>
@@ -109,16 +109,16 @@
               <div class="sidebar adjusted-stats trigger-watch" data-callback="adjustedStats">
                 <div class="player-stats first">
                   <div class="stat-card">
-                    <img class="chalk top left" src="img/chalk-o.png" />
-                    <img class="chalk top right" src="img/chalk-x.png" />
+                    <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                    <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
                     <div class="headshot">
                       <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/brandon-marshall.png" alt="Brandon Marshall" />
                     </div>
                     <div class="player-info">
                       <h4>Case Study<br/><span class="yellow">Brandon Marshall</span></br/>Veteran Player</h4>
-                      <img class="arrow" src="img/arrow.svg" />
-                      <img class="chalk bottom left" src="img/chalk-x.png" />
-                      <img class="chalk bottom right" src="img/chalk-o.png" />
+                      <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
+                      <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                      <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
                     </div>
                   </div>
                   <div class="stat-hidden">
@@ -143,16 +143,16 @@
                 </div>
                 <div class="player-stats second">
                   <div class="stat-card">
-                    <img class="chalk top left" src="img/chalk-o.png" />
-                    <img class="chalk top right" src="img/chalk-x.png" />
+                    <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                    <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
                     <div class="headshot">
                       <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/odell-beckham.png" alt="Odell Beckham Jr" />
                     </div>
                     <div class="player-info">
                       <h4>Case Study<br/><span class="yellow">Odell Beckham Jr.</span></br/>Rookie Player</h4>
-                      <img class="arrow" src="img/arrow.svg" />
-                      <img class="chalk bottom left" src="img/chalk-x.png" />
-                      <img class="chalk bottom right" src="img/chalk-o.png" />
+                      <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
+                      <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                      <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
                     </div>
                   </div>
                   <div class="stat-hidden">
@@ -248,7 +248,7 @@
           </div>
           <div id="gamebreaker-peyton" class="gamebreaker-panel" data-panel-index="2">
             <video id="breaker-video-2" class="gamebreaker-video" data-video-id="2">
-              <source src="video/gamebreaker-manning.mp4" type="video/mp4">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-manning.mp4" type="video/mp4">
             </video>
               <div class="breaker-profile">
                 <div class="headshot">
@@ -274,7 +274,7 @@
             <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-vick" class="gamebreaker-panel" data-panel-index="3">
-              <video id="breaker-video-3" src="video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
+              <video id="breaker-video-3" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
               <div class="breaker-profile">
                 <div class="headshot">
                   <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/vick-headshot.png" alt="Michael Vick" />
@@ -300,8 +300,8 @@
           </div>
           <div id="gamebreaker-wayne" class="gamebreaker-panel" data-panel-index="4">
             <video id="breaker-video-4" class="gamebreaker-video" data-video-id="4">
-              <source src="video/gamebreaker-wayne.mp4" type="video/mp4">
-              <source src="video/gamebreaker-wayne.webm" type="video/webm">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.mp4" type="video/mp4">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.webm" type="video/webm">
             </video>
               <div class="breaker-profile">
                 <div class="headshot">
