@@ -1581,7 +1581,6 @@ bottom: 10px;
     -ms-transform: translate(0,0);
     -webkit-transform: translate(0,0);
   }
-
 }
 
 @media( max-height:400px ) {
@@ -1591,5 +1590,4 @@ bottom: 10px;
     line-height: 95%;
     letter-spacing: 1px;
   }
-
 }
