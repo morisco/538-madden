@@ -94,7 +94,7 @@
                   Deep Accuracy <span class="stat-number"><span class="increase-me" data-final-number="2" data-starting-number="0">0</span>/5</span>
                 </div>
               </div>
-              <?php if(!$isMobile){ ?>
+				<?php if ( ! $isMobile ) { ?>
               <div class="combine combine-3">
                 <h3>Receiving</h3>
                 <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/walt_catch.gif" />
@@ -118,7 +118,7 @@
                   Long <span class="stat-number"><span class="increase-me" data-final-number="11" data-starting-number="0">0</span> yds</span>
                 </div>
               </div>
-              <?php } ?>
+				<?php } ?>
             </div>
           </div>
           <p>I strolled onto the gridiron in Orlando wearing old gym clothes and the cheapest sneakers available, which I ordered three days prior. I did the three stretches I remembered from my middle school Presidential Physical Fitness Test &#8212; touch your toes, lunge side to side, twist your arm out of its socket &#8212; and some light jogging.</p>
