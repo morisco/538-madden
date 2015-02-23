@@ -62,17 +62,16 @@
 
     initHeader: function() {
       if (window.location.hash === '#part2') {
-        $('.share-twitter').attr('href', MADDEN.twitter_part2);
-        $('.share-facebook').attr('href', MADDEN.facebook_part2);
+        MADDEN.swapShares(2);
         $('header').addClass('triggered');
+        $('header').removeClass('hidden');
         $('header nav a').removeClass('active');
         $('#part-2-link').addClass('active');
         MADDEN.triggerPart2();
         $(window).on('scroll', MADDEN.trackHeader);
         return;
       } else {
-        $('.share-twitter').attr('href', MADDEN.twitter_part1);
-        $('.share-facebook').attr('href', MADDEN.facebook_part1);
+        MADDEN.swapShares(1);
         $(window).on('scroll', MADDEN.trackHeader);
       }
 
@@ -80,29 +79,26 @@
         if (($(window).scrollTop()) >= ($('#part-2-opener').offset().top - 40) || window.location.hash === '#part2') {
           $('header nav a').removeClass('active');
           $('#part-2-link').addClass('active');
-          $('.share-twitter').attr('href', MADDEN.twitter_part2);
-          $('.share-facebook').attr('href', MADDEN.facebook_part2);
+          MADDEN.swapShares(2);
         } else {
           $('header nav a').removeClass('active');
           $('#part-1-link').addClass('active');
-          $('.share-twitter').attr('href', MADDEN.twitter_part1);
-          $('.share-facebook').attr('href', MADDEN.facebook_part1);
+          MADDEN.swapShares(1);
         }
       } else{
         $('header nav a').removeClass('active');
         $('#part-1-link').addClass('active');
-        $('.share-twitter').attr('href', MADDEN.twitter_part1);
-        $('.share-facebook').attr('href', MADDEN.facebook_part1);
+        MADDEN.swapShares(1);
       }
 
       if ($(window).scrollTop() > 100 && window.location.hash !== '#part2') {
         $('header').removeClass('triggered');
-        $('.share-twitter').attr('href', MADDEN.twitter_part1);
-        $('.share-facebook').attr('href', MADDEN.facebook_part1);
+        $('header').removeClass('hidden');
+        MADDEN.swapShares(1);
       } else {
         $('header').addClass('triggered');
-        $('.share-twitter').attr('href', MADDEN.twitter_part2);
-        $('.share-facebook').attr('href', MADDEN.facebook_part2);
+        $('header').removeClass('hidden');
+        MADDEN.swapShares(2);
       }
     },
 
@@ -119,8 +115,7 @@
           $('header').addClass('triggered');
         } else if (scrollPos > ($('#part-1-opener').height() / 2) && scrollPos < ($('#part-2-opener').offset().top - 40)) {
           $('header').removeClass('triggered locked');
-          $('.share-twitter').attr('href', MADDEN.twitter_part1);
-          $('.share-facebook').attr('href', MADDEN.facebook_part1);
+          MADDEN.swapShares(1);
           if (history.pushState) {
             history.pushState(null, null, '#');
           } else {
@@ -128,8 +123,7 @@
           }
         } else if (scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height() / 2)) {
           $('header').addClass('locked');
-          $('.share-twitter').attr('href', MADDEN.twitter_part2);
-          $('.share-facebook').attr('href', MADDEN.facebook_part2);
+          MADDEN.swapShares(2);
           if (history.pushState) {
               history.pushState(null, null, '#part2');
           } else {
@@ -150,6 +144,21 @@
           $('#part-1-link').addClass('active');
         }
       }
+    },
+
+    swapShares: function(part){
+      var twitterShare;
+      var facebookShare;
+      if(part == 1){
+        twitterShare =  "window.open('"+MADDEN.twitter_part1+"','pagename','resizable,height=420,width=550'); return false;";
+        facebookShare =  "window.open('"+MADDEN.facebook_part1+"','pagename','resizable,height=626,width=436'); return false;";
+      } else{
+        twitterShare =  "window.open('"+MADDEN.twitter_part2+"','pagename','resizable,height=420,width=370'); return false;";
+        facebookShare =  "window.open('"+MADDEN.facebook_part2+"','pagename','resizable,height=626,width=436'); return false;";
+      }
+      $('header .share-twitter').attr('onclick',twitterShare);
+      $('header .share-facebook').attr('onclick',facebookShare);
+
     },
 
     initInteractive: function(){
@@ -298,11 +307,12 @@
           });
         }
         return;
-      } else if (reset && element.attr('data-trigger')) {
+      } else if (reset) {
         element.removeClass('finished');
+        element.find('.tweet-wrapper').removeClass('fixed');
         element.removeAttr('data-trigger');
         element.removeClass('triggered');
-        $(this).removeAttr('style');
+        element.find('.tweet-wrapper').removeAttr('style');
         element.find('.tweet-intro').css('top', '0');
         return;
       } else if (!reset) {

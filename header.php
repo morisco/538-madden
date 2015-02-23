@@ -1,4 +1,4 @@
-<header>
+<header class="hidden">
   <div class="header-wrapper">
     <a class="logo" href="http://fivethirtyeight.com"><img class="words" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/538-logo.png" alt="FiveThirtyEight Sports - Home" /><img class="fox" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/fox-logo.svg" alt="FiveThirtyEight Sports - Home" /></a>
     <nav>

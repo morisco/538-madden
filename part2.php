@@ -136,7 +136,7 @@
           <p>Leaving Orlando, I reflected on the day and felt one thing above all: extreme pain. My back was seizing up, my right arm went somewhat numb, and a nap had only made me more sore. When I got home in the wee-morning hours, I took enough ibuprofen to dull my senses and decided that I should exercise more often.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-2-3"><sup id="ss-2-3">3</sup></a> The soreness continued for three more days.</p>
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
           <p><span class="dropcap">T</span>wo months later, Moore and company asked me to return to Florida for the big reveal: what I&rsquo;d look like as a real (fake), live (artificial) NFL (Madden) player. When I was first in Florida, EA mapped my face for an avatar by putting me in front of 12 high-definition cameras, each poised at a slightly different angle. It looked like what Jeremy Bentham would have made if he had gone into photography after he was tired of designing prisons.</p>
-          <p>I posed seven ways — one mugshot, left and right profile shots, a natural smile<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-2-4"><sup id="ss-2-4">4</sup></a>, one with my mouth slightly open,<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-2-5"><sup id="ss-2-5">5</sup></a>, one with a wrinkled forehead and eight chins, and one screaming. When I saw the photos in December, they looked like I had just walked out of an anti-methamphetamine advertisement. The photos came with polarized flashes that stripped my face of any shadow. Zooming in on the high-def shots made it look like I had slept in hot grease. Will Gibson, the technician who took the photos, said they made me look sort of like Ray Romano.</p>
+          <p>I posed seven ways — one mugshot, left and right profile shots, a natural smile<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-2-4"><sup id="ss-2-4">4</sup></a>, one with my mouth slightly open<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-2-5"><sup id="ss-2-5">5</sup></a>, one with a wrinkled forehead and eight chins, and one screaming. When I saw the photos in December, they looked like I had just walked out of an anti-methamphetamine advertisement. The photos came with polarized flashes that stripped my face of any shadow. Zooming in on the high-def shots made it look like I had slept in hot grease. Will Gibson, the technician who took the photos, said they made me look sort of like Ray Romano.</p>
           <p>But this, he said, was the point. &ldquo;Put Brad Pitt in front of this,&rdquo; he said, &ldquo;and he&rsquo;d look like Steve Buscemi.&rdquo;</p>
           <p class="chart">
             <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/face-scan.jpg" alt="Walter Hickey Digital Face Scan" />
@@ -195,6 +195,14 @@
 
               </ol>
              </div>
+        </div>
+        <div id="entry-comments" class="entry-comments fte-expandable">
+            <h3 class="fte-expandable-title">
+              Comments
+              <span class="add-comment">Add Comment</span></h3>
+            <div class="entry-comments-content fte-expandable-content">
+              <div class="fb-comments" data-href="http://fivethirtyeight.com/?post_type=fte_features&p=68752" data-width="491" data-numposts="5" data-colorscheme="light"></div>
+            </div>
         </div>
         <div class="post-author">
           <div class="post-thumbnail author-avatar">

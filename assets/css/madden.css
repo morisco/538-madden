@@ -31,6 +31,12 @@ body {
   transition: background 0s;
   -webkit-transition: background 0s
 }
+
+#madden header.hidden .logo,
+#madden header.hidden .fox,
+#madden header.hidden .words,
+#madden header.hidden nav{ opacity:0 !important; }
+
 #madden header .header-wrapper {
   width: 100%;
   padding: 0 15px;
@@ -40,6 +46,8 @@ body {
   position: relative;
   display: inline-block;
   padding: 12px 20px 12px 0;
+  transition:opacity 0.5s;
+  -webkit-transition:opacity 0.5s;
 }
 #madden header .logo .words {
   opacity: 0;
@@ -123,7 +131,8 @@ body {
   height: 15px;
   width: 15px;
 }
-#madden header.triggered .social-links a:hover svg path {
+#madden header.triggered .social-links a:hover svg path,
+#madden header.locked .social-links a:hover svg path {
   fill: #1b1a1b;
 }
 #madden header .social-links a:hover svg path {
