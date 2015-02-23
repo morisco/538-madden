@@ -17,9 +17,16 @@
       require_once 'Mobile_Detect.php';
       $detect = new Mobile_Detect;
       if ( $detect->isMobile() && !$detect->isTablet() ) { $isMobile = true; } else { $isMobile = false; }
+      define('FTE_MADDEN_DAY_2', true);
+      if (! function_exists('esc_url') ) { function esc_url($u) { return $u; } }
+      class MaddenSpecial {
+        function get_special_directory_uri() { return '/madden'; }
+      }
+      $fte_madden = new MaddenSpecial();
       ?>
+
       <div id="madden" class="entry-content">
-        <?php require('header-part-2.php'); ?>
+        <?php require('header.php'); ?>
         <?php require('part1.php'); ?>
         <?php require('part2.php'); ?>
       </div>
