@@ -6,7 +6,7 @@
               <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="video/mp4">
             </video>
           </div>
-			   <?php } ?>
+				<?php } ?>
 
           <div class="panel-1 panel">
             <div class="panel-wrapper">
@@ -361,7 +361,7 @@
           <p>&ldquo;In a perfect world, in ‘Madden 2037,&rsquo; we might have [ratings] split into 10 or 15 different awareness-type categories,&rdquo; Moore said, still rattling off items from his wish list. &ldquo;Like awareness around the end zone, awareness in the fourth quarter … </p>
           <div class="sidebar-wrapper">
             <p>&ldquo;The possibilities are endless.&rdquo;</p>
-            <?php if ( !FTE_MADDEN_DAY_2 ) : ?>
+            <?php if ( ! FTE_MADDEN_DAY_2 ) : ?>
               <div class="sidebar teaser">
                 <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/part-2-teaser.jpg" alt="Walter Hickey in part 2" />
                 <p><strong>Coming tomorrow:</strong><br/> Part 2 of our Virtual NFL series. “The Walk-On: How Madden Helped A Schlub  Like Me Make It Into The NFL” by Walt Hickey.</p>
