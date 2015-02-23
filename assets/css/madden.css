@@ -1268,6 +1268,9 @@ bottom: 10px;
     height:1024px;
   }
 
+  .admin-bar #madden header{
+    top:46px;
+  }
 
   #madden #part-1-opener .panel {
     opacity: 1;
@@ -1465,8 +1468,9 @@ bottom: 10px;
   .admin-bar #madden header{
     top:0px;
   }
-  #madden #part-1-opener
-  #madden #part-2-opener{
+  #madden #part-1-opener,
+  #madden #part-2-opener,
+  #madden .panel{
     height:500px;
   }
   #madden #part-1-opener {
