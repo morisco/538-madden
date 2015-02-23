@@ -359,8 +359,17 @@
           <p>It&rsquo;s a challenge that doesn&rsquo;t seem to be completely solvable using player ratings, no matter how much faith Moore places in them.</p>
           <p>Then again, I doubt it will stop him from trying.</p>
           <p>&ldquo;In a perfect world, in ‘Madden 2037,&rsquo; we might have [ratings] split into 10 or 15 different awareness-type categories,&rdquo; Moore said, still rattling off items from his wish list. &ldquo;Like awareness around the end zone, awareness in the fourth quarter … </p>
-          <p>&ldquo;The possibilities are endless.&rdquo;</p>
+          <div class="sidebar-wrapper">
+            <p>&ldquo;The possibilities are endless.&rdquo;</p>
+            <?php if ( FTE_MADDEN_DAY_2 ) : ?>
+              <div class="sidebar teaser">
+                <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/part-2-teaser.jpg" alt="Walter Hickey in part 2" />
+                <p><strong>Coming tomorrow:</strong><br/> Part 2 of our Virtual NFL series. “The Walk-On: How Madden Helped A Schlub  Like Me Make It Into The NFL” by Walt Hickey.</p>
+              </div>
+            <?php endif; ?>
+          </div>
         </section>
+
         <div id="entry-footnotes" class="fte-expandable">
           <h3 class="fte-expandable-title">Footnotes</h3>
           <div class="entry-footnotes-content fte-expandable-content">
@@ -385,7 +394,6 @@
                 <li id="fn-18"><span>Brady and Rodgers boast throwing power ratings of 93 and 95, respectively; Manning sits at 85.<a class="footnote-back" href="#ss-18"> ^</a></span></li>
                 <li id="fn-19"><span>Both Wayne and White boast speed ratings beneath the average of 90 for receivers in &ldquo;Madden NFL 15&rdquo;.<a class="footnote-back" href="#ss-19"> ^</a></span></li>
               </ol>
-
           </div>
         </div>
         <div id="entry-comments" class="entry-comments fte-expandable">

@@ -14,8 +14,8 @@
     videoPlaying: false,
     twitter_part1: 'https://twitter.com/intent/tweet?text=How%20Madden%20Ratings%20Work%3A%20The%20secret%20process%20that%20turns%20NFL%20players%20into%20digital%20gods.&url=http://53eig.ht/Madden',
     twitter_part2: 'https://twitter.com/intent/tweet?text=The%20Walk-On%3A%20How%20Madden%20helped%20an%20everyday%20schlub%20make%20it%20into%20the%20NFL.&url=http://53eig.ht/MaddenPt2',
-    facebook_part1: 'https://www.facebook.com/sharer/sharer.php?u=',
-    facebook_part2: 'https://www.facebook.com/sharer/sharer.php?u=',
+    facebook_part1: 'https://www.facebook.com/sharer/sharer.php?u=http://fivethirtyeight.com/features/madden/',
+    facebook_part2: 'https://www.facebook.com/sharer/sharer.php?u=http://fivethirtyeight.com/features/madden-2/',
 
     initApp: function() {
       $('#madden').animate({'opacity': 1});
@@ -288,6 +288,7 @@
         element.removeClass('finished');
         element.removeAttr('data-trigger');
         element.removeClass('triggered');
+        $(this).removeAttr('style');
         element.find('.tweet-intro').css('top', '0');
         return;
       } else if (!reset) {
@@ -409,6 +410,7 @@
         document.getElementById('breaker-video-2').pause();
         document.getElementById('breaker-video-3').pause();
         document.getElementById('breaker-video-4').pause();
+        element.removeClass('locked').removeClass('done');
         return;
       } else if (!reset) {
         element.attr('data-trigger', true);
@@ -651,18 +653,15 @@
         return;
       } else if (!reset) {
         element.attr('data-trigger', true);
-        var stat;
         var ratio = MADDEN.getRatio(element);
         if (ratio > 20 && ratio < 30 && !element.hasClass('triggered')) {
           var video = document.getElementById('hickey-video');
           video.play();
         } else if (ratio >= 30 && !element.find('#video-overlay').hasClass('triggered')) {
           element.find('#video-overlay').addClass('triggered');
-          element.find('.stat').each(function(index, stat) {
-
-            // stat = $(this);
+          element.find('.stat').each(function(index,stat) {
             setTimeout(function() {
-              stat.addClass('triggered');
+              $(stat).addClass('triggered');
             },index * 100);
           });
         }
