@@ -11,8 +11,8 @@
                 <h2>How Madden helped a schlub like me make it into the NFL</h2>
               </div>
               <div class="part-3">
-                <h3>by walt hickey</h3>
-                <h4>photography by marius bugge</h4>
+                <h3>by Walt Hickey</h3>
+                <h4>photography by Marius Bugge</h4>
               </div>
             </div>
           </div>
