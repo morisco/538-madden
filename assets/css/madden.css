@@ -8,10 +8,6 @@ body {
   background: #fff;
 }
 
-#madden {
-  opacity: 0;
-}
-
 #madden header {
   position: fixed;
   top: 0;
@@ -1217,11 +1213,20 @@ bottom: 10px;
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  #madden #part-1-opener,
+  #madden #part-2-opener,
+  #madden #part-2-opener,
+  #madden #part-2-opener .panel,
+  #madden .panel {
+    height:1024px;
+  }
   #madden #part-1-opener {
     background: url(/madden/img/full-screen.jpg);
     background-size: cover;
     background-position: center center;
   }
+
+  #madden #part-1-opener video{ display:none; }
   #madden #part-1-opener .panel {
     opacity: 1;
   }
@@ -1298,7 +1303,7 @@ bottom: 10px;
   }
 
   #madden #gamebreakers,#madden #gamebreakers .gamebreaker-panel {
-    height: 50vh;
+    height: 512px;
   }
   #madden #gamebreakers .gamebreaker-wrapper {
     width: 85%;
@@ -1366,8 +1371,10 @@ bottom: 10px;
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   #madden #part-1-opener,
-  #madden #part-2-opener {
-    height: 100vh;
+  #madden #part-2-opener,
+  #madden #part-2-opener .panel,
+  #madden .panel {
+    height:768px;
   }
   #madden #part-2-opener .part-1,
   #madden #part-2-opener .part-2,
@@ -1385,7 +1392,6 @@ bottom: 10px;
     background: url(/madden/img/full-screen.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
   }
   #madden .panel h1,
   #madden .panel h2 {
@@ -1414,11 +1420,14 @@ bottom: 10px;
 }
 
 @media( max-width: 600px ) {
+  #madden #part-1-opener
+  #madden #part-2-opener{
+    height:500px;
+  }
   #madden #part-1-opener {
     background: url(/madden/img/full-screen.jpg);
     background-size: cover;
     background-position: -230px center;
-    height: 100vh;
   }
   #madden #part-2-opener {
     background-color: #000;
