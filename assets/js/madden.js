@@ -108,7 +108,7 @@
 
     trackHeader: function() {
       var scrollPos = $(window).scrollTop();
-      if($('#part-2-opener').length == 0 ){
+      if ($('#part-2-opener').length === 0) {
         if (scrollPos > ($('#part-1-opener').height() / 2)) {
           $('header').removeClass('triggered');
         } else{
