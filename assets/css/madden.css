@@ -22,6 +22,9 @@ body {
   z-index: 10;
   vertical-align: middle;
 }
+.admin-bar #madden header{
+  top:30px;
+}
 #madden header.triggered {
   background: #c4380c;
   transition: background 0.5s;
@@ -213,7 +216,6 @@ body {
   top: calc(50% + 40px);
   left: 5%;
   width: 95%;
-  text-align: ;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%)
@@ -1499,7 +1501,6 @@ bottom: 10px;
   }
   #madden #interactive iframe {
     max-width: 95%;
-    height: 1650px;
   }
   #madden #hickey-video {
     min-height: 0px;

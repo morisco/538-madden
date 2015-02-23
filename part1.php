@@ -1,13 +1,12 @@
         <a name="part1"></a>
         <section class="full-screen opener trigger-watch" id="part-1-opener" data-callback="part1Opener">
-
-          <?php if ( ! $isMobile ) { ?>
-            <div class="panel video">
-              <video id="intro-video">
-                <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="video/mp4">
-              </video>
-            </div>
-			<?php } ?>
+        <?php if ( ! $isMobile ) { ?>
+          <div class="panel video">
+            <video id="intro-video">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="video/mp4">
+            </video>
+          </div>
+			   <?php } ?>
 
           <div class="panel-1 panel">
             <div class="panel-wrapper">
