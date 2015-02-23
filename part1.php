@@ -191,9 +191,9 @@
           <p>As for the rookies, their creation process dominates Moore&rsquo;s spring schedule.</p>
           <p>Starting around March, Moore begins sketching out the ratings framework for projected draftees using a series of templates for each position. Working with measurables from the <a href="http://en.wikipedia.org/wiki/NFL_scouting_combine" target="_blank">scouting combine</a> and <a href="http://en.wikipedia.org/wiki/National_Football_League_draft#Pro_Day" target="_blank">pro days</a>, he establishes a player&rsquo;s ratings in categories such as speed and strength, which are almost directly tied to the drills performed by prospects in advance of the NFL draft. For instance, a 4.50-second time in the 40-yard dash will usually earn a prospect a speed rating of 89, barring particularly strong scouting comments about his fleetness of foot (or lack thereof).</p>
           <p>At the same time, Moore dives into the various public pre-draft scouting reports for each player, marking down pluses and minuses when consistent themes emerge and applying those adjustments to the templates in areas where the raw combine measurables are less useful, such as coverage skills or play recognition.</p>
-          <a name="interact"></a>
+          <a name="interactive" class="interactive-link"></a>
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
-          <div id="interactive">
+          <div id="interact">
             <h3>Interactive</h3>
           </div>
           <p><span class="dropcap">F</span>inally, after all the component categories are set for both rookies and veterans, the numbers are used to generate the fabled Overall Rating.</p>

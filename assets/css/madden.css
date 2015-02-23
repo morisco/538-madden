@@ -439,6 +439,11 @@ font-size: 13px;
   line-height: 140%;
   letter-spacing: 0.03em;
 }
+
+#madden .content-width p.chart{
+  width:45%;
+}
+
 #madden .content-width .sidebar p {
   padding-right: 10%;
   color: #999;
@@ -943,13 +948,17 @@ bottom: 10px;
   border: 0px;
 }
 
-#madden #interactive {
+#madden #interact {
   width: 1024px;
   max-width: 98%;
   margin: 55px auto 100px;
   clear: both;
 }
-#madden #interactive h3 {
+#madden .interactive-link{
+  width:100%;
+  clear:both;
+}
+#madden #interact h3 {
   text-align: center;
   color: #40ad48;
   letter-spacing: 2px;
@@ -958,7 +967,7 @@ bottom: 10px;
   z-index: 5;
   position: relative
 }
-#madden #interactive iframe {
+#madden #interact iframe {
   width: 100%;
   position: relative;
   z-index: 0;
@@ -1192,9 +1201,21 @@ bottom: 10px;
     margin: 20px 5% 20px 0;
   }
 
+  #madden .ornamental-rule {
+    float: right;
+    clear: both;
+    margin-right: 5%;
+    width: 50%;
+  }
+
 }
 
 @media (max-width : 768px) {
+
+  #madden header a.title-bar {
+    display: none;
+  }
+
   #madden #part-1-opener,
   #madden #part-2-opener {
     height: 100vh;
@@ -1223,12 +1244,7 @@ bottom: 10px;
     width: 50%;
     margin-right: 5%;
   }
-  #madden .ornamental-rule {
-    float: right;
-    clear: both;
-    margin-right: 5%;
-    width: 50%;
-  }
+
   #madden .content-width .sidebar p {
     float: none;
     margin-right: auto;
@@ -1312,7 +1328,7 @@ bottom: 10px;
     width: 50%;
     margin: 20px 5% 50px 0;
   }
-  #madden #interactive {
+  #madden #interact {
     margin: 55px auto 55px;
   }
   #madden #combines .combine {
@@ -1446,6 +1462,9 @@ bottom: 10px;
 }
 
 @media( max-width: 600px ) {
+  .admin-bar #madden header{
+    top:0px;
+  }
   #madden #part-1-opener
   #madden #part-2-opener{
     height:500px;
@@ -1531,10 +1550,10 @@ bottom: 10px;
     margin: 0 auto 30px;
     float: none;
   }
-  #madden #interactive {
+  #madden #interact {
     height: auto;
   }
-  #madden #interactive iframe {
+  #madden #interact iframe {
     max-width: 95%;
   }
   #madden #hickey-video {

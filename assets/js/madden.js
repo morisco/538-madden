@@ -155,7 +155,7 @@
     },
 
     initInteractive: function(){
-      var pymParent = new pym.Parent('interactive', 'http://projects.fivethirtyeight.com/madden-scores/index.html', {});
+      var pymParent = new pym.Parent('interact', 'http://projects.fivethirtyeight.com/madden-scores/index.html', {});
     },
 
     initOpener: function() {
