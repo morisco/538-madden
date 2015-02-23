@@ -12,6 +12,10 @@
     muted: false,
     introVideo: document.getElementById('intro-video'),
     videoPlaying: false,
+    twitter_part1: 'https://twitter.com/intent/tweet?text=How%20Madden%20Ratings%20Work%3A%20The%20secret%20process%20that%20turns%20NFL%20players%20into%20digital%20gods.&url=http://53eig.ht/Madden',
+    twitter_part2: 'https://twitter.com/intent/tweet?text=The%20Walk-On%3A%20How%20Madden%20helped%20an%20everyday%20schlub%20make%20it%20into%20the%20NFL.&url=http://53eig.ht/MaddenPt2',
+    facebook_part1: 'https://www.facebook.com/sharer/sharer.php?u=',
+    facebook_part2: 'https://www.facebook.com/sharer/sharer.php?u=',
 
     initApp: function() {
       $('#madden').animate({'opacity': 1});
@@ -58,6 +62,8 @@
 
     initHeader: function() {
       if (window.location.hash === '#part2') {
+        $('.share-twitter').attr('href',MADDEN.twitter_part2);
+        $('.share-facebook').attr('href',MADDEN.facebook_part2);
         $('header').addClass('triggered');
         $('header nav a').removeClass('active');
         $('#part-2-link').addClass('active');
@@ -65,24 +71,30 @@
         $(window).on('scroll', MADDEN.trackHeader);
         return;
       } else {
+        $('.share-twitter').attr('href',MADDEN.twitter_part1);
+        $('.share-facebook').attr('href',MADDEN.facebook_part1);
         $(window).on('scroll', MADDEN.trackHeader);
       }
 
       if (($(window).scrollTop()) >= ($('#part-2-opener').offset().top - 40) || window.location.hash === '#part2') {
         $('header nav a').removeClass('active');
         $('#part-2-link').addClass('active');
+        $('.share-twitter').attr('href',MADDEN.twitter_part2);
+        $('.share-facebook').attr('href',MADDEN.facebook_part2);
       } else {
         $('header nav a').removeClass('active');
         $('#part-1-link').addClass('active');
+        $('.share-twitter').attr('href',MADDEN.twitter_part1);
+        $('.share-facebook').attr('href',MADDEN.facebook_part1);
       }
       if ($(window).scrollTop() > 100 && window.location.hash !== '#part2') {
         $('header').removeClass('triggered');
-        $('header').addClass('part-1');
-        $('header').removeClass('part-2');
+        $('.share-twitter').attr('href',MADDEN.twitter_part1);
+        $('.share-facebook').attr('href',MADDEN.facebook_part1);
       } else {
         $('header').addClass('triggered');
-        $('header').addClass('part-2');
-        $('header').removeClass('part-1');
+        $('.share-twitter').attr('href',MADDEN.twitter_part2);
+        $('.share-facebook').attr('href',MADDEN.facebook_part2);
       }
     },
 
@@ -92,8 +104,8 @@
         $('header').addClass('triggered');
       } else if (scrollPos > ($('#part-1-opener').height() / 2) && scrollPos < ($('#part-2-opener').offset().top - 40)) {
         $('header').removeClass('triggered locked');
-        $('header').addClass('part-1');
-        $('header').removeClass('part-2');
+        $('.share-twitter').attr('href',MADDEN.twitter_part1);
+        $('.share-facebook').attr('href',MADDEN.facebook_part1);
         if(history.pushState) {
           history.pushState(null, null, '#');
         }
@@ -102,8 +114,8 @@
         }
       } else if (scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height() / 2)) {
         $('header').addClass('locked');
-        $('header').addClass('part-2');
-        $('header').removeClass('part-1');
+        $('.share-twitter').attr('href',MADDEN.twitter_part2);
+        $('.share-facebook').attr('href',MADDEN.facebook_part2);
         if(history.pushState) {
             history.pushState(null, null, '#part2');
         }
@@ -647,7 +659,8 @@
         } else if (ratio >= 30 && !element.find('#video-overlay').hasClass('triggered')) {
           element.find('#video-overlay').addClass('triggered');
           element.find('.stat').each(function(index, stat) {
-            stat = $(this);
+
+            // stat = $(this);
             setTimeout(function() {
               stat.addClass('triggered');
             },index * 100);
