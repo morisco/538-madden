@@ -157,7 +157,7 @@
     },
 
     preTrigger: function(element) {
-      if (element.attr('data-callback') == 'adjustedStats') {
+      if (element.attr('data-callback') === 'adjustedStats') {
         element.find('.player-stats').addClass('triggered');
         element.attr('data-trigger', true);
       }
