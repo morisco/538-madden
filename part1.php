@@ -401,7 +401,7 @@
               Comments
               <span class="add-comment">Add Comment</span></h3>
             <div class="entry-comments-content fte-expandable-content">
-              <div class="fb-comments" data-href="http://fivethirtyeight.com/?post_type=fte_features&#038;p=66725" data-width="491" data-numposts="5" data-colorscheme="light"></div>
+              <div class="fb-comments" data-href="http://fivethirtyeight.com/?post_type=fte_features&#038;p=68633" data-width="491" data-numposts="5" data-colorscheme="light"></div>
             </div>
         </div>
         <div class="post-author">
