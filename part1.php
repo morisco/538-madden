@@ -1,20 +1,20 @@
         <a name="part1"></a>
         <section class="full-screen opener trigger-watch" id="part-1-opener" data-callback="part1Opener">
 
-          <?php if(!$isMobile){ ?>
+          <?php if ( ! $isMobile ) { ?>
             <div class="panel video">
               <video id="intro-video">
-                <source src="video/opener.mp4" type="video/mp4">
+                <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/opener.mp4" type="video/mp4">
               </video>
             </div>
-          <?php } ?>
+			<?php } ?>
 
           <div class="panel-1 panel">
             <div class="panel-wrapper">
               <h1>How Madden Ratings Are Made</h1>
-              <h2>The secret <span class="line-2">process that turns </span> NFL players into digital gods</h2>
-              <h3>by neil paine</h3>
-              <h4>illustration by mike mcquade</h4>
+              <h2>The Secret <span class="line-2">Process That Turns</span> NFL Players Into Digital Gods</h2>
+              <h3>by Neil Paine</h3>
+              <h4>illustration by Mike McQuade</h4>
             </div>
           </div>
 
@@ -40,7 +40,7 @@
         <section id="section-2" class="content-width">
           <p><span class="dropcap">O</span>n the early December day I visited his cramped cubicle, tucked away in a corner of an office building on the EA Sports campus near Orlando, Moore was putting the last touches on a <a herf="http://www.easports.com/madden-nfl/news/2014/mark-sanchez-madden-ratings?utm_campaign=mad15-social-global-ic-tw-rosterupdate-wk14-120414-mad-tw-img-site-sust&utm_source=twitter&utm_medium=social&sourceid=mad15-social-global-ic-tw-rosterupdate-wk14-120414-mad-tw-img-site-sust&cid=31592&ts=1421076967142" target="_blank">roster update</a> that would be downloaded later in the week by PlayStation and Xbox owners around the globe. When he was finished, 577 players saw some aspect of their skills re-evaluated on the basis of the previous week&rsquo;s action. It&rsquo;s an activity that Moore repeats every week of the season in an attempt to ensure that Madden imitates NFL reality.</p>
           <div class="sidebar-wrapper">
-            <?php if(!$isMobile){ ?>
+            <?php if ( ! $isMobile ) { ?>
               <div class="sidebar twitter-side trigger-watch" data-callback="showTweet">
                 <div class="tweet-wrapper" >
                   <div class="tweet-intro">
@@ -76,7 +76,7 @@
 
           <p>But player performance is <a href="http://skepticalsports.com/?p=478" target="_blank">notoriously</a> more difficult to quantify in football than in baseball. On the gridiron, detailed individual statistics are kept for only a handful of positions, and those numbers frequently <a href="http://fivethirtyeight.com/features/randy-moss-may-well-have-been-the-greatest-receiver-of-all-time/" target="_blank">miss the whole story</a> because of interactions between 11 players on each side of the ball. Game developers quickly realized that football players, in contrast with their cousins in baseball, would need to be graded on a wider variety of skills &#8212; and that ratings-makers would have to temper the science with a whole lot of art.</p>
           <div class="sidebar-wrapper">
-            <?php if(!$isMobile){ ?>
+            <?php if ( ! $isMobile ) { ?>
               <div class="sidebar">
                 <blockquote>
                   Player <br/>performance is <br/>notoriously<br/> more difficult<br/> to quantify in<br/> football than<br/> in baseball.
@@ -105,20 +105,20 @@
           <p class="chart"><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/graphs/paine-feature-madden-3.png" alt="NFL Video Games Have Gotten More Complex Graph" /></p>
           <div class="sidebar-wrapper">
             <p>Moore lobbied for many of the new rating categories, spurred by the same motivation that drove &ldquo;Micro League Baseball&rdquo; to add player ratings in the first place: greater differentiation among players.</p>
-            <?php if(!$isMobile){ ?>
+            <?php if ( ! $isMobile ) { ?>
               <div class="sidebar adjusted-stats trigger-watch" data-callback="adjustedStats">
                 <div class="player-stats first">
                   <div class="stat-card">
-                    <img class="chalk top left" src="img/chalk-o.png" />
-                    <img class="chalk top right" src="img/chalk-x.png" />
+                    <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                    <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
                     <div class="headshot">
                       <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/brandon-marshall.png" alt="Brandon Marshall" />
                     </div>
                     <div class="player-info">
                       <h4>Case Study<br/><span class="yellow">Brandon Marshall</span></br/>Veteran Player</h4>
-                      <img class="arrow" src="img/arrow.svg" />
-                      <img class="chalk bottom left" src="img/chalk-x.png" />
-                      <img class="chalk bottom right" src="img/chalk-o.png" />
+                      <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
+                      <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                      <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
                     </div>
                   </div>
                   <div class="stat-hidden">
@@ -143,16 +143,16 @@
                 </div>
                 <div class="player-stats second">
                   <div class="stat-card">
-                    <img class="chalk top left" src="img/chalk-o.png" />
-                    <img class="chalk top right" src="img/chalk-x.png" />
+                    <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                    <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
                     <div class="headshot">
                       <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/odell-beckham.png" alt="Odell Beckham Jr" />
                     </div>
                     <div class="player-info">
                       <h4>Case Study<br/><span class="yellow">Odell Beckham Jr.</span></br/>Rookie Player</h4>
-                      <img class="arrow" src="img/arrow.svg" />
-                      <img class="chalk bottom left" src="img/chalk-x.png" />
-                      <img class="chalk bottom right" src="img/chalk-o.png" />
+                      <img class="arrow" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/arrow.svg" />
+                      <img class="chalk bottom left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
+                      <img class="chalk bottom right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
                     </div>
                   </div>
                   <div class="stat-hidden">
@@ -200,16 +200,16 @@
           <p>When I asked Moore about this, I expected him to decline to comment, citing a proprietary formula shrouded in secrecy. Instead, he cheerfully called up a spreadsheet containing the values that go into computing a player&rsquo;s overall grade (and later e-mailed it to us). And somewhat anticlimactically, the overall rating is simply a <a href="http://en.wikipedia.org/wiki/Weighted_arithmetic_mean" target="_blank">weighted average</a> of a player&rsquo;s ratings across the 43 skill categories tracked by Madden, with different categories taking on more weight depending on the position.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-14"><sup id="ss-14">14</sup></a></p>
           <p>For example, the most heavily weighted categories for quarterbacks in “Madden NFL 15” are awareness and throwing power (each contributes about one-fifth of a quarterback’s overall rating), accuracy by zone (short and medium accuracy are both slightly more valuable than deep accuracy), and play-action passing. Together, those categories make up 89 percent of the overall grade for QBs, with the rest of the weight given to throwing on the run, agility, speed and acceleration.</p>
           <div id="doublewide">
-            <?php if(!$isMobile){ ?>
+            <?php if ( ! $isMobile ) { ?>
               <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/graphs/paine-feature-madden-4.png" />
-            <?php } else{ ?>
+            <?php } else { ?>
               <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/graphs/paine-feature-madden-4-mobile.png" />
             <?php } ?>
           </div>
           <p>The effects of the ratings on actual gameplay can be arcane for even the most seasoned Madden veterans. Perhaps no one outside of EA Sports has spent more time contemplating Madden&rsquo;s inner workings than SB Nation&rsquo;s Jon Bois, the creator of <a href="http://www.sbnation.com/breaking-madden" target="_blank">Breaking Madden</a>, a football column that doubles as an absurdist meditation on the game itself. But Bois confessed that he still can&rsquo;t quite figure out what some of the rating categories actually do for players on the virtual gridiron.</p>
           <p>&ldquo;There are definitely more obscure settings,&rdquo; Bois said. &ldquo;There&rsquo;s a slider called ‘press,&rsquo; which I have no idea what it means. I set it to zero every time, and I still have no idea what it does, or what ‘press&rsquo; even is.&rdquo;<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-15"><sup id="ss-15">15</sup></a></p>
           <div class="sidebar-wrapper">
-            <?php if(!$isMobile){ ?>
+            <?php if ( ! $isMobile ) { ?>
               <div class="sidebar">
                 <blockquote>
                   “I’ve heard it speculated that even the Madden team themselves don’t really know what’s going on,” Bailey said.
@@ -237,7 +237,7 @@
           <p>On one level, sports video games give regular Joes and Jills the opportunity to perform athletic feats that most could only dream about in real life &#8212; blazing runs, high-flying dunks, cannon-armed throws &#8212; and games have gotten pretty good at simulating these aspects of what it means to be a professional athlete.<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-17"><sup id="ss-17">17</sup></a> But sports video games will always struggle to accurately replicate the cerebral side of sports; that&rsquo;s why it&rsquo;s more difficult to <a href="https://feelingsarentnumbers.wordpress.com/2012/01/12/the-disappointment-of-digital-rubio/" target="_blank">simulate being Ricky Rubio than LeBron James</a>.</p>
           <p>When I asked Moore what types of players Madden had the most difficulty simulating, two archetypes sprung to his mind. &ldquo;There&rsquo;s the Peyton Manning guy &#8212; not [Tom] Brady or [Aaron] Rodgers because they have strong arms<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-18"><sup id="ss-18">18</sup></a> &#8212; but the quarterback that&rsquo;s pure decision-making, accuracy and touch,&rdquo; Moore said. &ldquo;And the crafty veteran wide receiver with the ability to find holes in zone [coverage], like Reggie Wayne or Roddy White.&rdquo;<a class="footnote-link" data-expandable="entry-footnotes" href="#fn-19"><sup id="ss-19">19</sup></a></p>
         </section>
-        <?php if(!$isMobile){ ?>
+        <?php if ( ! $isMobile ) { ?>
         <section class="full-screen trigger-watch" data-callback="gameBreakers" id="gamebreakers">
           <div id="gamebreaker-intro" class="gamebreaker-panel active" data-panel-index="1">
             <div class="gamebreaker-wrapper">
@@ -248,7 +248,7 @@
           </div>
           <div id="gamebreaker-peyton" class="gamebreaker-panel" data-panel-index="2">
             <video id="breaker-video-2" class="gamebreaker-video" data-video-id="2">
-              <source src="video/gamebreaker-manning.mp4" type="video/mp4">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-manning.mp4" type="video/mp4">
             </video>
               <div class="breaker-profile">
                 <div class="headshot">
@@ -274,7 +274,7 @@
             <a href="#" class="mute-video">Mute Video</a>
           </div>
           <div id="gamebreaker-vick" class="gamebreaker-panel" data-panel-index="3">
-              <video id="breaker-video-3" src="video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
+              <video id="breaker-video-3" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-vick.mp4" class="gamebreaker-video" data-video-id="3"></video>
               <div class="breaker-profile">
                 <div class="headshot">
                   <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/vick-headshot.png" alt="Michael Vick" />
@@ -300,8 +300,8 @@
           </div>
           <div id="gamebreaker-wayne" class="gamebreaker-panel" data-panel-index="4">
             <video id="breaker-video-4" class="gamebreaker-video" data-video-id="4">
-              <source src="video/gamebreaker-wayne.mp4" type="video/mp4">
-              <source src="video/gamebreaker-wayne.webm" type="video/webm">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.mp4" type="video/mp4">
+              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.webm" type="video/webm">
             </video>
               <div class="breaker-profile">
                 <div class="headshot">
@@ -327,7 +327,7 @@
               <a href="#" class="mute-video">Mute Video</a>
             </div>
         </section>
-        <?php } else {?>
+        <?php } else { ?>
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
         <?php } ?>
         <section id="section-3" class="content-width">
@@ -339,7 +339,7 @@
           <p>Bailey confirmed this development. &ldquo;It was true for a long time [that] the little speedy guys could just get open, and that was that,&rdquo; she said. &ldquo;I don&rsquo;t think that&rsquo;s as much of the case anymore.&rdquo;</p>
           <p>But while speed can be mitigated, Moore granted that there&rsquo;s no good way to overcome the problem of simulating a quarterback like Manning, whose most important skills &#8212; reading defenses, calling audibles, seeing things on the field that no one else can, and making sound decisions &#8212; are instantly negated when a gamer picks up the controller.</p>
           <div class="sidebar-wrapper">
-            <?php if(!$isMobile){ ?>
+            <?php if ( ! $isMobile ) { ?>
               <div class="sidebar">
                 <blockquote>
                   “Quarterback decision-making is the most difficult thing to simulate,” Moore said.

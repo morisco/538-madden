@@ -11,8 +11,8 @@
                 <h2>How Madden helped a schlub like me make it into the NFL</h2>
               </div>
               <div class="part-3">
-                <h3>by walt hickey</h3>
-                <h4>photography by marius bugge</h4>
+                <h3>by Walt Hickey</h3>
+                <h4>photography by Marius Bugge</h4>
               </div>
             </div>
           </div>
@@ -28,8 +28,8 @@
               <div id="hickey-stat">
                 <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/hickey-image.png" alt="Walter Hickey" class="hickey-image" />
                 <div class="hickey-bio">
-                  <img class="chalk top left" src="img/chalk-o.png" />
-                  <img class="chalk top right" src="img/chalk-x.png" />
+                  <img class="chalk top left" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-o.png" />
+                  <img class="chalk top right" src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/chalk-x.png" />
                   <div class="stat-wrap solid-border-top">
                     <div class="stat">Walter Hickey</div>
                     <div class="stat-note">Monroe, NY</div>
@@ -94,7 +94,7 @@
                   Deep Accuracy <span class="stat-number"><span class="increase-me" data-final-number="2" data-starting-number="0">0</span>/5</span>
                 </div>
               </div>
-              <?php if(!$isMobile){ ?>
+				<?php if ( ! $isMobile ) { ?>
               <div class="combine combine-3">
                 <h3>Receiving</h3>
                 <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/walt_catch.gif" />
@@ -118,7 +118,7 @@
                   Long <span class="stat-number"><span class="increase-me" data-final-number="11" data-starting-number="0">0</span> yds</span>
                 </div>
               </div>
-              <?php } ?>
+				<?php } ?>
             </div>
           </div>
           <p>I strolled onto the gridiron in Orlando wearing old gym clothes and the cheapest sneakers available, which I ordered three days prior. I did the three stretches I remembered from my middle school Presidential Physical Fitness Test &#8212; touch your toes, lunge side to side, twist your arm out of its socket &#8212; and some light jogging.</p>
@@ -153,8 +153,8 @@
           <p>Hickey did not have a good day. He threw 7 for 25, threw three interceptions and was sacked three times. The Giants lost 42-7. The only points came thanks to wide receiver Odell Beckham Jr., who could make any quarterback look good. He scored on a short pass that he turned into a 94-yard touchdown. My only comfort was to imagine the great headline that the New York Post would put on its back page the next day: &ldquo;Hickey Fails to Leave a Mark.&rdquo;</p>
         </section>
         <section id="video" class="full-screen trigger-watch" data-callback="hickeyVideo">
-          <video id="hickey-video" loop controls poster="img/walt-poster.jpg">
-            <source src="video/walt-hickey-video.mp4" type="video/mp4">
+          <video id="hickey-video" loop controls poster="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/walt-poster.jpg">
+            <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/walt-hickey-video.mp4" type="video/mp4">
           </video>
           <div id="video-overlay">
             <div class="stat-wrapper">
