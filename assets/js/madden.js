@@ -157,11 +157,9 @@
     },
 
     preTrigger: function(element) {
-      switch (element.attr('data-callback')) {
-        case 'adjustedStats':
-          element.find('.player-stats').addClass('triggered');
-          element.attr('data-trigger', true);
-        break;
+      if (element.attr('data-callback') == 'adjustedStats') {
+        element.find('.player-stats').addClass('triggered');
+        element.attr('data-trigger', true);
       }
     },
 
@@ -348,13 +346,18 @@
         return;
       } else if (!reset) {
         element.attr('data-trigger', true);
+
+        var originalStat;
+        var adjustedStat;
+        var difference;
         var currentRatio = MADDEN.getRatio(element);
+
         if (currentRatio > 33 && !element.find('.player-stats.first').hasClass('triggered')) {
           element.find('.player-stats.first').first().addClass('triggered');
         } else if (currentRatio > 55 && !element.find('.player-stats.first .adjustments').hasClass('triggered') && element.find('.player-stats.first').hasClass('triggered')) {
-          var originalStat = parseInt(element.find('.player-stats.first .original-rating .player-rating').text(), 10);
-          var adjustedStat = parseInt(element.find('.player-stats.first .adjusted-rating .player-rating').attr('data-final-rating'), 10);
-          var difference = adjustedStat - originalStat;
+          originalStat = parseInt(element.find('.player-stats.first .original-rating .player-rating').text(), 10);
+          adjustedStat = parseInt(element.find('.player-stats.first .adjusted-rating .player-rating').attr('data-final-rating'), 10);
+          difference = adjustedStat - originalStat;
           for (var i = originalStat; i <= adjustedStat; i++) {
             MADDEN.increaseNumber(originalStat, i, element.find('.player-stats.first .adjusted-rating .player-rating'), difference);
           }
@@ -362,11 +365,11 @@
         } else if (currentRatio > 70 && !element.find('.player-stats.second').hasClass('triggered')) {
            element.find('.player-stats.second').addClass('triggered');
         } else if (currentRatio > 77 && !element.find('.player-stats.second .adjustments').hasClass('triggered') && element.find('.player-stats.second').hasClass('triggered')) {
-          var originalStat = parseInt(element.find('.player-stats.second .original-rating .player-rating').text(), 10);
-          var adjustedStat = parseInt(element.find('.player-stats.second .adjusted-rating .player-rating').attr('data-final-rating'), 10);
-          var difference = adjustedStat - originalStat;
-          for (var i = originalStat; i <= adjustedStat; i++) {
-            MADDEN.increaseNumber(originalStat, i, element.find('.player-stats.second .adjusted-rating .player-rating'), difference);
+          originalStat = parseInt(element.find('.player-stats.second .original-rating .player-rating').text(), 10);
+          adjustedStat = parseInt(element.find('.player-stats.second .adjusted-rating .player-rating').attr('data-final-rating'), 10);
+          difference = adjustedStat - originalStat;
+          for (var j = originalStat; j <= adjustedStat; j++) {
+            MADDEN.increaseNumber(originalStat, j, element.find('.player-stats.second .adjusted-rating .player-rating'), difference);
           }
           element.find('.player-stats.second .adjustments').addClass('triggered');
         }
@@ -374,8 +377,9 @@
     },
 
     increaseNumber: function(original, index, element, difference) {
+      var delayInt;
       if (difference > 18) {
-        var delayInt = 1500 / difference;
+        delayInt = 1500 / difference;
       } else {
         delayInt = 80;
       }
@@ -524,11 +528,12 @@
 
     resetGamebreakers: function() {
       var finalScroll = $('#gamebreakers').offset().top + $('#gamebreakers').height();
+      var timeout;
       if ($(window).scrollTop() < finalScroll) {
         $('html,body').animate({scrollTop: finalScroll},1000);
-        var timeout = 1000;
+        timeout = 1000;
       } else {
-        var timeout = 0;
+        timeout = 0;
       }
       setTimeout(function() {
         $('.gamebreaker-panel.active').animate({'opacity': 0},250, function() {
@@ -634,6 +639,7 @@
         return;
       } else if (!reset) {
         element.attr('data-trigger', true);
+        var stat;
         var ratio = MADDEN.getRatio(element);
         if (ratio > 20 && ratio < 30 && !element.hasClass('triggered')) {
           var video = document.getElementById('hickey-video');
@@ -641,7 +647,7 @@
         } else if (ratio >= 30 && !element.find('#video-overlay').hasClass('triggered')) {
           element.find('#video-overlay').addClass('triggered');
           element.find('.stat').each(function(index, stat) {
-            var stat = $(this);
+            stat = $(this);
             setTimeout(function() {
               stat.addClass('triggered');
             },index * 100);
