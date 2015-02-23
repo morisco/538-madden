@@ -127,7 +127,7 @@
     },
 
     initInteractive: function(){
-      var pymParent = new pym.Parent('interactive', 'http://staging.projects.fivethirtyeight.com.s3-website-us-east-1.amazonaws.com/madden-scores/', {});
+      var pymParent = new pym.Parent('interactive', 'http://projects.fivethirtyeight.com.s3-website-us-east-1.amazonaws.com/madden-scores/', {});
     },
 
     initOpener: function() {
