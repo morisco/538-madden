@@ -13,6 +13,7 @@
               <h1>How Madden Ratings Are Made</h1>
               <h2>The Secret <span class="line-2">Process That Turns</span> NFL Players Into Digital Gods</h2>
               <h3>by Neil Paine</h3>
+              <h4>GRAPHICS BY REUBEN FISCHER-BAUM</h4>
               <h4>illustration by Mike McQuade</h4>
             </div>
           </div>
@@ -300,7 +301,6 @@
           <div id="gamebreaker-wayne" class="gamebreaker-panel" data-panel-index="4">
             <video id="breaker-video-4" class="gamebreaker-video" data-video-id="4">
               <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.mp4" type="video/mp4">
-              <source src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/video/gamebreaker-wayne.webm" type="video/webm">
             </video>
               <div class="breaker-profile">
                 <div class="headshot">
