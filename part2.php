@@ -12,6 +12,7 @@
               </div>
               <div class="part-3">
                 <h3>by Walt Hickey</h3>
+                <h4>graphics by Reuben Fischer-Baum</h4>
                 <h4>photography by Marius Bugge</h4>
               </div>
             </div>
