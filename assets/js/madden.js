@@ -94,11 +94,11 @@
       if ($(window).scrollTop() > 100 && window.location.hash !== '#part2') {
         $('header').removeClass('triggered');
         $('header').removeClass('hidden');
-        MADDEN.swapShares(1);
+        MADDEN.swapShares(2);
       } else {
         $('header').addClass('triggered');
         $('header').removeClass('hidden');
-        MADDEN.swapShares(2);
+        MADDEN.swapShares(1);
       }
     },
 
