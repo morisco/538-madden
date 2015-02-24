@@ -178,7 +178,7 @@
           <div class="sidebar-wrapper">
             <p>Despite the praise during practice — that I had more of an offensive-guard skill set, that I could be a tight end, that I was &ldquo;a real north and south kind of player&rdquo; — when it comes down to it, I&rsquo;m clumsy and awkward, my limbs don&rsquo;t quite go where I want them to go, and at best, it&rsquo;s just fun to watch me. Generally speaking, I don&rsquo;t think a regular person could compete with the pros. Most people are somewhat good at something. But greatness — regularly scheduled weekly articulations of greatness — is something that just can&rsquo;t be turned on.</p>
             <div class="sidebar teaser">
-              <a href="http://fivethirtyeight.com/datalab/listen-to-how-walt-hickey-and-neil-paine-tried-to-break-madden" target="_blank"><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/podcast-teaser.jpg" alt="Walter Hickey in part 2" /></a>
+              <a href="http://fivethirtyeight.com/datalab/listen-to-how-walt-hickey-and-neil-paine-tried-to-break-madden" target="_blank"><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/podcast-teaser.svg" alt="Walter Hickey in part 2" width="50" /></a>
               <p><strong><a href="http://fivethirtyeight.com/datalab/listen-to-how-walt-hickey-and-neil-paine-tried-to-break-madden" target="_blank">Listen to Walt Hickey and Neil Paine discuss their reporting and how they broke Madden.</a></strong></p>
             </div>
           </div>

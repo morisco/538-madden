@@ -721,12 +721,12 @@ font-size: 13px;
 }
 #madden #part-2-opener #opener-2 {
   z-index: 1;
-  background-image: url(/madden/img/part-2-opener-2.jpg);
+  background-image: url(/madden/img/part-2-opener-1.jpg);
   z-index: 2;
 }
 #madden #part-2-opener #opener-3 {
   z-index: 1;
-  background-image: url(/madden/img/part-2-opener-1.jpg);
+  background-image: url(/madden/img/part-2-opener-2.jpg);
   z-index: 3;
 }
 #madden #part-2-opener #opener-text {
