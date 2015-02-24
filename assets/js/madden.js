@@ -75,7 +75,7 @@
         $(window).on('scroll', MADDEN.trackHeader);
       }
 
-      if($('#part-2-opener').length > 0 ){
+      if ($('#part-2-opener').length > 0) {
         if (($(window).scrollTop()) >= ($('#part-2-opener').offset().top - 40) || window.location.hash === '#part2') {
           $('header nav a').removeClass('active');
           $('#part-2-link').addClass('active');
@@ -85,7 +85,7 @@
           $('#part-1-link').addClass('active');
           MADDEN.swapShares(1);
         }
-      } else{
+      } else {
         $('header nav a').removeClass('active');
         $('#part-1-link').addClass('active');
         MADDEN.swapShares(1);
@@ -107,7 +107,7 @@
       if ($('#part-2-opener').length === 0) {
         if (scrollPos > ($('#part-1-opener').height() / 2)) {
           $('header').removeClass('triggered');
-        } else{
+        } else {
           $('header').addClass('triggered');
         }
       } else {
@@ -146,7 +146,7 @@
       }
     },
 
-    swapShares: function(part){
+    swapShares: function(part) {
       var twitterShare;
       var facebookShare;
       if (part === 1) {
@@ -161,7 +161,7 @@
 
     },
 
-    initInteractive: function(){
+    initInteractive: function() {
       var pymParent = new pym.Parent('interact', 'http://projects.fivethirtyeight.com/madden-scores/index.html', {});
     },
 
@@ -683,7 +683,7 @@
           video.play();
         } else if (ratio >= 30 && !element.find('#video-overlay').hasClass('triggered')) {
           element.find('#video-overlay').addClass('triggered');
-          element.find('.stat').each(function(index,stat) {
+          element.find('.stat').each(function(index, stat) {
             setTimeout(function() {
               $(stat).addClass('triggered');
             },index * 100);
