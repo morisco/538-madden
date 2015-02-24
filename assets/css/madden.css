@@ -1217,6 +1217,10 @@ bottom: 10px;
     width: 50%;
   }
 
+  #madden #part-1-opener .panel {
+    opacity: 1;
+  }
+
 }
 
 @media (max-width : 768px) {
@@ -1266,6 +1270,8 @@ bottom: 10px;
     margin: 0 auto;
   }
 
+
+
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
@@ -1283,6 +1289,7 @@ bottom: 10px;
 
   #madden #part-1-opener .panel {
     opacity: 1;
+    height:950px;
   }
   #madden .panel .panel-wrapper {
     top: calc(50% + 20px);
@@ -1349,8 +1356,6 @@ bottom: 10px;
   #madden #combines p {
     margin-bottom: 20px;
   }
-
-
 
   #madden .sidebar-wrapper p {
     float: none;
@@ -1441,6 +1446,12 @@ bottom: 10px;
   #madden #part-2-opener.done .panel {
     position: absolute;
     top: 0;
+  }
+  #madden #part-1-opener video{
+    display:none;
+  }
+  #madden #part-1-opener .panel {
+    height:640px;
   }
   #madden #part-1-opener {
     background: url(/madden/img/full-screen.jpg);
