@@ -18,8 +18,8 @@ body {
   z-index: 10;
   vertical-align: middle;
 }
-.admin-bar #madden header{
-  top:30px;
+.admin-bar #madden header {
+  top: 30px;
 }
 #madden header.triggered {
   background: #c4380c;
@@ -35,7 +35,9 @@ body {
 #madden header.hidden .logo,
 #madden header.hidden .fox,
 #madden header.hidden .words,
-#madden header.hidden nav{ opacity:0 !important; }
+#madden header.hidden nav {
+  opacity: 0 !important;
+}
 
 #madden header .header-wrapper {
   width: 100%;
@@ -46,8 +48,8 @@ body {
   position: relative;
   display: inline-block;
   padding: 12px 20px 12px 0;
-  transition:opacity 0.5s;
-  -webkit-transition:opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
 }
 #madden header .logo .words {
   opacity: 0;
@@ -174,7 +176,7 @@ body {
 #madden #part-1-opener {
   height: 175vh;
   overflow: hidden;
-  z-index:5;
+  z-index: 5;
 }
 #madden #part-1-opener .background {
   width: 100%;
@@ -435,12 +437,12 @@ font-size: 13px;
   width: 255px;
   font-family: "AtlasGroteskWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#madden .content-width .sidebar.teaser{
-  bottom:0px;
-  right:100px;
-  top:auto;
-  left:auto;
-  width:172px;
+#madden .content-width .sidebar.teaser {
+  bottom: 0px;
+  right: 100px;
+  top: auto;
+  left: auto;
+  width: 172px;
 }
 #madden .content-width .sidebar p, #madden .content-width p.chart {
   width: 100%;
@@ -449,8 +451,8 @@ font-size: 13px;
   letter-spacing: 0.03em;
 }
 
-#madden .content-width p.chart{
-  width:45%;
+#madden .content-width p.chart {
+  width: 45%;
 }
 
 #madden .content-width .sidebar p {
@@ -481,9 +483,9 @@ font-size: 13px;
 }
 
 #madden .twitter-side {
-  position:relative;
+  position: relative;
   height: 800px;
-  z-index:0;
+  z-index: 0;
 }
 #madden .tweet-wrapper.fixed {
   top: 50px;
@@ -685,7 +687,7 @@ font-size: 13px;
   background: #000;
   text-align: center;
   overflow: hidden;
-  z-index:5;
+  z-index: 5;
 }
 #madden #part-2-opener .panel {
   height: 100vh;
@@ -963,9 +965,9 @@ bottom: 10px;
   margin: 55px auto 100px;
   clear: both;
 }
-#madden .interactive-link{
-  width:100%;
-  clear:both;
+#madden .interactive-link {
+  width: 100%;
+  clear: both;
 }
 #madden #interact h3 {
   text-align: center;
@@ -1174,7 +1176,9 @@ bottom: 10px;
 
 @media (max-width : 1100px) {
 
-  #madden #part-1-opener video{ display:none; }
+  #madden #part-1-opener video {
+    display: none;
+  }
 
   #madden #part-1-opener {
     background: url(/madden/img/full-screen.jpg);
@@ -1182,15 +1186,15 @@ bottom: 10px;
     background-position: center center;
   }
 
-  #madden .content-width .sidebar.teaser{
-    left:0px;
-    bottom:0px;
-    right:auto;
-    top:auto;
+  #madden .content-width .sidebar.teaser {
+    left: 0px;
+    bottom: 0px;
+    right: auto;
+    top: auto;
   }
 
-  #madden .content-width .sidebar.teaser p{
-    float:none;
+  #madden .content-width .sidebar.teaser p {
+    float: none;
   }
 
   #madden .content-width p {
@@ -1270,8 +1274,6 @@ bottom: 10px;
     margin: 0 auto;
   }
 
-
-
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
@@ -1280,16 +1282,16 @@ bottom: 10px;
   #madden #part-2-opener,
   #madden #part-2-opener .panel,
   #madden .panel {
-    height:1024px;
+    height: 1024px;
   }
 
-  .admin-bar #madden header{
-    top:46px;
+  .admin-bar #madden header {
+    top: 46px;
   }
 
   #madden #part-1-opener .panel {
     opacity: 1;
-    height:950px;
+    height: 950px;
   }
   #madden .panel .panel-wrapper {
     top: calc(50% + 20px);
@@ -1433,7 +1435,7 @@ bottom: 10px;
   #madden #part-2-opener,
   #madden #part-2-opener .panel,
   #madden .panel {
-    height:768px;
+    height: 768px;
   }
   #madden #part-2-opener .part-1,
   #madden #part-2-opener .part-2,
@@ -1447,11 +1449,11 @@ bottom: 10px;
     position: absolute;
     top: 0;
   }
-  #madden #part-1-opener video{
-    display:none;
+  #madden #part-1-opener video {
+    display: none;
   }
   #madden #part-1-opener .panel {
-    height:640px;
+    height: 640px;
   }
   #madden #part-1-opener {
     background: url(/madden/img/full-screen.jpg);
@@ -1485,13 +1487,13 @@ bottom: 10px;
 }
 
 @media( max-width: 600px ) {
-  .admin-bar #madden header{
-    top:0px;
+  .admin-bar #madden header {
+    top: 0px;
   }
   #madden #part-1-opener,
   #madden #part-2-opener,
-  #madden .panel{
-    height:500px;
+  #madden .panel {
+    height: 500px;
   }
   #madden #part-1-opener {
     background: url(/madden/img/full-screen.jpg);
@@ -1651,12 +1653,12 @@ bottom: 10px;
     -webkit-transform: translate(0,0);
   }
 
-  #madden .content-width .sidebar.teaser{
-    margin:40px 1.25% 0px;
+  #madden .content-width .sidebar.teaser {
+    margin: 40px 1.25% 0px;
   }
 }
 
-@media( max-height:400px ) {
+@media( max-height: 400px ) {
   #madden .panel h1,
   #madden .panel h2 {
     font-size: 36px;
