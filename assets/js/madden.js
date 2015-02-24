@@ -16,6 +16,7 @@
     twitter_part2: 'https://twitter.com/intent/tweet?text=The%20Walk-On%3A%20How%20Madden%20helped%20an%20everyday%20schlub%20make%20it%20into%20the%20NFL.&url=http://53eig.ht/MaddenPt2',
     facebook_part1: 'https://www.facebook.com/sharer/sharer.php?u=http://fivethirtyeight.com/features/madden/',
     facebook_part2: 'https://www.facebook.com/sharer/sharer.php?u=http://fivethirtyeight.com/features/madden-2/',
+    currentShares: 0,
 
     initApp: function() {
       $('#madden').animate({'opacity': 1});
@@ -24,6 +25,7 @@
       MADDEN.initEvents();
       MADDEN.initOpener();
       MADDEN.initHeader();
+      MADDEN.initShares();
       MADDEN.initInteractive();
     },
 
@@ -50,7 +52,6 @@
         $(this)[0].volume = 0;
       });
 
-
       $('header nav a').on('click', function() {
         $('header nav a').removeClass('active');
         $(this).addClass('active');
@@ -61,8 +62,8 @@
     },
 
     initHeader: function() {
+
       if (window.location.hash === '#part2') {
-        MADDEN.swapShares(1);
         $('header').addClass('triggered');
         $('header').removeClass('hidden');
         $('header nav a').removeClass('active');
@@ -71,7 +72,6 @@
         $(window).on('scroll', MADDEN.trackHeader);
         return;
       } else {
-        MADDEN.swapShares(1);
         $(window).on('scroll', MADDEN.trackHeader);
       }
 
@@ -79,25 +79,47 @@
         if (($(window).scrollTop()) >= ($('#part-2-opener').offset().top - 40) || window.location.hash === '#part2') {
           $('header nav a').removeClass('active');
           $('#part-2-link').addClass('active');
-          MADDEN.swapShares(1);
         } else {
           $('header nav a').removeClass('active');
           $('#part-1-link').addClass('active');
-          MADDEN.swapShares(1);
         }
       } else{
         $('header nav a').removeClass('active');
         $('#part-1-link').addClass('active');
-        MADDEN.swapShares(1);
       }
 
       if ($(window).scrollTop() > 100 && window.location.hash !== '#part2') {
         $('header').removeClass('triggered');
         $('header').removeClass('hidden');
-        MADDEN.swapShares(1);
       } else {
         $('header').addClass('triggered');
         $('header').removeClass('hidden');
+      }
+    },
+
+    initShares: function(){
+      if($('#part-2-opener').length === 0 ){
+        console.log('caught, set to 1');
+        MADDEN.swapShares(1);
+        return;
+      }
+
+      var scrollPos = $(window).scrollTop();
+      if (scrollPos < ($('#part-2-opener').offset().top - 40)) {
+        MADDEN.swapShares(1);
+      } else {
+        MADDEN.swapShares(2);
+      }
+
+      $(window).on('scroll', MADDEN.trackShares);
+    },
+
+    trackShares: function(){
+      console.log('tracking');
+      var scrollPos = $(window).scrollTop();
+      if (scrollPos >= ($('#part-2-opener').offset().top - 40)) {
+        MADDEN.swapShares(2);
+      } else {
         MADDEN.swapShares(1);
       }
     },
@@ -115,7 +137,6 @@
           $('header').addClass('triggered');
         } else if (scrollPos > ($('#part-1-opener').height() / 2) && scrollPos < ($('#part-2-opener').offset().top - 40)) {
           $('header').removeClass('triggered locked');
-          MADDEN.swapShares(1);
           if (history.pushState) {
             history.pushState(null, null, '#');
           } else {
@@ -123,7 +144,6 @@
           }
         } else if (scrollPos >= ($('#part-2-opener').offset().top - 40) && scrollPos < ($('#part-2-opener').offset().top + $('#part-2-opener').height() / 2)) {
           $('header').addClass('locked');
-          MADDEN.swapShares(2);
           if (history.pushState) {
               history.pushState(null, null, '#part2');
           } else {
@@ -147,6 +167,11 @@
     },
 
     swapShares: function(part){
+      if(part == MADDEN.currentShares){
+        return;
+      }
+
+      MADDEN.currentShares = part;
       var twitterShare;
       var facebookShare;
       if (part === 1) {
