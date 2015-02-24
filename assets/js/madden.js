@@ -99,7 +99,6 @@
 
     initShares: function(){
       if($('#part-2-opener').length === 0 ){
-        console.log('caught, set to 1');
         MADDEN.swapShares(1);
         return;
       }
@@ -115,7 +114,6 @@
     },
 
     trackShares: function(){
-      console.log('tracking');
       var scrollPos = $(window).scrollTop();
       if (scrollPos >= ($('#part-2-opener').offset().top - 40)) {
         MADDEN.swapShares(2);
