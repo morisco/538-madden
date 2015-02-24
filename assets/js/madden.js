@@ -75,7 +75,7 @@
         $(window).on('scroll', MADDEN.trackHeader);
       }
 
-      if($('#part-2-opener').length > 0 ){
+      if ($('#part-2-opener').length > 0) {
         if (($(window).scrollTop()) >= ($('#part-2-opener').offset().top - 40) || window.location.hash === '#part2') {
           $('header nav a').removeClass('active');
           $('#part-2-link').addClass('active');
@@ -83,7 +83,7 @@
           $('header nav a').removeClass('active');
           $('#part-1-link').addClass('active');
         }
-      } else{
+      } else {
         $('header nav a').removeClass('active');
         $('#part-1-link').addClass('active');
       }
@@ -97,8 +97,8 @@
       }
     },
 
-    initShares: function(){
-      if($('#part-2-opener').length === 0 ){
+    initShares: function() {
+      if ($('#part-2-opener').length === 0) {
         MADDEN.swapShares(1);
         return;
       }
@@ -113,7 +113,7 @@
       $(window).on('scroll', MADDEN.trackShares);
     },
 
-    trackShares: function(){
+    trackShares: function() {
       var scrollPos = $(window).scrollTop();
       if (scrollPos >= ($('#part-2-opener').offset().top - 40)) {
         MADDEN.swapShares(2);
@@ -127,7 +127,7 @@
       if ($('#part-2-opener').length === 0) {
         if (scrollPos > ($('#part-1-opener').height() / 2)) {
           $('header').removeClass('triggered');
-        } else{
+        } else {
           $('header').addClass('triggered');
         }
       } else {
@@ -164,8 +164,8 @@
       }
     },
 
-    swapShares: function(part){
-      if(part == MADDEN.currentShares){
+    swapShares: function(part) {
+      if (part == MADDEN.currentShares) {
         return;
       }
 
@@ -184,7 +184,7 @@
 
     },
 
-    initInteractive: function(){
+    initInteractive: function() {
       var pymParent = new pym.Parent('interact', 'http://projects.fivethirtyeight.com/madden-scores/index.html', {});
     },
 
@@ -706,7 +706,7 @@
           video.play();
         } else if (ratio >= 30 && !element.find('#video-overlay').hasClass('triggered')) {
           element.find('#video-overlay').addClass('triggered');
-          element.find('.stat').each(function(index,stat) {
+          element.find('.stat').each(function(index, stat) {
             setTimeout(function() {
               $(stat).addClass('triggered');
             },index * 100);
