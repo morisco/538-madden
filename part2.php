@@ -68,12 +68,12 @@
           <div class="sidebar-wrapper">
             <p>Take, for example, a player&rsquo;s trucking score, which captures his ability to run over a defender. Mine ended up being 9 out of 100, which makes me highly unlikely to take on Jadeveon Clowney and prevail. But my interaction with Clowney has an element of randomness &#8212; that weighted dice roll could lead to luck for me and misfortune for him, which would mean I&rsquo;d lower my shoulder and it would somehow push him aside. When I walked on the field to try out for the game, I found this idea oddly comforting.</p>
             <div class="sidebar trigger-watch" id="combines" data-callback="combineVideos">
-              <p>Hickey&rsquo;s average scores for combine drills.</p>
+              <p>Hickey&rsquo;s best scores for combine drills.</p>
               <div class="combine combine-1">
                 <h3>Speed</h3>
                 <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/walt_run.gif" />
                 <div class="stat">
-                  40 Yard Dash <span class="stat-number"><span class="increase-me" data-final-number="6" data-starting-number="0">0</span>.<span class="increase-me" data-final-number="75" data-starting-number="0">0</span> sec</span>
+                  40-Yard Dash <span class="stat-number"><span class="increase-me" data-final-number="6" data-starting-number="0">0</span>.<span class="increase-me" data-final-number="75" data-starting-number="0">0</span> sec</span>
                 </div>
                 <div class="stat">
                   3 Cone <span class="stat-number"><span class="increase-me" data-final-number="10" data-starting-number="0">0</span>.<span class="increase-me" data-final-number="22" data-starting-number="0">0</span> sec</span>
@@ -86,7 +86,7 @@
                 <h3>PASSING</h3>
                 <img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/walt_pass.gif" />
                 <div class="stat">
-                  Throw Power <span class="stat-number"><span class="increase-me" data-final-number="20" data-starting-number="0">0</span>'</span>
+                  Throw Power <span class="stat-number"><span class="increase-me" data-final-number="20" data-starting-number="0">0</span>yds</span>
                 </div>
                 <div class="stat">
                   Short Accuracy <span class="stat-number"><span class="increase-me" data-final-number="2" data-starting-number="0">0</span>/5</span>
@@ -175,7 +175,13 @@
           <p>And yet, Madden was way too kind. The Giants should have been so, so much worse with me at the helm. My avatar couldn&rsquo;t have been rated much lower. I was far closer to a zero rating than I was to the lowest legitimate athlete in the game (Tinker, the long snapper). Despite that, my avatar still managed to lead a team to a little less than three wins a year on average? That doesn&rsquo;t make sense. The Giants went 6-10 last season. There&rsquo;s no way Eli Manning is only three wins above Walt Hickey.</p>
           <p>All we need to do to demonstrate this is to look at the team that performed exactly as I expect mine would: the 2008 Detroit Lions. Although that team was among the worst of all time and failed to win a game, it was made up of talented players who were each still vastly better athletes than I am. Indeed, that year, the overall ratings for four Lions quarterbacks  — Daunte Culpepper (80), Jon Kitna (84), Dan Orlovsky (73) and Drew Stanton (77) — vastly exceeded my rating.</p>
           <p>Factor in my shocking kicking performance (maybe I could make 95 percent of extra-point attempts on, say, the moon or some other low-gravity satellite), and I think that even my low stats fail to encapsulate just how bad (or rather how normal) I am. Madden&rsquo;s simulation is geared to work within a realm of athleticism where I do not reside. To articulate my actual performance on the field, I&rsquo;d probably need a negative rating.</p>
-          <p>Despite the praise during practice — that I had more of an offensive-guard skill set, that I could be a tight end, that I was &ldquo;a real north and south kind of player&rdquo; — when it comes down to it, I&rsquo;m clumsy and awkward, my limbs don&rsquo;t quite go where I want them to go, and at best, it&rsquo;s just fun to watch me. Generally speaking, I don&rsquo;t think a regular person could compete with the pros. Most people are somewhat good at something. But greatness — regularly scheduled weekly articulations of greatness — is something that just can&rsquo;t be turned on.</p>
+          <div class="sidebar-wrapper">
+            <p>Despite the praise during practice — that I had more of an offensive-guard skill set, that I could be a tight end, that I was &ldquo;a real north and south kind of player&rdquo; — when it comes down to it, I&rsquo;m clumsy and awkward, my limbs don&rsquo;t quite go where I want them to go, and at best, it&rsquo;s just fun to watch me. Generally speaking, I don&rsquo;t think a regular person could compete with the pros. Most people are somewhat good at something. But greatness — regularly scheduled weekly articulations of greatness — is something that just can&rsquo;t be turned on.</p>
+            <div class="sidebar teaser">
+              <a href="http://fivethirtyeight.com/datalab/listen-to-how-walt-hickey-and-neil-paine-tried-to-break-madden" target="_blank"><img src="<?php echo esc_url( $fte_madden->get_special_directory_uri() ); ?>/img/podcast-teaser.jpg" alt="Walter Hickey in part 2" /></a>
+              <p><strong><a href="http://fivethirtyeight.com/datalab/listen-to-how-walt-hickey-and-neil-paine-tried-to-break-madden" target="_blank">Listen to Walt Hickey and Neil Paine discuss their reporting and how they broke Madden.</a></strong></p>
+            </div>
+          </div>
           <p>I asked Moore whether there were any sports that regular people could jump into and be at least a little competitive.</p>
           <p>&ldquo;Poker, if you consider that a sport,&rdquo; he said.</p>
           <p>Mohegan Sun has <a href="http://mohegansun.com/playing/poker.html" target="_blank">a poker tournament</a> at the end of the month. How hard can that be?</p>

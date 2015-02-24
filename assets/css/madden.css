@@ -447,6 +447,11 @@ font-size: 13px;
   left: auto;
   width: 172px;
 }
+
+#madden .content-width .sidebar.teaser a {
+  color:#999;
+}
+
 #madden .content-width .sidebar p, #madden .content-width p.chart {
   width: 100%;
   font-size: 12px;
