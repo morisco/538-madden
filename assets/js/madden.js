@@ -150,11 +150,11 @@
       var twitterShare;
       var facebookShare;
       if (part === 1) {
-        twitterShare = 'window.open("' + MADDEN.twitter_part1 + '", "", "resizable,height=420,width=550"); return false;';
-        facebookShare = 'window.open("' + MADDEN.facebook_part1 + '", "", "resizable,height=626,width=436"); return false;';
+        twitterShare = 'window.open("' + MADDEN.twitter_part1 + '", "", "resizable,height=251,width=550"); return false;';
+        facebookShare = 'window.open("' + MADDEN.facebook_part1 + '", "", "resizable,height=354,width=626"); return false;';
       } else {
-        twitterShare = 'window.open("' + MADDEN.twitter_part2 + '", "", "resizable,height=420,width=370"); return false;';
-        facebookShare = 'window.open("' + MADDEN.facebook_part2 + '", "", "resizable,height=626,width=436"); return false;';
+        twitterShare = 'window.open("' + MADDEN.twitter_part2 + '", "", "resizable,height=251,width=550"); return false;';
+        facebookShare = 'window.open("' + MADDEN.facebook_part2 + '", "", "resizable,height=354,width=626"); return false;';
       }
       $('header .share-twitter').attr('onclick', twitterShare);
       $('header .share-facebook').attr('onclick', facebookShare);
