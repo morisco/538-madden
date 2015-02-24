@@ -165,7 +165,7 @@
     },
 
     swapShares: function(part) {
-      if (part == MADDEN.currentShares) {
+      if (part === MADDEN.currentShares) {
         return;
       }
 
