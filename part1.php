@@ -13,7 +13,7 @@
               <h1>How Madden Ratings Are Made</h1>
               <h2>The Secret <span class="line-2">Process That Turns</span> NFL Players Into Digital Gods</h2>
               <h3>by Neil Paine</h3>
-              <h4>GRAPHICS BY REUBEN FISCHER-BAUM</h4>
+              <h4>graphics by Reuben Fischer-Baum</h4>
               <h4>illustration by Mike McQuade</h4>
             </div>
           </div>
