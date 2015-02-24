@@ -113,7 +113,7 @@ body {
   color: #fff100;
 }
 #madden header nav a.title-bar:hover {
- text-decoration: none;
+  text-decoration: none;
 }
 #madden header .social-links a.title-bar {
   cursor: default;
