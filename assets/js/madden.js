@@ -26,7 +26,7 @@
       MADDEN.initOpener();
       MADDEN.initHeader();
       MADDEN.initShares();
-      if (window.location.hash != '#part2') {
+      if (window.location.hash !== '#part2') {
         MADDEN.initInteractive();
       } else {
         MADDEN.initInteractiveWatch();
