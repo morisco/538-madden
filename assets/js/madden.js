@@ -749,7 +749,6 @@
             }
           });
         } else if (ratio >= 35 && ratio < 50 && !$('#combines .combine-2').hasClass('triggered')) {
-
           $('#combines .combine-2').addClass('triggered');
           $('.combine-2 .increase-me').each(function() {
             var original = $(this).attr('data-starting-number');
