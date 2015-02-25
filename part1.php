@@ -194,7 +194,7 @@
           <p>At the same time, Moore dives into the various public pre-draft scouting reports for each player, marking down pluses and minuses when consistent themes emerge and applying those adjustments to the templates in areas where the raw combine measurables are less useful, such as coverage skills or play recognition.</p>
           <a name="interactive" class="interactive-link"></a>
           <div class="ornamental-rule trigger-watch" data-callback="expandRuler"><hr><span></span></div>
-          <div id="interact" data-pym-src="http://projects.fivethirtyeight.com/madden-scores/index.html">
+          <div id="interact">
             <h3>Interactive</h3>
           </div>
           <p><span class="dropcap">F</span>inally, after all the component categories are set for both rookies and veterans, the numbers are used to generate the fabled Overall Rating.</p>

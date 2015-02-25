@@ -26,7 +26,11 @@
       MADDEN.initOpener();
       MADDEN.initHeader();
       MADDEN.initShares();
-      // MADDEN.initInteractive();
+      if (window.location.hash != '#part2') {
+        MADDEN.initInteractive();
+      } else {
+        MADDEN.initInteractiveWatch();
+      }
     },
 
     initEvents: function() {
@@ -186,6 +190,15 @@
 
     initInteractive: function() {
       var pymParent = new pym.Parent('interact', 'http://projects.fivethirtyeight.com/madden-scores/index.html', {});
+    },
+
+    initInteractiveWatch: function() {
+      $(window).on('scroll.watchInteractive',function() {
+        if($(window).scrollTop() <= $('#interact').offset().top){
+          $(window).off('scroll.watchInteractive');
+          MADDEN.initInteractive();
+        }
+      });
     },
 
     initOpener: function() {
