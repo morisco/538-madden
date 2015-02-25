@@ -26,7 +26,7 @@
       MADDEN.initOpener();
       MADDEN.initHeader();
       MADDEN.initShares();
-      MADDEN.initInteractive();
+      // MADDEN.initInteractive();
     },
 
     initEvents: function() {
